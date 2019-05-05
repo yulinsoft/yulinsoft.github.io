@@ -1,7 +1,7 @@
 ---
 title: 如何编译自己需要的 OpenWrt 固件
 date: 2019-05-03 21:17:01
-tags:
+tags: OpenWrt
 ---
 ### 注意：
 

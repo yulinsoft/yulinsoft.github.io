@@ -1,7 +1,7 @@
 ---
 title: Padavan 编译教程
 date: 2019-05-03 20:56:09
-tags:
+tags: Padavan
 ---
 #### 配置编译环境
 
