@@ -125,7 +125,7 @@ busuanzi: false ## If you want to use Busuanzi page views please set the value t
 
 # About page
 about:
-  photo_url: http://blog.yulinsoft.top/player/images/t3.jpg ## Your photo url
+  photo_url: /img/weixin.jpg ## Your photo url
   items:
   - label: 邮箱
     url: mailto:yulinsoft@gmail.com ## Your email with mailto: e.g.  mailto:zhenggchaoo@gmail.com
