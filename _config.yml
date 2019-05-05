@@ -106,5 +106,6 @@ jsonContent:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
      type: git
-     repo: git@github.com:yulinsoft/yulinsoft.github.io.git
-     branch: master
+     repo:
+        github: git@github.com:yulinsoft/yulinsoft.github.io.git,master
+        coding: git@git.dev.tencent.com:yulinsoft/yulinsoft.coding.me.git,master
