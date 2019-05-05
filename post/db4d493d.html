@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="这是我的个人博客。"><meta name="keywords" content="平淡如盐"><title>Hexo博客迁移到其他电脑 | 我酷我流行</title><link rel="stylesheet" type="text/css" href="//fonts.loli.net/css?family=Source+Code+Pro"><link rel="stylesheet" type="text/css" href="/css/style-dark.css?v=2.0.3"><link rel="stylesheet" type="text/css" href="/css/highlight-dark.css?v=2.0.3"><link rel="Shortcut Icon" href="/favicon.ico"><link rel="bookmark" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">Hexo博客迁移到其他电脑</h1><a id="logo" href="/.">我酷我流行</a><p class="description">越努力越幸运！</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a></div><div id="search-form"><div id="result-mask" class="hide"></div><label><input id="search-key" type="text" autocomplete="off" placeholder="搜索"></label><div id="result-wrap" class="hide"><div id="search-result"></div></div><div class="hide"><template id="search-tpl"><div class="item"><a href="/{path}" title="{title}"><div class="title">{title}</div><div class="time">{date}</div><div class="tags">{tags}</div></a></div></template></div></div></div><div id="layout" class="layout-g"><div class="layout-l"><div class="content_container"><div class="post"><h1 class="post-title">Hexo博客迁移到其他电脑</h1><div class="post-meta"><a href="/post/db4d493d.html#comments" class="comment-count"></a><p><span class="date">May 05, 2019</span></p></div><div class="post-content"><h4 id="安装必要的软件"><a href="#安装必要的软件" class="headerlink" title="安装必要的软件"></a>安装必要的软件</h4><ol>
+<li>下载安装Git客户端</li>
+<li>安装node js</li>
+</ol>
+<h4 id="恢复ssh配置"><a href="#恢复ssh配置" class="headerlink" title="恢复ssh配置"></a>恢复ssh配置</h4><p>回到你的git bash中</p>
+<h5 id="配置git用户名"><a href="#配置git用户名" class="headerlink" title="配置git用户名"></a>配置git用户名</h5><p><code>$ git config --global user.name &quot;yourname&quot;</code><br><code>$ git config --global user.email &quot;youremail&quot;</code></p>
+<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
+<h5 id="恢复ssh密钥"><a href="#恢复ssh密钥" class="headerlink" title="恢复ssh密钥"></a>恢复ssh密钥</h5><p>将原电脑备份的.ssh文件夹复制到当前用户目录下，一般为“C:\Users\用户名”下。<br>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。<br><a id="more"></a><br>继续回到你的git bash中，<br>输入</p>
+<p><code>$ cd ~/.ssh</code></p>
+<p>检查是否由.ssh的文件夹</p>
+<p>输入ls，列出该文件下的内容。下图说明存在</p>
+<p><img src="\img\1.png" alt></p>
+<p>输入</p>
+<p><code>$ eval &quot;$(ssh-agent -s)&quot;</code></p>
+<p>添加密钥到ssh-agent</p>
+<p>再输入</p>
+<p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
+<p>添加生成的SSH key到ssh-agent</p>
+<p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
+<p>输入ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
+<h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
+<p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
+<p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
+<p>接下来正常操作<br>在github上添加公钥public-key:<br>1、首先在你的终端运行 xclip -sel c ~/.ssh/id_rsa.pub将公钥内容复制到剪切板<br>2、在github上添加公钥时，直接复制即可<br>3、保存<br>在终端 </p>
+<p><code>$ ssh -T git@github.com</code></p>
+<p>如果看到Hi后面是你的用户名，就说明成功了。</p>
+<h4 id="备份原文件"><a href="#备份原文件" class="headerlink" title="备份原文件"></a>备份原文件</h4><p>打开原电脑的hexo文件夹，将以下文件备份。</p>
+<h5 id="需要转移的文件"><a href="#需要转移的文件" class="headerlink" title="需要转移的文件"></a>需要转移的文件</h5><blockquote>
+<p><strong>文件(夹)             说明</strong><br>scaffolds/         博客文章模板<br>source/             所有的博客文章<br>themes/            网站主题<br>.gitignore          push时需忽略的文件<br>_config.yml       站点配置文件<br>package.json    依赖包的名称和版本号</p>
+</blockquote>
+<p>由于配置文件和主题文件需要经常更改，采用github创建博客分支的方式进行备份。</p>
+<h5 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h5><p>克隆github上上生成的静态文件到hexo文件夹中</p>
+<p>git clone <a href="https://github.com/yourname/xxxx.github.io.git" target="_blank" rel="noopener">https://github.com/yourname/xxxx.github.io.git</a> hexo<br>克隆后将除.git文件外其他所有文件删除。主要是为了得到版本管理文件夹.git。</p>
+<p>.git文件为隐藏文件，可直接将可见文件全部删除</p>
+<p>将备份的原文件复制到此文件夹。若文件夹是从github克隆，则需要删除主题文件中的版本控制文件夹,以next主题为例：</p>
+<p><code>$ rm -rf thems/next/.git*</code><br>创建名为hexo的分支</p>
+<p><code>$ git checkout -b hexo</code><br>保存所有文件到暂存区</p>
+<p><code>$ git add --all</code></p>
+<h5 id="提交变更"><a href="#提交变更" class="headerlink" title="提交变更"></a>提交变更</h5><p><code>$ git commit -m &quot;hexo-2&quot;</code><br>提交变更时报错：</p>
+<p>根据提示配置。</p>
+<p>推送分支到github,并用–set-upstream与origin创建关联将</p>
+<p><code>$ git push --set-upstream origin hexo</code></p>
+<p>hexo设置为默认分支。</p>
+<h4 id="迁移到新电脑"><a href="#迁移到新电脑" class="headerlink" title="迁移到新电脑"></a>迁移到新电脑</h4><p>以后在其他电脑上写博客，直接将分支克隆下来。再使用npm install安装依赖。</p>
+<p><code>$ git clone -b hexo https://github.com/yourname/xxx.github.io.git myblog</code></p>
+<p><code>$ cd myblog</code></p>
+<p><code>$ npm install</code></p>
+<p>执行以上命令完成基础环境安装。</p>
+<h4 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h4><p>基础环境安装完成后，可以进行创建文章的测试。</p>
+<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><code>$ hexo n &quot;xxx&quot;</code></p>
+<p>注意：需要使用git push把源文件推到分支上</p>
+<p><code>$ git add .</code><br><code>$ git commit -m &quot;xxxx&quot;</code><br><code>$ git push origin hexo</code></p>
+<h5 id="部署文章"><a href="#部署文章" class="headerlink" title="部署文章"></a>部署文章</h5><p><code>$ hexo d -g</code></p>
+<h5 id="发布失败"><a href="#发布失败" class="headerlink" title="发布失败"></a>发布失败</h5><p>如果发布失败，可以安装最新版的putty，然后删除环境变量中的所有带ssh的变量后，重新打开git bash发布。</p>
+</div><div class="post-copyright"><blockquote><p>原文作者: 平淡如盐</p><p>原文链接: <a href="http://blog.yulinsoft.top/post/db4d493d.html">http://blog.yulinsoft.top/post/db4d493d.html</a></p><p>版权声明: 转载请注明出处(必须保留作者署名及链接)</p></blockquote></div><div class="tags"><a href="/tags/hexo/">hexo</a></div><div class="post-share"><div class="social-share"><span>分享到:</span></div></div><div class="post-nav"><a href="/post/4a17b156.html" class="next">Hello World</a></div><div id="comments"></div></div></div></div><div class="layout-r"><div id="sidebar"><div class="search-pla"></div><div id="toc" class="widget"><div class="widget-title"><i class="fa fa-fei">文章目录</i></div><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装必要的软件"><span class="toc-text">安装必要的软件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#恢复ssh配置"><span class="toc-text">恢复ssh配置</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#配置git用户名"><span class="toc-text">配置git用户名</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#恢复ssh密钥"><span class="toc-text">恢复ssh密钥</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#常见问题"><span class="toc-text">常见问题</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#备份原文件"><span class="toc-text">备份原文件</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#需要转移的文件"><span class="toc-text">需要转移的文件</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#创建分支"><span class="toc-text">创建分支</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#提交变更"><span class="toc-text">提交变更</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#迁移到新电脑"><span class="toc-text">迁移到新电脑</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#发表文章"><span class="toc-text">发表文章</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#新建文章"><span class="toc-text">新建文章</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#部署文章"><span class="toc-text">部署文章</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#发布失败"><span class="toc-text">发布失败</span></a></li></ol></li></ol></div><div class="widget"><div class="widget-title"><i class="fa fa-xie"> 最新文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/post/db4d493d.html">Hexo博客迁移到其他电脑</a></li><li class="post-list-item"><a class="post-list-link" href="/post/4a17b156.html">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/post/7ec7b2eb.html">如何编译自己需要的 OpenWrt 固件</a></li><li class="post-list-item"><a class="post-list-link" href="/post/4a10dd00.html">Padavan 编译教程</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-biao"> 标签</i></div><div class="tagcloud"><a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/Padavan/" style="font-size: 15px;">Padavan</a> <a href="/tags/OpenWrt/" style="font-size: 15px;">OpenWrt</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-archive"> 归档</i></div><ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/05/">五月 2019</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-you"> 友情链接</i></div><ul></ul><a href="http://yun.yulinsoft.top/" title="我的网盘" target="_blank">我的网盘</a><ul></ul><a href="http://www.yulinsoft.top/" title="我的网站" target="_blank">我的网站</a><ul></ul><a href="http://wenku.baidu.com/" title="百度文库" target="_blank">百度文库</a></div></div></div></div><a id="totop" href="#top"></a><div id="footer"><div class="footer-info"><p><a href="/baidusitemap.xml">网站地图</a> |  <a href="/atom.xml">订阅本站</a> |  <a href="/about/">联系博主</a></p><p><span> Copyright &copy;<a href="/." rel="nofollow">平淡如盐.</a></span><span> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a></span></p></div></div></div><script type="text/javascript" src="/js/search.json.js?v=2.0.3"></script><script type="text/javascript" src="/js/toctotop.js?v=2.0.3" async></script><link rel="stylesheet" type="text/css" href="/share/css/share.css"><script type="text/javascript" src="/share/js/social-share.js" charset="utf-8"></script><script type="text/javascript" src="/share/js/qrcode.js" charset="utf-8"></script></body></html>
