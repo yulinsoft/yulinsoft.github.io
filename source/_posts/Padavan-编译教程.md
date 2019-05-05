@@ -1,7 +1,8 @@
 ---
 title: Padavan 编译教程
-date: 2019-05-03 20:56:09
 tags: Padavan
+abbrlink: 4a10dd00
+date: 2019-05-03 20:56:09
 ---
 #### 配置编译环境
 
