@@ -109,7 +109,7 @@
 <meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow-night-blue.png">
 <meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow-night-bright.png">
 <meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow-night-eighties.png">
-<meta property="og:updated_time" content="2019-05-07T03:37:29.574Z">
+<meta property="og:updated_time" content="2019-05-07T07:48:08.038Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="nexT主题配置">
 <meta name="twitter:description" content="NexT 坚持将复杂的细节隐藏，提供尽量少并且简便的设置，保持最大限度的易用性。 设置 RSSNexT 中 RSS 有三个设置选项，满足特定的使用场景。 更改 主题配置文件，设定 rss 字段的值：  false：禁用 RSS，不在页面上显示 RSS 连接。 留空：使用 Hexo 生成的 Feed 链接。 你可以需要先安装 hexo-generator-feed 插件。 具体的链接地址：适用于已经">
@@ -292,7 +292,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
 
   </li>
         
@@ -435,7 +435,7 @@
                 
               
 
-              <time title="创建时间：2019-05-07 11:35:57 / 修改时间：11:37:29" itemprop="dateCreated datePublished" datetime="2019-05-07T11:35:57+08:00">2019-05-07</time>
+              <time title="创建时间：2019-05-07 11:35:57 / 修改时间：15:48:08" itemprop="dateCreated datePublished" datetime="2019-05-07T11:35:57+08:00">2019-05-07</time>
             
 
             
@@ -445,6 +445,24 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -598,8 +616,8 @@
 
     
       <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
-  <img id="wechat_subscriber_qcode" src="/img/weixin.jpg#/path/to/your/wechatqcode e.g. /uploads/wechat-qcode.jpg" alt="平淡如盐 wechat" style="width: 200px; max-width: 100%;">
-  <div></div>
+  <img id="wechat_subscriber_qcode" src="/img/weixin.jpg" alt="平淡如盐 wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎您扫一扫上面的微信号，方便我们的交流！</div>
 </div>
 
     
@@ -742,6 +760,27 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -979,6 +1018,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -997,6 +1039,12 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -1064,7 +1112,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

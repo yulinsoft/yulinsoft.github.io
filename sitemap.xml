@@ -2,9 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.yulinsoft.top/categories/index.html</loc>
+    
+    <lastmod>2019-05-07T07:52:04.748Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.yulinsoft.top/tags/index.html</loc>
+    
+    <lastmod>2019-05-07T07:51:48.308Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.yulinsoft.top/post/7ec7b2eb.html</loc>
+    
+    <lastmod>2019-05-07T07:49:46.358Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.yulinsoft.top/post/4a10dd00.html</loc>
+    
+    <lastmod>2019-05-07T07:49:13.022Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.yulinsoft.top/post/75058071.html</loc>
     
-    <lastmod>2019-05-07T03:37:29.574Z</lastmod>
+    <lastmod>2019-05-07T07:48:08.038Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.yulinsoft.top/post/db4d493d.html</loc>
+    
+    <lastmod>2019-05-07T07:47:50.230Z</lastmod>
     
   </url>
   
@@ -16,44 +51,9 @@
   </url>
   
   <url>
-    <loc>http://blog.yulinsoft.top/categories/index.html</loc>
-    
-    <lastmod>2019-05-07T02:04:40.750Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.yulinsoft.top/tags/index.html</loc>
-    
-    <lastmod>2019-05-07T02:04:29.598Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.yulinsoft.top/post/4a17b156.html</loc>
     
     <lastmod>2019-05-05T07:57:11.433Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.yulinsoft.top/post/4a10dd00.html</loc>
-    
-    <lastmod>2019-05-05T07:57:11.432Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.yulinsoft.top/post/7ec7b2eb.html</loc>
-    
-    <lastmod>2019-05-05T07:57:11.432Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.yulinsoft.top/post/db4d493d.html</loc>
-    
-    <lastmod>2019-05-05T07:57:11.431Z</lastmod>
     
   </url>
   

@@ -286,7 +286,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
 
   </li>
         
@@ -489,8 +489,8 @@
 
     
       <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
-  <img id="wechat_subscriber_qcode" src="/img/weixin.jpg#/path/to/your/wechatqcode e.g. /uploads/wechat-qcode.jpg" alt="平淡如盐 wechat" style="width: 200px; max-width: 100%;">
-  <div></div>
+  <img id="wechat_subscriber_qcode" src="/img/weixin.jpg" alt="平淡如盐 wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎您扫一扫上面的微信号，方便我们的交流！</div>
 </div>
 
     
@@ -631,6 +631,27 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -868,6 +889,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -886,6 +910,12 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -953,7 +983,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

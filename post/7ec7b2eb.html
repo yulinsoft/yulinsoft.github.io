@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="我酷我流行">
 <meta property="og:description" content="注意： 不要用root用户git和编译！！！ 国内用户编译前最好准备好梯子 默认登陆IP 192.168.1.1,密码password  编译命令如下: 首先装好Ubuntu 64bit，推荐Ubuntu 14 LTS x64 命令行输入sudo apt-get update，然后输入1sudo apt-get install build-essential asciidoc binutils b">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-05T07:57:11.432Z">
+<meta property="og:updated_time" content="2019-05-07T07:49:46.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何编译自己需要的 OpenWrt 固件">
 <meta name="twitter:description" content="注意： 不要用root用户git和编译！！！ 国内用户编译前最好准备好梯子 默认登陆IP 192.168.1.1,密码password  编译命令如下: 首先装好Ubuntu 64bit，推荐Ubuntu 14 LTS x64 命令行输入sudo apt-get update，然后输入1sudo apt-get install build-essential asciidoc binutils b">
@@ -286,7 +286,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
 
   </li>
         
@@ -446,11 +446,29 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-05 15:57:11" itemprop="dateModified" datetime="2019-05-05T15:57:11+08:00">2019-05-05</time>
+                <time title="修改时间：2019-05-07 15:49:46" itemprop="dateModified" datetime="2019-05-07T15:49:46+08:00">2019-05-07</time>
               
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/OpenWrt/" itemprop="url" rel="index"><span itemprop="name">OpenWrt</span></a></span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -515,8 +533,8 @@
 
     
       <div id="wechat_subscriber" style="display: block; padding: 10px 0; margin: 20px auto; width: 100%; text-align: center;">
-  <img id="wechat_subscriber_qcode" src="/img/weixin.jpg#/path/to/your/wechatqcode e.g. /uploads/wechat-qcode.jpg" alt="平淡如盐 wechat" style="width: 200px; max-width: 100%;">
-  <div></div>
+  <img id="wechat_subscriber_qcode" src="/img/weixin.jpg" alt="平淡如盐 wechat" style="width: 200px; max-width: 100%;">
+  <div>欢迎您扫一扫上面的微信号，方便我们的交流！</div>
 </div>
 
     
@@ -663,6 +681,27 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -900,6 +939,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -918,6 +960,12 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -985,7 +1033,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {

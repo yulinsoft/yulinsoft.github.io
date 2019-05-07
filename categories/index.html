@@ -99,14 +99,14 @@
   <meta name="description" content="这是我的个人博客。">
 <meta name="keywords" content="平淡如盐">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
+<meta property="og:title" content="文章分类">
 <meta property="og:url" content="http://blog.yulinsoft.top/categories/index.html">
 <meta property="og:site_name" content="我酷我流行">
 <meta property="og:description" content="这是我的个人博客。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-07T02:04:40.750Z">
+<meta property="og:updated_time" content="2019-05-07T07:52:04.748Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="categories">
+<meta name="twitter:title" content="文章分类">
 <meta name="twitter:description" content="这是我的个人博客。">
 
 
@@ -127,7 +127,7 @@
   };
 </script>
 
-  <title>categories | 我酷我流行</title>
+  <title>文章分类 | 我酷我流行</title>
   
 
 
@@ -286,7 +286,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">0</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类<span class="badge">3</span></a>
 
   </li>
         
@@ -399,7 +399,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">categories
+<h1 class="post-title" itemprop="name headline">文章分类
 
 </h1>
 
@@ -423,10 +423,22 @@
             <div class="category-all-title">
               
               
-              暂无分类
+                
+                  
+                
+              
+                
+                  
+                
+              
+                
+                  
+                
+              
+              目前共计 3 个分类
             </div>
             <div class="category-all">
-              
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Hexo/">Hexo</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/OpenWrt/">OpenWrt</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/Padavan/">Padavan</a><span class="category-list-count">1</span></li></ul>
             </div>
           </div>
         
@@ -490,6 +502,27 @@
                 </div>
               
 
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                      <a href="/categories/">
+                    
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
 
               
@@ -710,6 +743,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -728,6 +764,12 @@
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/three/three.min.js"></script>
+
+  
+  <script src="/lib/three/three-waves.min.js"></script>
 
 
   
@@ -778,7 +820,7 @@
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
