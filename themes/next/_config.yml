@@ -66,21 +66,21 @@ footer:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
-    version: true
+    version: false
 
   theme:
     # Theme & scheme info link (Theme - NexT.scheme).
-    enable: true
+    enable: false
     # Version info of NexT after scheme info (vX.X.X).
-    version: true
+    version: false
 
   # Beian icp information for Chinese users. In China, every legal website should have a beian icp in website footer.
   # http://www.beian.miit.gov.cn
   beian:
-    enable: false
-    icp:
+    enable: true
+    icp: "豫ICP备17041227号-1"
 
   # Any custom text can be defined here.
   #custom_text: Hosted by <a href="https://pages.coding.me" class="theme-link" rel="noopener" target="_blank">Coding Pages</a>
@@ -93,9 +93,9 @@ footer:
 # Valid values of language: deed.zh, deed.fr, deed.de, etc.
 creative_commons:
   license: by-nc-sa
-  sidebar: false
-  post: false
-  language:
+  sidebar: true
+  post: true
+  language: zh-CN
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
@@ -198,9 +198,10 @@ site_state: true
 social:
   GitHub: https://github.com/yulinsoft || github
   E-Mail: mailto:yulinsoft@gmail.com || envelope
-  #Weibo: https://weibo.com/yourname || weibo
+  Weibo: https://weibo.com/yulinsoft || weibo
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
+  我的网盘: http://yun.yulinsoft.top || cloud
+  我的网站: http://yun.yulinsoft.top || edge
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -210,23 +211,24 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Blog rolls
 links_icon: link
 links_title: 友情链接
-links_layout: block
-#links_layout: inline
+#links_layout: block
+links_layout: inline
 links:
   我的网盘: http://yun.yulinsoft.top
+  我的网站: http://www.yulinsoft.top
 
 # Sidebar Avatar
 avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: /img/weixin.jpg#/images/avatar.gif
+  url: /img/weixin.jpg
   # If true, the avatar would be dispalyed in circle.
   rounded: false
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
@@ -280,7 +282,7 @@ back2top:
 # A button to open designated chat widget in sidebar.
 # Firstly, you need enable the chat service you want to activate its sidebar button.
 chat:
-  enable: false
+  enable: true
   #service: chatra
   #service: tidio
   icon: comment # icon in Font Awesome 4, set false to disable icon
@@ -310,7 +312,7 @@ excerpt_description: true
 # Automatically Excerpt (Not recommend).
 # Use <!-- more --> in the post to control excerpt accurately.
 auto_excerpt:
-  enable: false
+  enable: true
   length: 150
 
 # Read more button
@@ -645,7 +647,7 @@ valine:
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80NDA5OC8yMDYzMw==
 
 # Gitment
 # Introduction: https://github.com/imsun/gitment
@@ -756,7 +758,7 @@ needmoreshare2:
 #  localhost_ignored: true
 
 # CNZZ count
-#cnzz_siteid:
+cnzz_siteid: 1277456073
 
 # Application Insights
 # See: https://azure.microsoft.com/en-us/services/application-insights
