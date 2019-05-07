@@ -3,6 +3,7 @@ title: 如何编译自己需要的 OpenWrt 固件
 tags: OpenWrt
 abbrlink: 7ec7b2eb
 date: 2019-05-03 21:17:01
+categories: OpenWrt
 ---
 ### 注意：
 

@@ -3,6 +3,7 @@ title: nexT主题配置
 tags: next
 abbrlink: '75058071'
 date: 2019-05-07 11:35:57
+categories: Hexo
 ---
 
 NexT 坚持将复杂的细节隐藏，提供尽量少并且简便的设置，保持最大限度的易用性。

@@ -3,6 +3,7 @@ title: Hexo博客迁移到其他电脑
 tags: hexo
 abbrlink: db4d493d
 date: 2019-05-05 09:23:42
+categories: Hexo
 ---
 
 #### 安装必要的软件
@@ -20,8 +21,8 @@ date: 2019-05-05 09:23:42
 `$ git config --global user.email "youremail"`
 
 这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。
-
-可以用以下两条，检查一下你有没有输对
+<!--more-->
+你可以用以下两条，检查一下你有没有输对
 
 `$ git config user.name`
 `$ git config user.email`
@@ -30,7 +31,7 @@ date: 2019-05-05 09:23:42
 
 将原电脑备份的.ssh文件夹复制到当前用户目录下，一般为“C:\Users\用户名”下。
 ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。
-<!--more-->
+
 继续回到你的git bash中，
 输入
 

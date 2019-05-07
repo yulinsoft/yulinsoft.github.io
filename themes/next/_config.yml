@@ -351,8 +351,8 @@ codeblock:
 # Wechat Subscriber
 wechat_subscriber:
   enable: true
-  qcode: /img/weixin.jpg#/path/to/your/wechatqcode e.g. /uploads/wechat-qcode.jpg
-  #description: e.g. subscribe to my blog by scanning my public wechat account
+  qcode: /img/weixin.jpg
+  description: 欢迎您扫一扫上面的微信号，方便我们的交流！
 
 # Reward (Donate)
 reward_settings:
@@ -861,7 +861,7 @@ search:
   path: search.xml
   field: post
   format: html
-  limit: 1000
+  limit: 10000
 
 # Local search
 # Dependencies: https://github.com/theme-next/hexo-generator-searchdb
@@ -1009,7 +1009,7 @@ canvas_nest:
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
 # three_waves
-three_waves: false
+three_waves: true
 # canvas_lines
 canvas_lines: false
 # canvas_sphere
@@ -1114,18 +1114,6 @@ vendors:
   # canvas_nest_nomobile: //cdn.jsdelivr.net/gh/theme-next/theme-next-canvas-nest@1/canvas-nest-nomobile.min.js
   canvas_nest:
   canvas_nest_nomobile:
-
-  # Internal version: 1.0.0
-  # See: https://github.com/theme-next/theme-next-three
-  # Example:
-  # three: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three.min.js
-  # three_waves: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/three-waves.min.js
-  # canvas_lines: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_lines.min.js
-  # canvas_sphere: //cdn.jsdelivr.net/gh/theme-next/theme-next-three@1/canvas_sphere.min.js
-  three:
-  three_waves:
-  canvas_lines:
-  canvas_sphere:
 
   # Internal version: 1.0.0
   # See: https://github.com/zproo/canvas-ribbon

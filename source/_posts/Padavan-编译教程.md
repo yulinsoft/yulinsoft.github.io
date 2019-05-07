@@ -3,6 +3,7 @@ title: Padavan 编译教程
 tags: Padavan
 abbrlink: 4a10dd00
 date: 2019-05-03 20:56:09
+categories: Padavan
 ---
 #### 配置编译环境
 
@@ -19,11 +20,11 @@ $ sudo apt-get install git
 $ cd /opt
 $ sudo git clone https://bitbucket.org/padavan/rt-n56u.git
 ```
+<!--more-->
 安装编译固件所需要的工具
 ``` bash
 $ sudo apt-get install autoconf automake bison build-essential flex gawk gettext gperf libtool pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev texinfo python-docutils mc
 ```
-<!--more-->
 编译一个交叉编译的工具链
 ``` bash
 $ cd /opt/rt-n56u/toolchain-mipsel
