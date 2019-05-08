@@ -5,7 +5,7 @@
 # Site
 title: 我酷我流行
 subtitle: 越努力越幸运！
-description: 这是我的个人博客。
+description: 平平淡淡才是真。
 keywords: 平淡如盐
 author: 平淡如盐
 language: zh-CN
@@ -40,7 +40,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
