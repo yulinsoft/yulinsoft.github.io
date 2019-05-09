@@ -1009,7 +1009,7 @@ canvas_nest:
 # JavaScript 3D library.
 # Dependencies: https://github.com/theme-next/theme-next-three
 # three_waves
-three_waves: true
+three_waves: false
 # canvas_lines
 canvas_lines: false
 # canvas_sphere
