@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.yulinsoft.top/playlist/index.html</loc>
+    
+    <lastmod>2019-05-10T09:42:03.342Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.yulinsoft.top/post/4a17b156.html</loc>
     
     <lastmod>2019-05-09T00:23:25.559Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://blog.yulinsoft.top/about/index.html</loc>
     
     <lastmod>2019-05-07T03:33:56.926Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.yulinsoft.top/player/index.html</loc>
-    
-    <lastmod>2019-05-01T13:06:50.000Z</lastmod>
     
   </url>
   
