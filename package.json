@@ -23,6 +23,7 @@
     "hexo-renderer-jade": "^0.4.1",
     "hexo-renderer-marked": "^0.3.2",
     "hexo-renderer-stylus": "^0.3.3",
-    "hexo-server": "^0.3.3"
+    "hexo-server": "^0.3.3",
+    "hexo-tag-aplayer": "^3.0.4"
   }
 }

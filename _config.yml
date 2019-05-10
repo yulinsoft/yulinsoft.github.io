@@ -103,7 +103,10 @@ jsonContent:
     excerpt: false
     categories: true
     tags: true
-
+    
+aplayer:
+  meting: true
+  
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
