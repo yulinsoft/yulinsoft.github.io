@@ -5,7 +5,7 @@
 # Site
 title: 我酷我流行
 subtitle: 越努力越幸运！
-description: 平平淡淡才是真。
+description: 明天的你一定会感谢今天努力的自己。
 keywords: 平淡如盐
 author: 平淡如盐
 language: zh-CN
@@ -13,7 +13,7 @@ timezone: Asia/Chongqing
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://blog.yulinsoft.top 
+url: https://blog.yulinsoft.top 
 root: /
 #permalink: :year/:month/:day/:title/
 
@@ -32,7 +32,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-    - 'player/**'
     - 'pay/**'
 
 # Writing
@@ -42,7 +41,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: true
+post_asset_folder: false
 relative_link: false
 future: true
 highlight:
