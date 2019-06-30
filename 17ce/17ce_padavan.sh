@@ -44,6 +44,8 @@ init_files()
 	wget_install libstdc++.so.6   $CDN_BASE/lib/libstdc
 	wget_install libpolarssl.so.7    $CDN_BASE/lib/libpolarssl.so.7
 	wget_install libmbedtls.so.9    $CDN_BASE/lib/libmbedtls.so.9
+	wget_install libmbedcrypto.so.0    $CDN_BASE/lib/libmbedcrypto.so.0
+	wget_install libmbedx509.so.0    $CDN_BASE/lib/libmbedx509.so.0
 	wget_install libc.so    $CDN_BASE/lib/libc.so
 	wget_install ld-uClibc.so.1    $CDN_BASE/lib/ld-uClibc.so.1
 }
