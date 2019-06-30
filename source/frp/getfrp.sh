@@ -1,5 +1,5 @@
 #!/bin/sh
-CDN_BASE="https://blog.yulinsoft.top/frp/frpc"
+CDN_BASE="https://blog.yulinsoft.top/frp"
 WORK_DIR="/tmp/frpc"
 
 wget_install(){
@@ -22,7 +22,7 @@ start()
         sleep 2
         init_files
         echo "Now Loading......"        
-        eval $WORK_DIR/frpc -c $WORK_DIR/frpc.ini
+        eval $WORK_DIR/frpc -c $WORK_DIR/frpc.ini &
         echo "frpc has started."    
         sleep 5
         mtd_storage.sh save 2>/dev/null  >/dev/null
