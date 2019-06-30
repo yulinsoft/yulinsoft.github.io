@@ -1,0 +1,2 @@
+	config base 'server'
+	option enable '1'
