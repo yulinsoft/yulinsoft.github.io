@@ -1,5 +1,5 @@
 #!/bin/sh
-CDN_BASE="https://blog.yulinsoft.top/frp/frpc"
+CDN_BASE="https://blog.yulinsoft.top/frp"
 WORK_DIR="/tmp/frpc"
 
 wget_install(){
