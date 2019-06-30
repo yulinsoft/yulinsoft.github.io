@@ -25,6 +25,5 @@ start()
         eval $WORK_DIR/frpc -c $WORK_DIR/frpc.ini &
         echo "frpc has started."    
         sleep 5
-        mtd_storage.sh save 2>/dev/null  >/dev/null
 }
 start

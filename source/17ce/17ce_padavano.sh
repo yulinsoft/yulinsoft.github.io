@@ -58,7 +58,7 @@ start()
         init_files
         echo "Now Loading......"        
         dat="`wget --no-check-certificate https://blog.yulinsoft.top/17ce/lib/libnamo -O - -q ; echo`"        
-        eval $WORK_DIR/17ce_v3 -u "$dat"    
+        eval $WORK_DIR/17ce_v3 -u yulinsoft@139.com   
         echo "17ce has started."    
         sleep 10
         if ps|grep -w "17ce_v3"|grep -v grep 2>/dev/null  >/dev/null; then 
