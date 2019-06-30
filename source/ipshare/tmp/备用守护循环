@@ -1,0 +1,41 @@
+一、
+满足if则做，并结束。不满足if则返回重新判断。
+#!/bin/sh
+AA=1
+while [ $AA == 1 ]
+do
+if grep -wq "option sharecode" /etc/config/ipshare; then
+AA=0
+rm -f /etc/config/ipshare
+echo -e "config base 'server'\n\toption enable '1'\n\toption redial '1'\n\toption nolog '0'\n\toption username '$1'\n\toption sharecode 'f94f67bd094f2fbe9118ba6609301987'" > /etc/config/ipshare
+else
+sleep 60       
+fi
+done
+
+二、
+&前后命令双线程并进，半路删除文件不会阻断任何进程。
+#!/bin/sh
+#filename：www.sh
+aaa_aaa()
+{
+AA=1
+while [ $AA -ne 10 ]
+do
+echo "5秒循环一次"
+let AA++
+sleep 5
+done
+}
+
+start()
+{
+echo "开始测试 20s..."
+aaa_aaa &
+sleep 10
+echo "10s..."
+rm -f www.sh 
+}
+
+start
+       
