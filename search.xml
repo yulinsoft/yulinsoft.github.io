@@ -391,4 +391,58 @@
 <p>本博客的 hexo环境 也在这armbian上，通过git部署到vps</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>CloudDrive控制器</title>
+    <url>/post/undefined.html</url>
+    <content><![CDATA[<p><a href="https://kudoushinichi.lanzoui.com/i9SXKsc88de">阿里云盘变本地硬盘CloudDrive</a>是一个好工具，它可以把你的阿里云盘和天翼云盘的内容映射到本地盘符，方便的使用。</p>
+<h3 id="简单说明"><a href="#简单说明" class="headerlink" title="简单说明"></a>简单说明</h3><p>CloudDrive是以后台服务的形式运行的，每次开机后它会在后台启动，添加盘符，完成映射，然后在后台默默地为你服务。有时候我们并不需要使用网盘的内容，但程序仍然在支持，占用资源不说，它还具有联网权限，这无疑给系统安全留下了隐患。本程序就是控制CloudDrive启动和运行的程序。<br><img src="https://attach.52pojie.cn/forum/202108/15/173347pz2vs201s3ydm339.png" alt="请输入图片描述"></p>
+<h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p>1、运行程序后会显示CloudDrive的运行状态，点击绿色状态条会打开CloudDrive的本地网页配置。</p>
+<p>2、“启动”和“停止”就是简单的控制服务的启动和停止，启动时系统出现盘符，停止时消失。</p>
+<p>3、“启动状态”控制服务的开机自启状态，具体意思参照系统服务控制。</p>
+<h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p>免费下载：<a href="https://yulinsoft.lanzoui.com/iDnHyso0g0d">https://yulinsoft.lanzoui.com/iDnHyso0g0d</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>简单倒计时</title>
+    <url>/post/undefined.html</url>
+    <content><![CDATA[<p>软件简介<br>工作中有时会用到倒计时显示，看了一些软件都不够满意，于是就自己写了一个，这样定制性更强，自己可以随时修改，满足自己的需求。界面如下图：</p>
+<p><img src="https://attach.52pojie.cn/forum/202109/05/111039zxsdydvdvqspozs3.png" alt="请输入图片描述"><br>功能介绍<br>主要功能看设置界面。</p>
+<p><img src="https://attach.52pojie.cn/forum/202109/05/111119chp3gchyhoch2ow2.png" alt="请输入图片描述"><br>1、双击画面自动全屏，全屏界面双击或按ESC退出全屏。<br>2、支持命令行传递一个数字(这个数字代表分钟)，可用于PPT中调用显示指定时长的倒计时。<br>3、有简单的开始和结束音效，最后10秒有提示音效。可以在设置中关闭。<br>4、设置参数保存功能，可以自定义背景和字体颜色，满足你的色。<br>5、全屏隐藏工具栏时，请用回车键控制开始和暂停计时。<br>6、基本就这些，其它自己摸索吧！</p>
+<p><img src="https://attach.52pojie.cn/forum/202109/05/111142rn9wjjxtgtjj3n4j.gif" alt="请输入图片描述"><br>软件下载</p>
+<p>免费下载：<a href="https://yulinsoft.lanzoui.com/iVm0Gtmmnef">https://yulinsoft.lanzoui.com/iVm0Gtmmnef</a>  密码:1111</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>简单拼接-图片拼图神器</title>
+    <url>/post/undefined.html</url>
+    <content><![CDATA[<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>关于说拼接后图片质量变差的说明<br>本程序拼图时的原则之一就以小图片的分辨率为基准。因为我工作时拼图的对象大部分是手机截图，图片大小差别不大。如果你把一个1080P的图片和一个32*32图片进行拼接，那么拼后的图片高就是32像素或者宽就是32像素，这样的图片肯定没法看，所以就有人说图片质量差，原因就在这里。这不是问题，而是原则上就是这样，请大家谨记这一原则。</p>
+<h4 id="PicMerger-1-22-10-7"><a href="#PicMerger-1-22-10-7" class="headerlink" title="PicMerger-1.22.10.7"></a>PicMerger-1.22.10.7</h4><p>1、修复清空列表的菜单右键点击时不出现的问题，并添加了一个清空按钮。<br>2、右上角添加了打印图片按钮，并将打印临时图片移到了系统临时目录。<br>3、添加了保存为BMP格式，方便老式编程工具合并图片。</p>
+<h4 id="PicMerger-1-22-9-24"><a href="#PicMerger-1-22-9-24" class="headerlink" title="PicMerger-1.22.9.24"></a>PicMerger-1.22.9.24</h4><p>1、添加拖动列表中图片进行调整顺序的功能。<br>2、修复有图片间隔时最后留有空白的问题。<br><img src="https://attach.52pojie.cn/forum/202209/24/180347gv9di5d1oaivmd9u.gif" alt="请输入图片描述"></p>
+<h4 id="PicMerger-1-22-8-3"><a href="#PicMerger-1-22-8-3" class="headerlink" title="PicMerger-1.22.8.3"></a>PicMerger-1.22.8.3</h4><p>1、添加点击图片直接打印的功能。<br>2、优化图片列表删除逻辑。<br>3、固定了命令行合并生成的图片名为”MergedIMG.jpg”，方便命令行配合其它脚本批量操作。</p>
+<span id="more"></span>
+<h4 id="PicMerger-1-22-7-5"><a href="#PicMerger-1-22-7-5" class="headerlink" title="PicMerger-1.22.7.5"></a>PicMerger-1.22.7.5</h4><p>1、PNG图片输出支持背景透明。<br>2、图片大小超出最大限制时会弹出错误提醒（猜测值为65535*65535）。</p>
+<h4 id="PicMerger-1-22-7-2"><a href="#PicMerger-1-22-7-2" class="headerlink" title="PicMerger-1.22.7.2"></a>PicMerger-1.22.7.2</h4><p>1、添加了清空图片列表的右键菜单。<br>2、添加了图片输出质量控制。<br>3、添加了PNG图片格式输出。<br>4、添加了配置自动保存和导入功能。<br>5、命令行拼图采用最后一次关闭窗口时的配置，纵横可配置。<br>6、纵横选项切换时，会自动重新合并。<br>7、优化了绘图逻辑，增强了程序的稳定性，缩小了程序大小。</p>
+<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>工作中经常用到需要把图片拼接后上传任务，手机端和图库可以很好地完成任务，但电脑端一直没有好用的工具，于是就写了一个适合自己使用的，需要的可以下载使用。</p>
+<h3 id="软件说明"><a href="#软件说明" class="headerlink" title="软件说明"></a>软件说明</h3><p>就是简单地将多个图片拼接成一个图片，支持横向和纵向拼接，设置图片间的距离。<br>1、点击“添加图片”，自动拼图，然后保存拼图就可以了。</p>
+<p><img src="https://attach.52pojie.cn/forum/202207/01/105350zy0dlkl6000z8o7y.gif" alt="请输入图片描述"></p>
+<p>2、直接拖动图片到软件界面，会自动拼图，然后保存就行了。</p>
+<p>3、命令行拼图，拖动图片到软件图标会自动合并生成图片。</p>
+<p><img src="https://attach.52pojie.cn/forum/202207/01/105442vl7w1immbj4q7mmq.gif" alt="请输入图片描述"></p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>免费下载：<a href="https://yulinsoft.lanzoul.com/b00vtqffc">https://yulinsoft.lanzoul.com/b00vtqffc</a><br>密码:epqu</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>随机音乐播放器</title>
+    <url>/post/undefined.html</url>
+    <content><![CDATA[<p>更新日志：<br>版本：1.0.8.25<br>新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。<br>版本：1.0.8.11<br>1、新增了暂停控制（点击滚动的歌名或右键菜单）。<br><img src="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png" alt="请输入图片描述"></p>
+<p>2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。<br>3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。<br>版本：1.0.8.8<br>1、修复了滚动歌名概率性消失的bug。<br>2、新增了选择榜单功能。<br>3、更换了软件图标。<br><img src="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png" alt="请输入图片描述"></p>
+<p>前言<br>前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。</p>
+<span id="more"></span>
+
+<p>软件特色<br>简洁小巧，功能很简单，就是打开后联网播放网易云的随机音乐，有一个显示专辑封面的小窗口，可以隐藏，点击后会切换下一首。<br>任务栏有小图标，单击图标换歌，双击图标隐藏或显示窗口。<br>有需要的可以下载。无需各种框架，delphi开发，完全绿色。</p>
+<p>下载地址</p>
+<p>下载地址：</p>
+<p>白嫖地址：<br><a href="https://yulinsoft.lanzoui.com/b00uqjc0d">https://yulinsoft.lanzoui.com/b00uqjc0d</a>   密码：1111</p>
+]]></content>
+  </entry>
 </search>

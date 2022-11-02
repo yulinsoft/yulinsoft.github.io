@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://example.com/post/undefined.html</loc>
+    
+    <lastmod>2022-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/undefined.html</loc>
+    
+    <lastmod>2022-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/undefined.html</loc>
+    
+    <lastmod>2022-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/undefined.html</loc>
+    
+    <lastmod>2022-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://example.com/post/321cf7da.html</loc>
+    
+    <lastmod>2022-11-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://example.com/post/8a3a14b.html</loc>
     
     <lastmod>2022-11-02</lastmod>
@@ -12,15 +57,6 @@
   
   <url>
     <loc>http://example.com/post/6bc9832c.html</loc>
-    
-    <lastmod>2022-10-31</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://example.com/post/321cf7da.html</loc>
     
     <lastmod>2022-10-31</lastmod>
     
