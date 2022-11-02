@@ -1,75 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hexo博客迁移到其他电脑</title>
-    <url>/post/db4d493d.html</url>
-    <content><![CDATA[<h4 id="安装必要的软件"><a href="#安装必要的软件" class="headerlink" title="安装必要的软件"></a>安装必要的软件</h4><ol>
-<li>下载安装Git客户端</li>
-<li>安装node js</li>
-</ol>
-<h4 id="恢复ssh配置"><a href="#恢复ssh配置" class="headerlink" title="恢复ssh配置"></a>恢复ssh配置</h4><p>回到你的git bash中</p>
-<h5 id="配置git用户名"><a href="#配置git用户名" class="headerlink" title="配置git用户名"></a>配置git用户名</h5><p><code>$ git config --global user.name &quot;yourname&quot;</code><br><code>$ git config --global user.email &quot;youremail&quot;</code></p>
-<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
-<span id="more"></span>
-<p>你可以用以下两条，检查一下你有没有输对</p>
-<p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
-<h5 id="恢复ssh密钥"><a href="#恢复ssh密钥" class="headerlink" title="恢复ssh密钥"></a>恢复ssh密钥</h5><p>将原电脑备份的.ssh文件夹复制到当前用户目录下，一般为“C:\Users\用户名”下。<br>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
-<p>继续回到你的git bash中，<br>输入</p>
-<p><code>$ cd ~/.ssh</code></p>
-<p>检查是否由.ssh的文件夹</p>
-<p>输入ls，列出该文件下的内容。下图说明存在</p>
-<p><img src="/%5Cimg%5C1.png"></p>
-<p>输入</p>
-<p><code>$ eval &quot;$(ssh-agent -s)&quot;</code></p>
-<p>添加密钥到ssh-agent</p>
-<p>再输入</p>
-<p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
-<p>添加生成的SSH key到ssh-agent</p>
-<p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
-<p>输入ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#x74;&#104;&#x75;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
-<h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
-<p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
-<p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
-<p>接下来正常操作<br>在github上添加公钥public-key:<br>1、首先在你的终端运行 xclip -sel c ~&#x2F;.ssh&#x2F;id_rsa.pub将公钥内容复制到剪切板<br>2、在github上添加公钥时，直接复制即可<br>3、保存<br>在终端 </p>
-<p><code>$ ssh -T git@github.com</code></p>
-<p>如果看到Hi后面是你的用户名，就说明成功了。</p>
-<h4 id="备份原文件"><a href="#备份原文件" class="headerlink" title="备份原文件"></a>备份原文件</h4><p>打开原电脑的hexo文件夹，将以下文件备份。</p>
-<h5 id="需要转移的文件"><a href="#需要转移的文件" class="headerlink" title="需要转移的文件"></a>需要转移的文件</h5><blockquote>
-<p><strong>文件(夹)	         说明</strong><br>scaffolds&#x2F;	     博客文章模板<br>source&#x2F;	         所有的博客文章<br>themes&#x2F;	        网站主题<br>.gitignore	      push时需忽略的文件<br>_config.yml	   站点配置文件<br>package.json    依赖包的名称和版本号</p>
-</blockquote>
-<p>由于配置文件和主题文件需要经常更改，采用github创建博客分支的方式进行备份。</p>
-<h5 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h5><p>克隆github上上生成的静态文件到hexo文件夹中</p>
-<p>git clone <a href="https://github.com/yourname/xxxx.github.io.git">https://github.com/yourname/xxxx.github.io.git</a> hexo<br>克隆后将除.git文件外其他所有文件删除。主要是为了得到版本管理文件夹.git。</p>
-<p>.git文件为隐藏文件，可直接将可见文件全部删除</p>
-<p>将备份的原文件复制到此文件夹。若文件夹是从github克隆，则需要删除主题文件中的版本控制文件夹,以next主题为例：</p>
-<p><code>$ rm -rf thems/next/.git*</code><br>创建名为hexo的分支</p>
-<p><code>$ git checkout -b hexo</code><br>保存所有文件到暂存区</p>
-<p><code>$ git add --all</code></p>
-<h5 id="提交变更"><a href="#提交变更" class="headerlink" title="提交变更"></a>提交变更</h5><p><code>$ git commit -m &quot;hexo-2&quot;</code><br>提交变更时报错：</p>
-<p>根据提示配置。</p>
-<p>推送分支到github,并用–set-upstream与origin创建关联将</p>
-<p><code>$ git push --set-upstream origin hexo</code></p>
-<p>hexo设置为默认分支。</p>
-<h4 id="迁移到新电脑"><a href="#迁移到新电脑" class="headerlink" title="迁移到新电脑"></a>迁移到新电脑</h4><p>以后在其他电脑上写博客，直接将分支克隆下来。再使用npm install安装依赖。</p>
-<p><code>$ git clone -b hexo https://github.com/yourname/xxx.github.io.git myblog</code></p>
-<p><code>$ cd myblog</code></p>
-<p><code>$ npm install</code></p>
-<p>执行以上命令完成基础环境安装。</p>
-<h4 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h4><p>基础环境安装完成后，可以进行创建文章的测试。</p>
-<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><code>$ hexo n &quot;xxx&quot;</code></p>
-<p>注意：需要使用git push把源文件推到分支上</p>
-<p><code>$ git add .</code><br><code>$ git commit -m &quot;xxxx&quot;</code><br><code>$ git push origin hexo</code></p>
-<h5 id="部署文章"><a href="#部署文章" class="headerlink" title="部署文章"></a>部署文章</h5><p><code>$ hexo d -g</code></p>
-<h5 id="发布失败"><a href="#发布失败" class="headerlink" title="发布失败"></a>发布失败</h5><p>如果发布失败，可以安装最新版的putty，然后删除环境变量中的所有带ssh的变量后，重新打开git bash发布。</p>
-]]></content>
-      <categories>
-        <category>Hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Padavan 编译教程</title>
     <url>/post/4a10dd00.html</url>
     <content><![CDATA[<h4 id="配置编译环境"><a href="#配置编译环境" class="headerlink" title="配置编译环境"></a>配置编译环境</h4><p>安装虚拟机<br>安装Ubuntu 16.04LTS</p>
@@ -135,6 +66,75 @@
       </categories>
       <tags>
         <tag>Padavan</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo博客迁移到其他电脑</title>
+    <url>/post/db4d493d.html</url>
+    <content><![CDATA[<h4 id="安装必要的软件"><a href="#安装必要的软件" class="headerlink" title="安装必要的软件"></a>安装必要的软件</h4><ol>
+<li>下载安装Git客户端</li>
+<li>安装node js</li>
+</ol>
+<h4 id="恢复ssh配置"><a href="#恢复ssh配置" class="headerlink" title="恢复ssh配置"></a>恢复ssh配置</h4><p>回到你的git bash中</p>
+<h5 id="配置git用户名"><a href="#配置git用户名" class="headerlink" title="配置git用户名"></a>配置git用户名</h5><p><code>$ git config --global user.name &quot;yourname&quot;</code><br><code>$ git config --global user.email &quot;youremail&quot;</code></p>
+<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<span id="more"></span>
+<p>你可以用以下两条，检查一下你有没有输对</p>
+<p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
+<h5 id="恢复ssh密钥"><a href="#恢复ssh密钥" class="headerlink" title="恢复ssh密钥"></a>恢复ssh密钥</h5><p>将原电脑备份的.ssh文件夹复制到当前用户目录下，一般为“C:\Users\用户名”下。<br>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
+<p>继续回到你的git bash中，<br>输入</p>
+<p><code>$ cd ~/.ssh</code></p>
+<p>检查是否由.ssh的文件夹</p>
+<p>输入ls，列出该文件下的内容。下图说明存在</p>
+<p><img src="/%5Cimg%5C1.png"></p>
+<p>输入</p>
+<p><code>$ eval &quot;$(ssh-agent -s)&quot;</code></p>
+<p>添加密钥到ssh-agent</p>
+<p>再输入</p>
+<p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
+<p>添加生成的SSH key到ssh-agent</p>
+<p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
+<p>输入ssh -T <a href="mailto:&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#x74;&#x40;&#103;&#x69;&#x74;&#x68;&#117;&#98;&#46;&#x63;&#x6f;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
+<h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
+<p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
+<p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
+<p>接下来正常操作<br>在github上添加公钥public-key:<br>1、首先在你的终端运行 xclip -sel c ~&#x2F;.ssh&#x2F;id_rsa.pub将公钥内容复制到剪切板<br>2、在github上添加公钥时，直接复制即可<br>3、保存<br>在终端 </p>
+<p><code>$ ssh -T git@github.com</code></p>
+<p>如果看到Hi后面是你的用户名，就说明成功了。</p>
+<h4 id="备份原文件"><a href="#备份原文件" class="headerlink" title="备份原文件"></a>备份原文件</h4><p>打开原电脑的hexo文件夹，将以下文件备份。</p>
+<h5 id="需要转移的文件"><a href="#需要转移的文件" class="headerlink" title="需要转移的文件"></a>需要转移的文件</h5><blockquote>
+<p><strong>文件(夹)	         说明</strong><br>scaffolds&#x2F;	     博客文章模板<br>source&#x2F;	         所有的博客文章<br>themes&#x2F;	        网站主题<br>.gitignore	      push时需忽略的文件<br>_config.yml	   站点配置文件<br>package.json    依赖包的名称和版本号</p>
+</blockquote>
+<p>由于配置文件和主题文件需要经常更改，采用github创建博客分支的方式进行备份。</p>
+<h5 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h5><p>克隆github上上生成的静态文件到hexo文件夹中</p>
+<p>git clone <a href="https://github.com/yourname/xxxx.github.io.git">https://github.com/yourname/xxxx.github.io.git</a> hexo<br>克隆后将除.git文件外其他所有文件删除。主要是为了得到版本管理文件夹.git。</p>
+<p>.git文件为隐藏文件，可直接将可见文件全部删除</p>
+<p>将备份的原文件复制到此文件夹。若文件夹是从github克隆，则需要删除主题文件中的版本控制文件夹,以next主题为例：</p>
+<p><code>$ rm -rf thems/next/.git*</code><br>创建名为hexo的分支</p>
+<p><code>$ git checkout -b hexo</code><br>保存所有文件到暂存区</p>
+<p><code>$ git add --all</code></p>
+<h5 id="提交变更"><a href="#提交变更" class="headerlink" title="提交变更"></a>提交变更</h5><p><code>$ git commit -m &quot;hexo-2&quot;</code><br>提交变更时报错：</p>
+<p>根据提示配置。</p>
+<p>推送分支到github,并用–set-upstream与origin创建关联将</p>
+<p><code>$ git push --set-upstream origin hexo</code></p>
+<p>hexo设置为默认分支。</p>
+<h4 id="迁移到新电脑"><a href="#迁移到新电脑" class="headerlink" title="迁移到新电脑"></a>迁移到新电脑</h4><p>以后在其他电脑上写博客，直接将分支克隆下来。再使用npm install安装依赖。</p>
+<p><code>$ git clone -b hexo https://github.com/yourname/xxx.github.io.git myblog</code></p>
+<p><code>$ cd myblog</code></p>
+<p><code>$ npm install</code></p>
+<p>执行以上命令完成基础环境安装。</p>
+<h4 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h4><p>基础环境安装完成后，可以进行创建文章的测试。</p>
+<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><code>$ hexo n &quot;xxx&quot;</code></p>
+<p>注意：需要使用git push把源文件推到分支上</p>
+<p><code>$ git add .</code><br><code>$ git commit -m &quot;xxxx&quot;</code><br><code>$ git push origin hexo</code></p>
+<h5 id="部署文章"><a href="#部署文章" class="headerlink" title="部署文章"></a>部署文章</h5><p><code>$ hexo d -g</code></p>
+<h5 id="发布失败"><a href="#发布失败" class="headerlink" title="发布失败"></a>发布失败</h5><p>如果发布失败，可以安装最新版的putty，然后删除环境变量中的所有带ssh的变量后，重新打开git bash发布。</p>
+]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -275,16 +275,6 @@
       </tags>
   </entry>
   <entry>
-    <title>历史上的今天-精装版</title>
-    <url>/post/321cf7da.html</url>
-    <content><![CDATA[<p><img src="https://attach.52pojie.cn/forum/202108/08/205109z01ujz1z1n77jjxy.png" alt="主界面"></p>
-<h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>昨天看到52上发的“历史上的今天”程序，作者讲述了从爬取数据到开发程序的过程，于是下载试了试，发现无论从日历选择任何日期，显示的都是当日的数据，这个bug已经回帖反馈了。而且作者也说接口都是临时的，过几天可能就失效了。我就想着干脆自己也做一个本地数据的程序，就不存在失效的问题了。说干就干，本想着直接从他的接口爬取数据，但看到他的数据也连的百度百科，就分析了一下百度百科，直接从百度百科下载到了数据，全部数据5M多，这个数据我会提供分享，有需要的可以下载。</p>
-<span id="more"></span>
-<h3 id="开发过程"><a href="#开发过程" class="headerlink" title="开发过程"></a>开发过程</h3><p>由于下载的数据是json格式，初步设计是直接解析使用，考虑到程序的绿色，于是把数据以资源形式嵌入到exe中，程序运行时按需读取解析，方便快捷。分析数据发现，每条数据的标题和详情中，都含有A标签，放入列表时要把A标签的相关内容去掉，于是用到了正则表达式。显示数据时要不要把A标签用上呢？前几天编程时用到了delphi的新控件LinkLabel，它是可以解析A标签的，那不正好用在这里吗？每天的主题图片取自百度百科，所有的关键字链接也出自百度，方便大家学习。经过昨天晚上和今天下午的努力，克服了重重困难，我的程序终于完成了。</p>
-<h3 id="程序特色"><a href="#程序特色" class="headerlink" title="程序特色"></a>程序特色</h3><h5 id="1、数据取自百度百科，全面，权威。"><a href="#1、数据取自百度百科，全面，权威。" class="headerlink" title="1、数据取自百度百科，全面，权威。"></a>1、数据取自百度百科，全面，权威。</h5><h5 id="2、本地化数据，除图片取自百度，无网也能查看。"><a href="#2、本地化数据，除图片取自百度，无网也能查看。" class="headerlink" title="2、本地化数据，除图片取自百度，无网也能查看。"></a>2、本地化数据，除图片取自百度，无网也能查看。</h5><h5 id="3、界面优化处理，布局更加合理，无图时不留空位。"><a href="#3、界面优化处理，布局更加合理，无图时不留空位。" class="headerlink" title="3、界面优化处理，布局更加合理，无图时不留空位。"></a>3、界面优化处理，布局更加合理，无图时不留空位。</h5><h5 id="4、程序经过压缩，运行绿色稳定。"><a href="#4、程序经过压缩，运行绿色稳定。" class="headerlink" title="4、程序经过压缩，运行绿色稳定。"></a>4、程序经过压缩，运行绿色稳定。</h5><p><img src="https://attach.52pojie.cn/forum/202108/08/205111lh5cwjqk9eh5kj5g.png" alt="无图界面"></p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><h5 id="蓝奏链接：https-yulinsoft-lanzoui-com-b00uqkvmf-密码-1111"><a href="#蓝奏链接：https-yulinsoft-lanzoui-com-b00uqkvmf-密码-1111" class="headerlink" title="蓝奏链接：https://yulinsoft.lanzoui.com/b00uqkvmf   密码:1111"></a>蓝奏链接：<a href="https://yulinsoft.lanzoui.com/b00uqkvmf">https://yulinsoft.lanzoui.com/b00uqkvmf</a>   密码:1111</h5>]]></content>
-  </entry>
-  <entry>
     <title>如何编译自己需要的 OpenWrt 固件</title>
     <url>/post/7ec7b2eb.html</url>
     <content><![CDATA[<h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ol>
@@ -317,22 +307,6 @@
       <tags>
         <tag>OpenWrt</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>拼音助手最新版2.2.8.29</title>
-    <url>/post/6bc9832c.html</url>
-    <content><![CDATA[<h2 id="最新版本："><a href="#最新版本：" class="headerlink" title="最新版本："></a>最新版本：</h2><p>版本：V2.2.8.29</p>
-<ul>
-<li>修复了Win7下的不兼容问题（win10用户可不用升级）。</li>
-</ul>
-<p>版本：V2.2.8.24<br>1、修复了文档中字号不是整数时可能出错的问题。<br>2、文档右键菜单中添加了汉字注音菜单，方便大家操作。<br>版本：V2.2.8.18<br>优化安装程序，修复WPS下安装失败的问题。<br>版本：V2.2.8.16<br>1、界面进行了适当调整，字体更清晰。<br>2、结合多个网络词典，更新了50多个生僻字读音。<br>3、加入软件注册机制，主要功能仍能免费使用。</p>
-<p>下载地址：<a href="https://yulinsoft.lanzoul.com/b00vz97ng">https://yulinsoft.lanzoul.com/b00vz97ng</a> 密码:1111  </p>
-<h2 id="特别说明："><a href="#特别说明：" class="headerlink" title="特别说明："></a>特别说明：</h2><p>由于本软件被人在淘宝上随意卖钱，损害了作者利益，因此从本版本开始加入了注册机制。免费版只少了多音字标注和多音校对功能，你还可以使用右键手动校对，如果支持本软件的开发，请注册正式版。<br><a href="https://imgtu.com/i/vDpYo8"><img src="https://s1.ax1x.com/2022/08/17/vDpYo8.gif" alt="拼音助手演示"></a><br> 拼音助手是一款用于Word和WPS的注音插件，具有能够一次性标注32000个汉字、运行速度快、智能中文词组识别、彩色拼音、拼音组合及多音字校对界面友好等诸多功能，尤为值得一提的是：它能够方便地为多音词注音，解决了拼音标注中的一大难题。它将为您的汉字拼音标注工作带来快乐。<br>本软件推荐用户使用于Windows10+Office 2016或WPS 2019平台，亦可运行于Office 2007以上和WPS 2013以上平台中，已全面支持64位平台。</p>
-<span id="more"></span>
-<h2 id="一、功能描述"><a href="#一、功能描述" class="headerlink" title="一、功能描述"></a>一、功能描述</h2><p>1、摒弃了普通拼音标注软件以字取音从而导致“词组”中汉字出现多音字问题；<br>2、可以标注轻声词、多音词，解决了拼音标注中的一大难题。<br>3、拼音词库共收录汉字20902个，轻声及多音词词库参考拼音居士和拼音克星词库共收录1994个。<br>4、可以设置拼音的对齐方式，字体，字号和偏移量。拼音标注前，建议完成对文档的编排，以使字体接近最终文档要求。字体、字号和偏移量用户可以根据需要自己设定，建议先小试部分汉字。<br>5、自动记忆最近一次的用户对于拼音加注的设置。<br>6、随选定状态确定拼音标注范围。选定状态下，仅为所选内容标注拼音；非选定状态下，从光标处开始标注拼音。<br>7、友好的多音校对面板。<br>选定状态下，仅为所选内容进行多音校对；非选定状态下，从光标所在位置开始多音校对，可随时终止多音校对。<br>8、右键快速校对<br>8.1、右键校对可对全文任意汉字的拼音进行校对，只需将光标定位于汉字（拼音）之前或者选中该汉字（拼音）后右击即可。<br>8.2、右键菜单分为三组，第一组为当前汉字的一个或者多个拼音项；第二组为当前汉字注音（当前拼音）的轻声、轻声特别标注、儿化音和大小写切换（如果当前拼音为大写，则第二组的最后一项为小写，反之，则为大写）；第三组为用户自定义，和常用功能菜单，可任意修改当前汉字的注音。<br>8.3、当用户选择“儿”字右击时，最后第二个菜单项为删除“儿”字的拼音。<br>8.4、右键菜单建议在全文通读中使用。<br>9、两种颜色区分多音字，拼音助手采用红、绿两种颜色表示不同的拼音。红色表示多音字，绿色表示经过多音校对或者右键校对过的拼音。<br>10、去除拼音声调的功能。<br>11、去字留音，删除汉字而只保留拼音的功能（转为无格式文本）。适用于根据拼音写汉字的场合。<br>11.1、上下结构的去字留音，拼音仍位于汉字的上方，但汉字被设置为白色。左右结构的去字留音，拼音位于汉字的左侧，汉字被替换为指定的软空格数量。<br>11.2、可以指定11种括号样式（含无括号）。<br>12、去音留字，删除拼音还原汉字（转为无格式文本）</p>
-<h2 id="二、注意事项："><a href="#二、注意事项：" class="headerlink" title="二、注意事项："></a>二、注意事项：</h2><p>1、建议一次性标注的汉字数量不超过32000字。此受Word文档极限的约束。<br>2、中文间的空间可能会影响词组的识别和查询，建议用户在拼音标注之前删除不必要的空格。<br>3、拼音助手标注的拼音，受词库的影响。不保证所有拼音均是有效的或者正确的。　　</p>
-<h2 id="三、中文句首大写规则"><a href="#三、中文句首大写规则" class="headerlink" title="三、中文句首大写规则"></a>三、中文句首大写规则</h2><p>1、文章标题中开头的汉字；<br>2、段落开头的汉字；<br>3、句号、问号、感叹号、冒号后面的汉字；<br>4、冒号加前引号后边的汉字；<br>5、逗号加前引号后边的汉字；<br>6、省略号后边的汉字。</p>
-]]></content>
   </entry>
   <entry>
     <title>斐讯N1刷armbian</title>
@@ -389,60 +363,6 @@
 <p><img src="https://i.loli.net/2019/05/31/5cf0c337bdde850737.png" alt="shh登入的画面"></p>
 <p><img src="https://i.loli.net/2019/05/31/5cf0c352992e760254.png" alt="安装了java环境，跑了两个springboot的程序，无压力"></p>
 <p>本博客的 hexo环境 也在这armbian上，通过git部署到vps</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>CloudDrive控制器</title>
-    <url>/post/undefined.html</url>
-    <content><![CDATA[<p><a href="https://kudoushinichi.lanzoui.com/i9SXKsc88de">阿里云盘变本地硬盘CloudDrive</a>是一个好工具，它可以把你的阿里云盘和天翼云盘的内容映射到本地盘符，方便的使用。</p>
-<h3 id="简单说明"><a href="#简单说明" class="headerlink" title="简单说明"></a>简单说明</h3><p>CloudDrive是以后台服务的形式运行的，每次开机后它会在后台启动，添加盘符，完成映射，然后在后台默默地为你服务。有时候我们并不需要使用网盘的内容，但程序仍然在支持，占用资源不说，它还具有联网权限，这无疑给系统安全留下了隐患。本程序就是控制CloudDrive启动和运行的程序。<br><img src="https://attach.52pojie.cn/forum/202108/15/173347pz2vs201s3ydm339.png" alt="请输入图片描述"></p>
-<h3 id="功能说明"><a href="#功能说明" class="headerlink" title="功能说明"></a>功能说明</h3><p>1、运行程序后会显示CloudDrive的运行状态，点击绿色状态条会打开CloudDrive的本地网页配置。</p>
-<p>2、“启动”和“停止”就是简单的控制服务的启动和停止，启动时系统出现盘符，停止时消失。</p>
-<p>3、“启动状态”控制服务的开机自启状态，具体意思参照系统服务控制。</p>
-<h3 id="软件下载"><a href="#软件下载" class="headerlink" title="软件下载"></a>软件下载</h3><p>免费下载：<a href="https://yulinsoft.lanzoui.com/iDnHyso0g0d">https://yulinsoft.lanzoui.com/iDnHyso0g0d</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>简单倒计时</title>
-    <url>/post/undefined.html</url>
-    <content><![CDATA[<p>软件简介<br>工作中有时会用到倒计时显示，看了一些软件都不够满意，于是就自己写了一个，这样定制性更强，自己可以随时修改，满足自己的需求。界面如下图：</p>
-<p><img src="https://attach.52pojie.cn/forum/202109/05/111039zxsdydvdvqspozs3.png" alt="请输入图片描述"><br>功能介绍<br>主要功能看设置界面。</p>
-<p><img src="https://attach.52pojie.cn/forum/202109/05/111119chp3gchyhoch2ow2.png" alt="请输入图片描述"><br>1、双击画面自动全屏，全屏界面双击或按ESC退出全屏。<br>2、支持命令行传递一个数字(这个数字代表分钟)，可用于PPT中调用显示指定时长的倒计时。<br>3、有简单的开始和结束音效，最后10秒有提示音效。可以在设置中关闭。<br>4、设置参数保存功能，可以自定义背景和字体颜色，满足你的色。<br>5、全屏隐藏工具栏时，请用回车键控制开始和暂停计时。<br>6、基本就这些，其它自己摸索吧！</p>
-<p><img src="https://attach.52pojie.cn/forum/202109/05/111142rn9wjjxtgtjj3n4j.gif" alt="请输入图片描述"><br>软件下载</p>
-<p>免费下载：<a href="https://yulinsoft.lanzoui.com/iVm0Gtmmnef">https://yulinsoft.lanzoui.com/iVm0Gtmmnef</a>  密码:1111</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>简单拼接-图片拼图神器</title>
-    <url>/post/undefined.html</url>
-    <content><![CDATA[<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>关于说拼接后图片质量变差的说明<br>本程序拼图时的原则之一就以小图片的分辨率为基准。因为我工作时拼图的对象大部分是手机截图，图片大小差别不大。如果你把一个1080P的图片和一个32*32图片进行拼接，那么拼后的图片高就是32像素或者宽就是32像素，这样的图片肯定没法看，所以就有人说图片质量差，原因就在这里。这不是问题，而是原则上就是这样，请大家谨记这一原则。</p>
-<h4 id="PicMerger-1-22-10-7"><a href="#PicMerger-1-22-10-7" class="headerlink" title="PicMerger-1.22.10.7"></a>PicMerger-1.22.10.7</h4><p>1、修复清空列表的菜单右键点击时不出现的问题，并添加了一个清空按钮。<br>2、右上角添加了打印图片按钮，并将打印临时图片移到了系统临时目录。<br>3、添加了保存为BMP格式，方便老式编程工具合并图片。</p>
-<h4 id="PicMerger-1-22-9-24"><a href="#PicMerger-1-22-9-24" class="headerlink" title="PicMerger-1.22.9.24"></a>PicMerger-1.22.9.24</h4><p>1、添加拖动列表中图片进行调整顺序的功能。<br>2、修复有图片间隔时最后留有空白的问题。<br><img src="https://attach.52pojie.cn/forum/202209/24/180347gv9di5d1oaivmd9u.gif" alt="请输入图片描述"></p>
-<h4 id="PicMerger-1-22-8-3"><a href="#PicMerger-1-22-8-3" class="headerlink" title="PicMerger-1.22.8.3"></a>PicMerger-1.22.8.3</h4><p>1、添加点击图片直接打印的功能。<br>2、优化图片列表删除逻辑。<br>3、固定了命令行合并生成的图片名为”MergedIMG.jpg”，方便命令行配合其它脚本批量操作。</p>
-<span id="more"></span>
-<h4 id="PicMerger-1-22-7-5"><a href="#PicMerger-1-22-7-5" class="headerlink" title="PicMerger-1.22.7.5"></a>PicMerger-1.22.7.5</h4><p>1、PNG图片输出支持背景透明。<br>2、图片大小超出最大限制时会弹出错误提醒（猜测值为65535*65535）。</p>
-<h4 id="PicMerger-1-22-7-2"><a href="#PicMerger-1-22-7-2" class="headerlink" title="PicMerger-1.22.7.2"></a>PicMerger-1.22.7.2</h4><p>1、添加了清空图片列表的右键菜单。<br>2、添加了图片输出质量控制。<br>3、添加了PNG图片格式输出。<br>4、添加了配置自动保存和导入功能。<br>5、命令行拼图采用最后一次关闭窗口时的配置，纵横可配置。<br>6、纵横选项切换时，会自动重新合并。<br>7、优化了绘图逻辑，增强了程序的稳定性，缩小了程序大小。</p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>工作中经常用到需要把图片拼接后上传任务，手机端和图库可以很好地完成任务，但电脑端一直没有好用的工具，于是就写了一个适合自己使用的，需要的可以下载使用。</p>
-<h3 id="软件说明"><a href="#软件说明" class="headerlink" title="软件说明"></a>软件说明</h3><p>就是简单地将多个图片拼接成一个图片，支持横向和纵向拼接，设置图片间的距离。<br>1、点击“添加图片”，自动拼图，然后保存拼图就可以了。</p>
-<p><img src="https://attach.52pojie.cn/forum/202207/01/105350zy0dlkl6000z8o7y.gif" alt="请输入图片描述"></p>
-<p>2、直接拖动图片到软件界面，会自动拼图，然后保存就行了。</p>
-<p>3、命令行拼图，拖动图片到软件图标会自动合并生成图片。</p>
-<p><img src="https://attach.52pojie.cn/forum/202207/01/105442vl7w1immbj4q7mmq.gif" alt="请输入图片描述"></p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>免费下载：<a href="https://yulinsoft.lanzoul.com/b00vtqffc">https://yulinsoft.lanzoul.com/b00vtqffc</a><br>密码:epqu</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>随机音乐播放器</title>
-    <url>/post/undefined.html</url>
-    <content><![CDATA[<p>更新日志：<br>版本：1.0.8.25<br>新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。<br>版本：1.0.8.11<br>1、新增了暂停控制（点击滚动的歌名或右键菜单）。<br><img src="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png" alt="请输入图片描述"></p>
-<p>2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。<br>3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。<br>版本：1.0.8.8<br>1、修复了滚动歌名概率性消失的bug。<br>2、新增了选择榜单功能。<br>3、更换了软件图标。<br><img src="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png" alt="请输入图片描述"></p>
-<p>前言<br>前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。</p>
-<span id="more"></span>
-
-<p>软件特色<br>简洁小巧，功能很简单，就是打开后联网播放网易云的随机音乐，有一个显示专辑封面的小窗口，可以隐藏，点击后会切换下一首。<br>任务栏有小图标，单击图标换歌，双击图标隐藏或显示窗口。<br>有需要的可以下载。无需各种框架，delphi开发，完全绿色。</p>
-<p>下载地址</p>
-<p>下载地址：</p>
-<p>白嫖地址：<br><a href="https://yulinsoft.lanzoui.com/b00uqjc0d">https://yulinsoft.lanzoui.com/b00uqjc0d</a>   密码：1111</p>
 ]]></content>
   </entry>
 </search>
