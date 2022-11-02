@@ -6,13 +6,13 @@ http://example.com/categories/index.html
 http://example.com/post/8a3a14b.html
 http://example.com/post/75058071.html
 http://example.com/post/7ec7b2eb.html
-http://example.com/post/db4d493d.html
 http://example.com/post/4a10dd00.html
+http://example.com/post/db4d493d.html
 http://example.com/
-http://example.com/tags/hexo/
 http://example.com/tags/Padavan/
 http://example.com/tags/next/
+http://example.com/tags/hexo/
 http://example.com/tags/OpenWrt/
-http://example.com/categories/Hexo/
 http://example.com/categories/Padavan/
+http://example.com/categories/Hexo/
 http://example.com/categories/OpenWrt/
