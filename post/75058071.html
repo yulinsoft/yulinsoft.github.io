@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="NexT 坚持将复杂的细节隐藏，提供尽量少并且简便的设置，保持最大限度的易用性。 设置 RSSNexT 中 RSS 有三个设置选项，满足特定的使用场景。 更改 主题配置文件，设定 rss 字段的值：  false：禁用 RSS，不在页面上显示 RSS 连接。 留空：使用 Hexo 生成的 Feed 链接。 你可以需要先安装 hexo-generator-feed 插件。 具体的链接地址：适用于已经">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nexT主题配置">
+<meta property="og:url" content="http://example.com/post/75058071.html">
+<meta property="og:site_name" content="我酷我流行">
+<meta property="og:description" content="NexT 坚持将复杂的细节隐藏，提供尽量少并且简便的设置，保持最大限度的易用性。 设置 RSSNexT 中 RSS 有三个设置选项，满足特定的使用场景。 更改 主题配置文件，设定 rss 字段的值：  false：禁用 RSS，不在页面上显示 RSS 连接。 留空：使用 Hexo 生成的 Feed 链接。 你可以需要先安装 hexo-generator-feed 插件。 具体的链接地址：适用于已经">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow.png">
+<meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow-night.png">
+<meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow-night-blue.png">
+<meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow-night-bright.png">
+<meta property="og:image" content="https://theme-next.iissnan.com/assets/img/tomorrow-night-eighties.png">
+<meta property="article:published_time" content="2019-05-07T03:35:57.000Z">
+<meta property="article:modified_time" content="2022-10-30T09:14:35.019Z">
+<meta property="article:author" content="平淡如盐">
+<meta property="article:tag" content="next">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://theme-next.iissnan.com/assets/img/tomorrow.png">
+
+
+<link rel="canonical" href="http://example.com/post/75058071.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/post/75058071.html","path":"post/75058071.html","title":"nexT主题配置"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>nexT主题配置 | 我酷我流行</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">我酷我流行</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">越努力越幸运！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE-RSS"><span class="nav-number">1.</span> <span class="nav-text">设置 RSS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E3%80%8C%E6%A0%87%E7%AD%BE%E3%80%8D%E9%A1%B5%E9%9D%A2"><span class="nav-number">2.</span> <span class="nav-text">添加「标签」页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E3%80%8C%E5%88%86%E7%B1%BB%E3%80%8D%E9%A1%B5%E9%9D%A2"><span class="nav-number">3.</span> <span class="nav-text">添加「分类」页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%AD%97%E4%BD%93"><span class="nav-number">4.</span> <span class="nav-text">设置字体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E4%B8%BB%E9%A2%98"><span class="nav-number">5.</span> <span class="nav-text">设置代码高亮主题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BE%A7%E8%BE%B9%E6%A0%8F%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">6.</span> <span class="nav-text">侧边栏社交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD"><span class="nav-number">7.</span> <span class="nav-text">开启打赏功能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5"><span class="nav-number">8.</span> <span class="nav-text">友情链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%85%BE%E8%AE%AF%E5%85%AC%E7%9B%8A404%E9%A1%B5%E9%9D%A2"><span class="nav-number">9.</span> <span class="nav-text">腾讯公益404页面</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AB%99%E7%82%B9%E5%BB%BA%E7%AB%8B%E6%97%B6%E9%97%B4"><span class="nav-number">10.</span> <span class="nav-text">站点建立时间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%A2%E9%98%85%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7"><span class="nav-number">11.</span> <span class="nav-text">订阅微信公众号</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E3%80%8C%E5%8A%A8%E7%94%BB%E6%95%88%E6%9E%9C%E3%80%8D"><span class="nav-number">12.</span> <span class="nav-text">设置「动画效果」</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E3%80%8C%E8%83%8C%E6%99%AF%E5%8A%A8%E7%94%BB%E3%80%8D"><span class="nav-number">13.</span> <span class="nav-text">设置「背景动画」</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="平淡如盐"
+      src="/img/weixin.jpg">
+  <p class="site-author-name" itemprop="name">平淡如盐</p>
+  <div class="site-description" itemprop="description">明天的你一定会感谢今天努力的自己。</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yulinsoft" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yulinsoft@gmail.com" title="E-Mail → mailto:yulinsoft@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/yulinsoft" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.yulinsoft.top/" title="我的网站 → http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank"><i class="edge fa-fw"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.yulinsoft.top/" title="http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank">我的网站</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/75058071.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/weixin.jpg">
+      <meta itemprop="name" content="平淡如盐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我酷我流行">
+      <meta itemprop="description" content="明天的你一定会感谢今天努力的自己。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="nexT主题配置 | 我酷我流行">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          nexT主题配置
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-07 11:35:57" itemprop="dateCreated datePublished" datetime="2019-05-07T11:35:57+08:00">2019-05-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-10-30 17:14:35" itemprop="dateModified" datetime="2022-10-30T17:14:35+08:00">2022-10-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>NexT 坚持将复杂的细节隐藏，提供尽量少并且简便的设置，保持最大限度的易用性。</p>
+<h3 id="设置-RSS"><a href="#设置-RSS" class="headerlink" title="设置 RSS"></a>设置 RSS</h3><p>NexT 中 RSS 有三个设置选项，满足特定的使用场景。 更改 <strong>主题配置文件</strong>，设定 <code>rss</code> 字段的值：</p>
+<ul>
+<li><code>false</code>：禁用 RSS，不在页面上显示 RSS 连接。</li>
+<li>留空：使用 Hexo 生成的 Feed 链接。 你可以需要先安装 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-generator-feed">hexo-generator-feed</a> 插件。</li>
+<li>具体的链接地址：适用于已经烧制过 Feed 的情形。<span id="more"></span></li>
+</ul>
+<h3 id="添加「标签」页面"><a href="#添加「标签」页面" class="headerlink" title="添加「标签」页面"></a>添加「标签」页面</h3><p>新建「标签」页面，并在菜单中显示「标签」链接。「标签」页面将展示站点的所有标签，若你的所有文章都未包含标签，此页面将是空的。 底下代码是一篇包含标签的文章的例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 标签测试文章</span><br><span class="line">tags:</span><br><span class="line">  - Testing</span><br><span class="line">  - Another Tag</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>请参阅 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html#%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE">Hexo 的分类与标签文档</a>，了解如何为文章添加标签或者分类。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/theme-settings.html#new-page-tags">新建页面</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/theme-settings.html#set-page-tags">设置页面类型</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/theme-settings.html#update-menu-for-tags-page">修改菜单</a></li>
+</ul>
+<p>在终端窗口下，定位到 Hexo 站点目录下。使用 <code>hexo new page</code> 新建一个页面，命名为 <code>tags</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong>如果有集成评论服务，页面也会带有评论。 若需要关闭的话，请添加字段 <code>comments</code> 并将值设置为 <code>false</code>，如：</p>
+<p>禁用评论示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 标签</span><br><span class="line">date: 2014-12-22 12:39:04</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="添加「分类」页面"><a href="#添加「分类」页面" class="headerlink" title="添加「分类」页面"></a>添加「分类」页面</h3><p>新建「分类」页面，并在菜单中显示「分类」链接。「分类」页面将展示站点的所有分类，若你的所有文章都未包含分类，此页面将是空的。 底下代码是一篇包含分类的文章的例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">title: 分类测试文章</span><br><span class="line">categories: Testing</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>请参阅 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter.html#%E5%88%86%E7%B1%BB%E5%92%8C%E6%A0%87%E7%AD%BE">Hexo 的分类与标签文档</a>，了解如何为文章添加标签或者分类。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/theme-settings.html#new-page-categories">新建页面</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/theme-settings.html#set-page-categories">设置页面类型</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/theme-settings.html#update-menu-for-categories-page">修改菜单</a></li>
+</ul>
+<p>在终端窗口下，定位到 Hexo 站点目录下。使用 <code>hexo new page</code> 新建一个页面，命名为 <code>categories</code> ：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd your-hexo-site</span><br><span class="line">$ hexo new page categories</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong>如果有集成评论服务，页面也会带有评论。 若需要关闭的话，请添加字段 <code>comments</code> 并将值设置为 <code>false</code>，如：</p>
+<p>禁用评论示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 分类</span><br><span class="line">date: 2014-12-22 12:39:04</span><br><span class="line">type: &quot;categories&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体"></a>设置字体</h3><p><strong>注意：</strong> 此特性在版本 <strong>5.0.1</strong> 中引入，要使用此功能请确保所使用的 NexT 版本在此之后</p>
+<p>为了解决 <a target="_blank" rel="noopener" href="https://www.google.com/fonts">Google Fonts API</a> 不稳定的问题，NexT 在 5.0.1 中引入此特性。 通过此特性，你可以指定所使用的字体库外链地址；与此同时，NexT 开放了 5 个特定范围的字体设定，他们是：</p>
+<ul>
+<li>全局字体：定义的字体将在全站范围使用</li>
+<li>标题字体：文章内标题的字体（h1, h2, h3, h4, h5, h6）</li>
+<li>文章字体：文章所使用的字体</li>
+<li>Logo字体：Logo 所使用的字体</li>
+<li>代码字体： 代码块所使用的字体</li>
+</ul>
+<p>各项所指定的字体将作为首选字体，当他们不可用时会自动 Fallback 到 NexT 设定的基础字体组：</p>
+<ul>
+<li>非代码类字体：Fallback 到 <code>&quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, sans-serif</code></li>
+<li>代码类字体： Fallback 到 <code>consolas, Menlo, &quot;PingFang SC&quot;, &quot;Microsoft YaHei&quot;, monospace</code></li>
+</ul>
+<p>另外，每一项都有一个额外的 <code>external</code> 属性，此属性用来控制是否使用外链字体库。 开放此属性方便你设定那些已经安装在系统中的字体，减少不必要的请求（请求大小）。</p>
+<p>配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">font:</span><br><span class="line">  enable: true</span><br><span class="line"></span><br><span class="line">  # 外链字体库地址，例如 //fonts.googleapis.com (默认值)</span><br><span class="line">  host:</span><br><span class="line"></span><br><span class="line">  # 全局字体，应用在 body 元素上</span><br><span class="line">  global:</span><br><span class="line">    external: true</span><br><span class="line">    family: Monda</span><br><span class="line"></span><br><span class="line">  # 标题字体 (h1, h2, h3, h4, h5, h6)</span><br><span class="line">  headings:</span><br><span class="line">    external: true</span><br><span class="line">    family: Roboto Slab</span><br><span class="line"></span><br><span class="line">  # 文章字体</span><br><span class="line">  posts:</span><br><span class="line">    external: true</span><br><span class="line">    family:</span><br><span class="line"></span><br><span class="line">  # Logo 字体</span><br><span class="line">  logo:</span><br><span class="line">    external: true</span><br><span class="line">    family: Lobster Two</span><br><span class="line">    size: 24</span><br><span class="line"></span><br><span class="line">  # 代码字体，应用于 code 以及代码块</span><br><span class="line">  codes:</span><br><span class="line">    external: true</span><br><span class="line">    family: PT Mono</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置代码高亮主题"><a href="#设置代码高亮主题" class="headerlink" title="设置代码高亮主题"></a>设置代码高亮主题</h3><p>NexT 使用 <a target="_blank" rel="noopener" href="https://github.com/chriskempson/tomorrow-theme">Tomorrow Theme</a> 作为代码高亮，共有5款主题供你选择。 NexT 默认使用的是 白色的 <code>normal</code> 主题，可选的值有 <code>normal</code>，<code>night</code>， <code>night blue</code>， <code>night bright</code>， <code>night eighties</code>：</p>
+<table>
+<thead>
+<tr>
+<th><img src="https://theme-next.iissnan.com/assets/img/tomorrow.png" alt="img"></th>
+<th><img src="https://theme-next.iissnan.com/assets/img/tomorrow-night.png" alt="img"></th>
+<th><img src="https://theme-next.iissnan.com/assets/img/tomorrow-night-blue.png" alt="img"></th>
+<th><img src="https://theme-next.iissnan.com/assets/img/tomorrow-night-bright.png" alt="img"></th>
+<th><img src="https://theme-next.iissnan.com/assets/img/tomorrow-night-eighties.png" alt="img"></th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody></table>
+<p>更改 <code>highlight_theme</code> 字段，将其值设定成你所喜爱的高亮主题，例如：</p>
+<p>高亮主题设置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Code Highlight theme</span><br><span class="line"># Available value: normal | night | night eighties | night blue | night bright</span><br><span class="line"># https://github.com/chriskempson/tomorrow-theme</span><br><span class="line">highlight_theme: normal</span><br></pre></td></tr></table></figure>
+
+<h3 id="侧边栏社交链接"><a href="#侧边栏社交链接" class="headerlink" title="侧边栏社交链接"></a>侧边栏社交链接</h3><p>侧栏社交链接的修改包含两个部分，第一是链接，第二是链接图标。 两者配置均在 <strong>主题配置文件</strong> 中。</p>
+<ol>
+<li><p>链接放置在 <code>social</code> 字段下，一行一个链接。其键值格式是 <code>显示文本: 链接地址</code>。</p>
+<p>配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># Social links</span><br><span class="line">social:</span><br><span class="line">  GitHub: https://github.com/your-user-name</span><br><span class="line">  Twitter: https://twitter.com/your-user-name</span><br><span class="line">  微博: http://weibo.com/your-user-name</span><br><span class="line">  豆瓣: http://douban.com/people/your-user-name</span><br><span class="line">  知乎: http://www.zhihu.com/people/your-user-name</span><br><span class="line">  # 等等</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设定链接的图标，对应的字段是 <code>social_icons</code>。其键值格式是 <code>匹配键: Font Awesome 图标名称</code>， <code>匹配键</code> 与上一步所配置的链接的 <code>显示文本</code> 相同（大小写严格匹配），<code>图标名称</code> 是 Font Awesome 图标的名字（不必带 <code>fa-</code> 前缀）。<code>enable</code> 选项用于控制是否显示图标，你可以设置成 <code>false</code> 来去掉图标。</p>
+<p>配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># Social Icons</span><br><span class="line">social_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  # Icon Mappings</span><br><span class="line">  GitHub: github</span><br><span class="line">  Twitter: twitter</span><br><span class="line">  微博: weibo</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="开启打赏功能"><a href="#开启打赏功能" class="headerlink" title="开启打赏功能"></a>开启打赏功能</h3><p>越来越多的平台（微信公众平台，新浪微博，简书，百度打赏等）支持打赏功能，付费阅读时代越来越近，特此增加了打赏功能，支持微信打赏和支付宝打赏。 只需要 <strong>主题配置文件</strong> 中填入 微信 和 支付宝 收款二维码图片地址 即可开启该功能。</p>
+<p>打赏功能配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reward_comment: 坚持原创技术分享，您的支持将鼓励我继续创作！</span><br><span class="line">wechatpay: /path/to/wechat-reward-image</span><br><span class="line">alipay: /path/to/alipay-reward-image</span><br></pre></td></tr></table></figure>
+
+<h3 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h3><p>编辑 <strong>主题配置文件</strong> 添加：</p>
+<p>友情链接配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># title</span><br><span class="line">links_title: Links</span><br><span class="line">links:</span><br><span class="line">  MacTalk: http://macshuo.com/</span><br><span class="line">  Title: http://example.com/</span><br></pre></td></tr></table></figure>
+
+<h3 id="腾讯公益404页面"><a href="#腾讯公益404页面" class="headerlink" title="腾讯公益404页面"></a>腾讯公益404页面</h3><p>腾讯公益404页面，寻找丢失儿童，让大家一起关注此项公益事业！效果如下 <a target="_blank" rel="noopener" href="http://www.ixirong.com/404.html">http://www.ixirong.com/404.html</a></p>
+<p>使用方法，新建 404.html 页面，放到主题的 <code>source</code> 目录下，内容如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html;charset=utf-8;&quot;/&gt;</span><br><span class="line">  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge,chrome=1&quot; /&gt;</span><br><span class="line">  &lt;meta name=&quot;robots&quot; content=&quot;all&quot; /&gt;</span><br><span class="line">  &lt;meta name=&quot;robots&quot; content=&quot;index,follow&quot;/&gt;</span><br><span class="line">  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://qzone.qq.com/gy/404/style/404style.css&quot;&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  &lt;script type=&quot;text/plain&quot; src=&quot;http://www.qq.com/404/search_children.js&quot;</span><br><span class="line">          charset=&quot;utf-8&quot; homePageUrl=&quot;/&quot;</span><br><span class="line">          homePageName=&quot;回到我的主页&quot;&gt;</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">  &lt;script src=&quot;https://qzone.qq.com/gy/404/data.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script src=&quot;https://qzone.qq.com/gy/404/page.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="站点建立时间"><a href="#站点建立时间" class="headerlink" title="站点建立时间"></a>站点建立时间</h3><p>这个时间将在站点的底部显示，例如 <code>© 2013 - 2015</code>。 编辑 <strong>主题配置文件</strong>，新增字段 <code>since</code>。</p>
+<p>配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">since: 2013</span><br></pre></td></tr></table></figure>
+
+<h3 id="订阅微信公众号"><a href="#订阅微信公众号" class="headerlink" title="订阅微信公众号"></a>订阅微信公众号</h3><p><strong>注意：</strong> 此特性在版本 <strong>5.0.1</strong> 中引入，要使用此功能请确保所使用的 NexT 版本在此之后</p>
+<p>在每篇文章的末尾显示微信公众号二维码，扫一扫，轻松订阅博客。</p>
+<p>在微信公众号平台下载您的二维码，并将它存放于博客<code>source/uploads/</code>目录下。</p>
+<p>然后编辑 <strong>主题配置文件</strong>，如下：</p>
+<p>配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Wechat Subscriber</span><br><span class="line">wechat_subscriber:</span><br><span class="line">  enabled: true</span><br><span class="line">  qcode: /uploads/wechat-qcode.jpg</span><br><span class="line">  description: 欢迎您扫一扫上面的微信公众号，订阅我的博客！</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置「动画效果」"><a href="#设置「动画效果」" class="headerlink" title="设置「动画效果」"></a>设置「动画效果」</h3><p>NexT 默认开启动画效果，效果使用 JavaScript 编写，因此需要等待 JavaScript 脚本完全加载完毕后才会显示内容。 如果您比较在乎速度，可以将设置此字段的值为 <code>false</code> 来关闭动画。</p>
+<p>编辑 <strong>主题配置文件</strong>， 搜索 <code>use_motion</code>，根据您的需求设置值为 <code>true</code> 或者 <code>false</code> 即可：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">use_motion: true  # 开启动画效果</span><br><span class="line">use_motion: false # 关闭动画效果</span><br></pre></td></tr></table></figure>
+
+<h3 id="设置「背景动画」"><a href="#设置「背景动画」" class="headerlink" title="设置「背景动画」"></a>设置「背景动画」</h3><p>NexT 自带两种背景动画效果</p>
+<p>编辑 <strong>主题配置文件</strong>， 搜索 <code>canvas_nest</code> 或 <code>three_waves</code>，根据您的需求设置值为 <code>true</code> 或者 <code>false</code> 即可：</p>
+<p><strong>注意：</strong> <code>three_waves</code> 在版本 <strong>5.1.1</strong> 中引入。只能同时开启一种背景动画效果。</p>
+<p><code>canvas_nest</code> 配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># canvas_nest</span><br><span class="line">canvas_nest: true //开启动画</span><br><span class="line">canvas_nest: false //关闭动画</span><br></pre></td></tr></table></figure>
+
+<p><code>three_waves</code> 配置示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># three_waves</span><br><span class="line">three_waves: true //开启动画</span><br><span class="line">three_waves: false //关闭动画</span><br></pre></td></tr></table></figure>
+
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/next/" rel="tag"># next</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/db4d493d.html" rel="prev" title="Hexo博客迁移到其他电脑">
+                  <i class="fa fa-chevron-left"></i> Hexo博客迁移到其他电脑
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/8a3a14b.html" rel="next" title="斐讯N1刷armbian">
+                  斐讯N1刷armbian <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">平淡如盐</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

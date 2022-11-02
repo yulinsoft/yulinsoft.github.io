@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="配置编译环境安装虚拟机安装Ubuntu 16.04LTS 安装git12$ sudo apt-get update$ sudo apt-get install git 转到 &#x2F;opt目录，并且用命令克隆Padavan仓库 12$ cd &#x2F;opt$ sudo git clone https:&#x2F;&#x2F;bitbucket.org&#x2F;padavan&#x2F;rt-n56u.git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Padavan 编译教程">
+<meta property="og:url" content="http://example.com/post/4a10dd00.html">
+<meta property="og:site_name" content="我酷我流行">
+<meta property="og:description" content="配置编译环境安装虚拟机安装Ubuntu 16.04LTS 安装git12$ sudo apt-get update$ sudo apt-get install git 转到 &#x2F;opt目录，并且用命令克隆Padavan仓库 12$ cd &#x2F;opt$ sudo git clone https:&#x2F;&#x2F;bitbucket.org&#x2F;padavan&#x2F;rt-n56u.git">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-05-03T12:56:09.000Z">
+<meta property="article:modified_time" content="2022-10-30T09:14:35.018Z">
+<meta property="article:author" content="平淡如盐">
+<meta property="article:tag" content="Padavan">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="http://example.com/post/4a10dd00.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/post/4a10dd00.html","path":"post/4a10dd00.html","title":"Padavan 编译教程"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Padavan 编译教程 | 我酷我流行</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">我酷我流行</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">越努力越幸运！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E7%BC%96%E8%AF%91%E7%8E%AF%E5%A2%83"><span class="nav-number">1.</span> <span class="nav-text">配置编译环境</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85git"><span class="nav-number">2.</span> <span class="nav-text">安装git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">生成配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">4.</span> <span class="nav-text">修改配置文件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%82%E9%85%8D%E7%81%AF%E4%B8%8E%E5%A4%8D%E4%BD%8D%E9%94%AE"><span class="nav-number">5.</span> <span class="nav-text">适配灯与复位键</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B0%83%E7%94%A8%E5%8E%9F%E5%8E%82%E6%97%A0%E7%BA%BF%E5%8F%82%E6%95%B0"><span class="nav-number">6.</span> <span class="nav-text">调用原厂无线参数</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%80%82%E9%85%8DWAN%E5%8F%A3%E4%B8%8ELAN%E5%8F%A3"><span class="nav-number">7.</span> <span class="nav-text">适配WAN口与LAN口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E5%A4%96%E7%BD%AEPA-amp-LAN%E6%94%AF%E6%8C%81"><span class="nav-number">8.</span> <span class="nav-text">开启外置PA&amp;LAN支持</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%89%A9%E5%B1%95%E5%86%85%E5%AD%98"><span class="nav-number">9.</span> <span class="nav-text">扩展内存</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E6%97%B6%E5%8C%BA"><span class="nav-number">10.</span> <span class="nav-text">设置时区</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B3%E9%97%ADtelnet%E5%BC%80%E5%90%AFssh"><span class="nav-number">11.</span> <span class="nav-text">关闭telnet开启ssh</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B1%89%E5%8C%96"><span class="nav-number">12.</span> <span class="nav-text">汉化</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%9B%BA%E4%BB%B6"><span class="nav-number">13.</span> <span class="nav-text">生成固件</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="平淡如盐"
+      src="/img/weixin.jpg">
+  <p class="site-author-name" itemprop="name">平淡如盐</p>
+  <div class="site-description" itemprop="description">明天的你一定会感谢今天努力的自己。</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yulinsoft" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yulinsoft@gmail.com" title="E-Mail → mailto:yulinsoft@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/yulinsoft" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.yulinsoft.top/" title="我的网站 → http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank"><i class="edge fa-fw"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.yulinsoft.top/" title="http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank">我的网站</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/4a10dd00.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/weixin.jpg">
+      <meta itemprop="name" content="平淡如盐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我酷我流行">
+      <meta itemprop="description" content="明天的你一定会感谢今天努力的自己。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Padavan 编译教程 | 我酷我流行">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Padavan 编译教程
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-03 20:56:09" itemprop="dateCreated datePublished" datetime="2019-05-03T20:56:09+08:00">2019-05-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-10-30 17:14:35" itemprop="dateModified" datetime="2022-10-30T17:14:35+08:00">2022-10-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Padavan/" itemprop="url" rel="index"><span itemprop="name">Padavan</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h4 id="配置编译环境"><a href="#配置编译环境" class="headerlink" title="配置编译环境"></a>配置编译环境</h4><p>安装虚拟机<br>安装Ubuntu 16.04LTS</p>
+<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install git</span><br></pre></td></tr></table></figure>
+<p>转到 &#x2F;opt目录，并且用命令克隆Padavan仓库</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git <span class="built_in">clone</span> https://bitbucket.org/padavan/rt-n56u.git</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>安装编译固件所需要的工具</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install autoconf automake bison build-essential flex gawk gettext gperf libtool pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev texinfo python-docutils mc</span><br></pre></td></tr></table></figure>
+<p>编译一个交叉编译的工具链</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
+<p>编译3.0内核的固件<br>如果你需要编译3.0内核的固件就需要执行下面的步骤，默认支持3.4内核</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain_3.0.x</span><br></pre></td></tr></table></figure>
+<p>编译好后的工具链会放在 &#x2F;opt&#x2F;rt-n56u&#x2F;toolchain-mipsel&#x2F;toolchain-3.0.x<br>以后在更新或者升级工具链的情况下才需要执行以上步骤。<br>机型适配（newifi mini）<br>进行入固件源码目录</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/trunk</span><br></pre></td></tr></table></figure>
+<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><p>删除默认的配置文件 opt&#x2F;rt-n56u&#x2F;trunk下的.config文件，默认是隐藏的，可以使用Ctrl+H显示与隐藏配置文件，或者用以下命令进行删除</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo <span class="built_in">rm</span> -f opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
+<p>从opt&#x2F;rt-n56u&#x2F;trunk&#x2F;configs&#x2F;templates里拷贝出 ac54u_base.config到 opt&#x2F;rt-n56u&#x2F;trunk下并重命名成.config，或者用以下命令进行操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo <span class="built_in">cp</span> opt/rt-n56u/trunk/configs/templates/ac54_base.config  /opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
+<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>由于修改后默认的.config配置文件里文档写的很详细，就不多解释，根据自己需要开启与关闭需要与不需要的功能，#这个符号默认是注释代码，也就是关闭某个功能，反之去掉就是开启（可以把文档内容拷出来到翻译里翻译一遍，可以很清楚的看到每个功能是干什么用的）</p>
+<h4 id="适配灯与复位键"><a href="#适配灯与复位键" class="headerlink" title="适配灯与复位键"></a>适配灯与复位键</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;board.h</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* ASUS RT-AC54U */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_PID        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NAME        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_DESC        <span class="string">&quot;ASUS RT-AC54U Wireless Router&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_NAME    <span class="string">&quot;ASUSTek Computer Inc.&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_URL    <span class="string">&quot;http://www.asus.com/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_MODEL_URL        <span class="string">&quot;http://www.asus.com/Networking/RTAC54U/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_BOOT_TIME        25</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_FLASH_TIME    120</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_RESET</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_BTN_WPS    11</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_WLTOG</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ALL</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WIFI    72</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_SW2G</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_SW5G    50</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_POWER    9</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_LAN    55</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WAN    51</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_USB    52</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ROUTER</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_PWR_USB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_5G_11AC    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ETH_LEDS    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_L1000    0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_W1000    0</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
+<h4 id="调用原厂无线参数"><a href="#调用原厂无线参数" class="headerlink" title="调用原厂无线参数"></a>调用原厂无线参数</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config查找修改成以下代码，并删除目录下SingleSKU开头的文件。</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">CONFIG_RT_SINGLE_SKU=n</span><br><span class="line">CONFIG_RT2860V2_AP_GREENAP=y</span><br><span class="line">CONFIG_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_MT76X2_AP_GREENAP=y</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_RALINK_UART_BRATE=<span class="number">57600</span></span><br></pre></td></tr></table></figure>
+<h4 id="适配WAN口与LAN口"><a href="#适配WAN口与LAN口" class="headerlink" title="适配WAN口与LAN口"></a>适配WAN口与LAN口</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">CONFIG_RAETH_ESW_PORT_WAN=<span class="number">4</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN1=<span class="number">1</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN2=<span class="number">0</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN3=<span class="number">3</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN4=<span class="number">2</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
+<h4 id="开启外置PA-amp-LAN支持"><a href="#开启外置PA-amp-LAN支持" class="headerlink" title="开启外置PA&amp;LAN支持"></a>开启外置PA&amp;LAN支持</h4><p>在  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config里删除# CONFIG_EXTERNAL_PA_EXTERNAL_LNA is not set 这一行代码，并加入下面的代码</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br></pre></td></tr></table></figure>
+<h4 id="扩展内存"><a href="#扩展内存" class="headerlink" title="扩展内存"></a>扩展内存</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config配置文件，以AC-54U为例，默认是64M，所以只需要将以下代码进行如下修改</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//没修改前是64M内存</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M=y</span><br><span class="line">CONFIG_RT2880_DRAM_128M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">64</span></span><br><span class="line"><span class="comment">//修改成128M</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_128M=y</span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">128</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置时区"><a href="#设置时区" class="headerlink" title="设置时区"></a>设置时区</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.h</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_TIMEZONE        <span class="string">&quot;CST-8&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_NTP_SERVER0        <span class="string">&quot;ntp1.aliyun.com&quot;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="关闭telnet开启ssh"><a href="#关闭telnet开启ssh" class="headerlink" title="关闭telnet开启ssh"></a>关闭telnet开启ssh</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.c</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;<span class="string">&quot;telnetd&quot;</span>,<span class="string">&quot;0&quot;</span>&#125;.</span><br><span class="line">&#123;<span class="string">&quot;sshd_enable&quot;</span>,<span class="string">&quot;1&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h4><p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.header文件，找到LANG_EN&#x3D;English修改成以下</p>
+<blockquote>
+<p>LANG_EN&#x3D;简体中文</p>
+</blockquote>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.footer文件，把里面内容翻译成中文（也可以从已经汉化的固件里提取&#x2F;www&#x2F;EN.dict文件，删除以下的内容，然后保存并重新命名成EN.footer；</p>
+<blockquote>
+<p>[Language type]<br>LANG_EN&#x3D;简体中文<br>LANG_RU&#x3D;English</p>
+</blockquote>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;Makefile文件，找到echo “LANG_RU&#x3D;Pусский” &gt;$(ROMFS_DIR)&#x2F;www&#x2F;EN.header修改成以下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;LANG_RU=English&quot;</span> &gt;$(ROMFS_DIR)/www/EN.header</span><br></pre></td></tr></table></figure>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;RU.dict文件，找到LANG_EN&#x3D;English修改成以下</p>
+<blockquote>
+<p>LANG_EN&#x3D;简体中文</p>
+</blockquote>
+<h4 id="生成固件"><a href="#生成固件" class="headerlink" title="生成固件"></a>生成固件</h4><p>清除源码树</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ./clear_tree</span><br></pre></td></tr></table></figure>
+<p>开始编译生成固件</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ./build_firmware</span><br></pre></td></tr></table></figure>
+<p>编译完成后生成的固件在 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;images里面<br>更新源码<br>转到 &#x2F;opt目录，克隆最新源码</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
+<p>如果你对本地存仓库进行了更改，那么在更新源码的时候，你必须运行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo git stash</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
+<p>如果更改了工具链，则必须重新构建它</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./clean_toolchain</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
+<p>以上的修改建议使用手工进行修改，如果直接使用文件进行覆盖的话很容易出错。而且一但编译出错的话需要花很多时间进行调整，所以还是自己一步步慢慢改吧。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Padavan/" rel="tag"># Padavan</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/7ec7b2eb.html" rel="next" title="如何编译自己需要的 OpenWrt 固件">
+                  如何编译自己需要的 OpenWrt 固件 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">平淡如盐</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>

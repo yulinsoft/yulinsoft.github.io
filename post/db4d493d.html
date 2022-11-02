@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="安装必要的软件 下载安装Git客户端 安装node js  恢复ssh配置回到你的git bash中 配置git用户名$ git config --global user.name &quot;yourname&quot;$ git config --global user.email &quot;youremail&quot; 这里的yourname输入你的GitHub用户名，youremail">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo博客迁移到其他电脑">
+<meta property="og:url" content="http://example.com/post/db4d493d.html">
+<meta property="og:site_name" content="我酷我流行">
+<meta property="og:description" content="安装必要的软件 下载安装Git客户端 安装node js  恢复ssh配置回到你的git bash中 配置git用户名$ git config --global user.name &quot;yourname&quot;$ git config --global user.email &quot;youremail&quot; 这里的yourname输入你的GitHub用户名，youremail">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/%5Cimg%5C1.png">
+<meta property="article:published_time" content="2019-05-05T01:23:42.000Z">
+<meta property="article:modified_time" content="2022-10-30T09:14:35.018Z">
+<meta property="article:author" content="平淡如盐">
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/%5Cimg%5C1.png">
+
+
+<link rel="canonical" href="http://example.com/post/db4d493d.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/post/db4d493d.html","path":"post/db4d493d.html","title":"Hexo博客迁移到其他电脑"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Hexo博客迁移到其他电脑 | 我酷我流行</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">我酷我流行</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">越努力越幸运！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%BF%85%E8%A6%81%E7%9A%84%E8%BD%AF%E4%BB%B6"><span class="nav-number">1.</span> <span class="nav-text">安装必要的软件</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%81%A2%E5%A4%8Dssh%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">恢复ssh配置</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%85%8D%E7%BD%AEgit%E7%94%A8%E6%88%B7%E5%90%8D"><span class="nav-number">2.1.</span> <span class="nav-text">配置git用户名</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%81%A2%E5%A4%8Dssh%E5%AF%86%E9%92%A5"><span class="nav-number">2.2.</span> <span class="nav-text">恢复ssh密钥</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="nav-number">2.3.</span> <span class="nav-text">常见问题</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%87%E4%BB%BD%E5%8E%9F%E6%96%87%E4%BB%B6"><span class="nav-number">3.</span> <span class="nav-text">备份原文件</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%9C%80%E8%A6%81%E8%BD%AC%E7%A7%BB%E7%9A%84%E6%96%87%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">需要转移的文件</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E5%88%86%E6%94%AF"><span class="nav-number">3.2.</span> <span class="nav-text">创建分支</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%8F%90%E4%BA%A4%E5%8F%98%E6%9B%B4"><span class="nav-number">3.3.</span> <span class="nav-text">提交变更</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%81%E7%A7%BB%E5%88%B0%E6%96%B0%E7%94%B5%E8%84%91"><span class="nav-number">4.</span> <span class="nav-text">迁移到新电脑</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8F%91%E8%A1%A8%E6%96%87%E7%AB%A0"><span class="nav-number">5.</span> <span class="nav-text">发表文章</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">5.1.</span> <span class="nav-text">新建文章</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E6%96%87%E7%AB%A0"><span class="nav-number">5.2.</span> <span class="nav-text">部署文章</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%8F%91%E5%B8%83%E5%A4%B1%E8%B4%A5"><span class="nav-number">5.3.</span> <span class="nav-text">发布失败</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="平淡如盐"
+      src="/img/weixin.jpg">
+  <p class="site-author-name" itemprop="name">平淡如盐</p>
+  <div class="site-description" itemprop="description">明天的你一定会感谢今天努力的自己。</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yulinsoft" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yulinsoft@gmail.com" title="E-Mail → mailto:yulinsoft@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/yulinsoft" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="http://www.yulinsoft.top/" title="我的网站 → http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank"><i class="edge fa-fw"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.yulinsoft.top/" title="http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank">我的网站</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/db4d493d.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/weixin.jpg">
+      <meta itemprop="name" content="平淡如盐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我酷我流行">
+      <meta itemprop="description" content="明天的你一定会感谢今天努力的自己。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Hexo博客迁移到其他电脑 | 我酷我流行">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Hexo博客迁移到其他电脑
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-05 09:23:42" itemprop="dateCreated datePublished" datetime="2019-05-05T09:23:42+08:00">2019-05-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2022-10-30 17:14:35" itemprop="dateModified" datetime="2022-10-30T17:14:35+08:00">2022-10-30</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h4 id="安装必要的软件"><a href="#安装必要的软件" class="headerlink" title="安装必要的软件"></a>安装必要的软件</h4><ol>
+<li>下载安装Git客户端</li>
+<li>安装node js</li>
+</ol>
+<h4 id="恢复ssh配置"><a href="#恢复ssh配置" class="headerlink" title="恢复ssh配置"></a>恢复ssh配置</h4><p>回到你的git bash中</p>
+<h5 id="配置git用户名"><a href="#配置git用户名" class="headerlink" title="配置git用户名"></a>配置git用户名</h5><p><code>$ git config --global user.name &quot;yourname&quot;</code><br><code>$ git config --global user.email &quot;youremail&quot;</code></p>
+<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<span id="more"></span>
+<p>你可以用以下两条，检查一下你有没有输对</p>
+<p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
+<h5 id="恢复ssh密钥"><a href="#恢复ssh密钥" class="headerlink" title="恢复ssh密钥"></a>恢复ssh密钥</h5><p>将原电脑备份的.ssh文件夹复制到当前用户目录下，一般为“C:\Users\用户名”下。<br>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
+<p>继续回到你的git bash中，<br>输入</p>
+<p><code>$ cd ~/.ssh</code></p>
+<p>检查是否由.ssh的文件夹</p>
+<p>输入ls，列出该文件下的内容。下图说明存在</p>
+<p><img src="/%5Cimg%5C1.png"></p>
+<p>输入</p>
+<p><code>$ eval &quot;$(ssh-agent -s)&quot;</code></p>
+<p>添加密钥到ssh-agent</p>
+<p>再输入</p>
+<p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
+<p>添加生成的SSH key到ssh-agent</p>
+<p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
+<p>输入ssh -T <a href="mailto:&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#x6f;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
+<h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
+<p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
+<p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
+<p>接下来正常操作<br>在github上添加公钥public-key:<br>1、首先在你的终端运行 xclip -sel c ~&#x2F;.ssh&#x2F;id_rsa.pub将公钥内容复制到剪切板<br>2、在github上添加公钥时，直接复制即可<br>3、保存<br>在终端 </p>
+<p><code>$ ssh -T git@github.com</code></p>
+<p>如果看到Hi后面是你的用户名，就说明成功了。</p>
+<h4 id="备份原文件"><a href="#备份原文件" class="headerlink" title="备份原文件"></a>备份原文件</h4><p>打开原电脑的hexo文件夹，将以下文件备份。</p>
+<h5 id="需要转移的文件"><a href="#需要转移的文件" class="headerlink" title="需要转移的文件"></a>需要转移的文件</h5><blockquote>
+<p><strong>文件(夹)	         说明</strong><br>scaffolds&#x2F;	     博客文章模板<br>source&#x2F;	         所有的博客文章<br>themes&#x2F;	        网站主题<br>.gitignore	      push时需忽略的文件<br>_config.yml	   站点配置文件<br>package.json    依赖包的名称和版本号</p>
+</blockquote>
+<p>由于配置文件和主题文件需要经常更改，采用github创建博客分支的方式进行备份。</p>
+<h5 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h5><p>克隆github上上生成的静态文件到hexo文件夹中</p>
+<p>git clone <a target="_blank" rel="noopener" href="https://github.com/yourname/xxxx.github.io.git">https://github.com/yourname/xxxx.github.io.git</a> hexo<br>克隆后将除.git文件外其他所有文件删除。主要是为了得到版本管理文件夹.git。</p>
+<p>.git文件为隐藏文件，可直接将可见文件全部删除</p>
+<p>将备份的原文件复制到此文件夹。若文件夹是从github克隆，则需要删除主题文件中的版本控制文件夹,以next主题为例：</p>
+<p><code>$ rm -rf thems/next/.git*</code><br>创建名为hexo的分支</p>
+<p><code>$ git checkout -b hexo</code><br>保存所有文件到暂存区</p>
+<p><code>$ git add --all</code></p>
+<h5 id="提交变更"><a href="#提交变更" class="headerlink" title="提交变更"></a>提交变更</h5><p><code>$ git commit -m &quot;hexo-2&quot;</code><br>提交变更时报错：</p>
+<p>根据提示配置。</p>
+<p>推送分支到github,并用–set-upstream与origin创建关联将</p>
+<p><code>$ git push --set-upstream origin hexo</code></p>
+<p>hexo设置为默认分支。</p>
+<h4 id="迁移到新电脑"><a href="#迁移到新电脑" class="headerlink" title="迁移到新电脑"></a>迁移到新电脑</h4><p>以后在其他电脑上写博客，直接将分支克隆下来。再使用npm install安装依赖。</p>
+<p><code>$ git clone -b hexo https://github.com/yourname/xxx.github.io.git myblog</code></p>
+<p><code>$ cd myblog</code></p>
+<p><code>$ npm install</code></p>
+<p>执行以上命令完成基础环境安装。</p>
+<h4 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h4><p>基础环境安装完成后，可以进行创建文章的测试。</p>
+<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><code>$ hexo n &quot;xxx&quot;</code></p>
+<p>注意：需要使用git push把源文件推到分支上</p>
+<p><code>$ git add .</code><br><code>$ git commit -m &quot;xxxx&quot;</code><br><code>$ git push origin hexo</code></p>
+<h5 id="部署文章"><a href="#部署文章" class="headerlink" title="部署文章"></a>部署文章</h5><p><code>$ hexo d -g</code></p>
+<h5 id="发布失败"><a href="#发布失败" class="headerlink" title="发布失败"></a>发布失败</h5><p>如果发布失败，可以安装最新版的putty，然后删除环境变量中的所有带ssh的变量后，重新打开git bash发布。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/hexo/" rel="tag"># hexo</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/7ec7b2eb.html" rel="prev" title="如何编译自己需要的 OpenWrt 固件">
+                  <i class="fa fa-chevron-left"></i> 如何编译自己需要的 OpenWrt 固件
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/post/75058071.html" rel="next" title="nexT主题配置">
+                  nexT主题配置 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">平淡如盐</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
