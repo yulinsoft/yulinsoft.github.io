@@ -1,3 +1,9 @@
+http://example.com/post/undefined.html
+http://example.com/post/undefined.html
+http://example.com/post/6bc9832c.html
+http://example.com/post/undefined.html
+http://example.com/post/undefined.html
+http://example.com/post/321cf7da.html
 http://example.com/post/8a3a14b.html
 http://example.com/about/index.html
 http://example.com/tags/index.html
@@ -11,6 +17,8 @@ http://example.com/tags/Padavan/
 http://example.com/tags/hexo/
 http://example.com/tags/next/
 http://example.com/tags/OpenWrt/
+http://example.com/tags/%E4%B8%AA%E4%BA%BA%E8%BD%AF%E4%BB%B6/
 http://example.com/categories/Padavan/
 http://example.com/categories/Hexo/
 http://example.com/categories/OpenWrt/
+http://example.com/categories/%E4%B8%AA%E4%BA%BA%E8%BD%AF%E4%BB%B6/
