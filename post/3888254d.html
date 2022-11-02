@@ -13,38 +13,37 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="更新日志关于说拼接后图片质量变差的说明本程序拼图时的原则之一就以小图片的分辨率为基准。因为我工作时拼图的对象大部分是手机截图，图片大小差别不大。如果你把一个1080P的图片和一个32*32图片进行拼接，那么拼后的图片高就是32像素或者宽就是32像素，这样的图片肯定没法看，所以就有人说图片质量差，原因就在这里。这不是问题，而是原则上就是这样，请大家谨记这一原则。 PicMerger-1.22.10.">
+    <meta name="description" content="更新日志：版本：1.0.8.25新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。版本：1.0.8.111、新增了暂停控制（点击滚动的歌名或右键菜单）。 2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。版本：1.0.8.81、修复了滚动歌名概率性消失的bug。2、新增了选择榜单功能。3、更换了软件图标。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="简单拼接-图片拼图神器">
-<meta property="og:url" content="http://example.com/post/undefined.html">
+<meta property="og:title" content="随机音乐播放器">
+<meta property="og:url" content="http://example.com/post/3888254d.html">
 <meta property="og:site_name" content="我酷我流行">
-<meta property="og:description" content="更新日志关于说拼接后图片质量变差的说明本程序拼图时的原则之一就以小图片的分辨率为基准。因为我工作时拼图的对象大部分是手机截图，图片大小差别不大。如果你把一个1080P的图片和一个32*32图片进行拼接，那么拼后的图片高就是32像素或者宽就是32像素，这样的图片肯定没法看，所以就有人说图片质量差，原因就在这里。这不是问题，而是原则上就是这样，请大家谨记这一原则。 PicMerger-1.22.10.">
+<meta property="og:description" content="更新日志：版本：1.0.8.25新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。版本：1.0.8.111、新增了暂停控制（点击滚动的歌名或右键菜单）。 2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。版本：1.0.8.81、修复了滚动歌名概率性消失的bug。2、新增了选择榜单功能。3、更换了软件图标。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://attach.52pojie.cn/forum/202209/24/180347gv9di5d1oaivmd9u.gif">
-<meta property="og:image" content="https://attach.52pojie.cn/forum/202207/01/105350zy0dlkl6000z8o7y.gif">
-<meta property="og:image" content="https://attach.52pojie.cn/forum/202207/01/105442vl7w1immbj4q7mmq.gif">
-<meta property="article:published_time" content="2022-11-02T08:33:57.000Z">
-<meta property="article:modified_time" content="2022-11-02T09:22:50.866Z">
+<meta property="og:image" content="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png">
+<meta property="og:image" content="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png">
+<meta property="article:published_time" content="2022-11-02T08:35:36.000Z">
+<meta property="article:modified_time" content="2022-11-02T10:06:57.544Z">
 <meta property="article:author" content="平淡如盐">
 <meta property="article:tag" content="个人软件">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://attach.52pojie.cn/forum/202209/24/180347gv9di5d1oaivmd9u.gif">
+<meta name="twitter:image" content="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png">
 
 
-<link rel="canonical" href="http://example.com/post/undefined.html">
+<link rel="canonical" href="http://example.com/post/3888254d.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/post/undefined.html","path":"post/undefined.html","title":"简单拼接-图片拼图神器"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/post/3888254d.html","path":"post/3888254d.html","title":"随机音乐播放器"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>简单拼接-图片拼图神器 | 我酷我流行</title>
+<title>随机音乐播放器 | 我酷我流行</title>
   
 
 
@@ -135,7 +134,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -148,7 +147,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97"><span class="nav-number">1.</span> <span class="nav-text">更新日志</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#PicMerger-1-22-10-7"><span class="nav-number">1.1.</span> <span class="nav-text">PicMerger-1.22.10.7</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PicMerger-1-22-9-24"><span class="nav-number">1.2.</span> <span class="nav-text">PicMerger-1.22.9.24</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PicMerger-1-22-8-3"><span class="nav-number">1.3.</span> <span class="nav-text">PicMerger-1.22.8.3</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PicMerger-1-22-7-5"><span class="nav-number">1.4.</span> <span class="nav-text">PicMerger-1.22.7.5</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#PicMerger-1-22-7-2"><span class="nav-number">1.5.</span> <span class="nav-text">PicMerger-1.22.7.2</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">2.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E8%AF%B4%E6%98%8E"><span class="nav-number">3.</span> <span class="nav-text">软件说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="nav-number">4.</span> <span class="nav-text">下载地址</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -237,7 +235,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/post/undefined.html">
+    <link itemprop="mainEntityOfPage" href="http://example.com/post/3888254d.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/weixin.jpg">
@@ -250,12 +248,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="简单拼接-图片拼图神器 | 我酷我流行">
+      <meta itemprop="name" content="随机音乐播放器 | 我酷我流行">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          简单拼接-图片拼图神器
+          随机音乐播放器
         </h1>
 
         <div class="post-meta-container">
@@ -267,7 +265,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2022-11-02 16:33:57 / 修改时间：17:22:50" itemprop="dateCreated datePublished" datetime="2022-11-02T16:33:57+08:00">2022-11-02</time>
+      <time title="创建时间：2022-11-02 16:35:36 / 修改时间：18:06:57" itemprop="dateCreated datePublished" datetime="2022-11-02T16:35:36+08:00">2022-11-02</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -289,20 +287,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>关于说拼接后图片质量变差的说明<br>本程序拼图时的原则之一就以小图片的分辨率为基准。因为我工作时拼图的对象大部分是手机截图，图片大小差别不大。如果你把一个1080P的图片和一个32*32图片进行拼接，那么拼后的图片高就是32像素或者宽就是32像素，这样的图片肯定没法看，所以就有人说图片质量差，原因就在这里。这不是问题，而是原则上就是这样，请大家谨记这一原则。</p>
-<h4 id="PicMerger-1-22-10-7"><a href="#PicMerger-1-22-10-7" class="headerlink" title="PicMerger-1.22.10.7"></a>PicMerger-1.22.10.7</h4><p>1、修复清空列表的菜单右键点击时不出现的问题，并添加了一个清空按钮。<br>2、右上角添加了打印图片按钮，并将打印临时图片移到了系统临时目录。<br>3、添加了保存为BMP格式，方便老式编程工具合并图片。</p>
-<h4 id="PicMerger-1-22-9-24"><a href="#PicMerger-1-22-9-24" class="headerlink" title="PicMerger-1.22.9.24"></a>PicMerger-1.22.9.24</h4><p>1、添加拖动列表中图片进行调整顺序的功能。<br>2、修复有图片间隔时最后留有空白的问题。<br><img src="https://attach.52pojie.cn/forum/202209/24/180347gv9di5d1oaivmd9u.gif" alt="请输入图片描述"></p>
-<h4 id="PicMerger-1-22-8-3"><a href="#PicMerger-1-22-8-3" class="headerlink" title="PicMerger-1.22.8.3"></a>PicMerger-1.22.8.3</h4><p>1、添加点击图片直接打印的功能。<br>2、优化图片列表删除逻辑。<br>3、固定了命令行合并生成的图片名为”MergedIMG.jpg”，方便命令行配合其它脚本批量操作。</p>
+        <p>更新日志：<br>版本：1.0.8.25<br>新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。<br>版本：1.0.8.11<br>1、新增了暂停控制（点击滚动的歌名或右键菜单）。<br><img src="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png" alt="请输入图片描述"></p>
+<p>2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。<br>3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。<br>版本：1.0.8.8<br>1、修复了滚动歌名概率性消失的bug。<br>2、新增了选择榜单功能。<br>3、更换了软件图标。<br><img src="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png" alt="请输入图片描述"></p>
+<p>前言<br>前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。</p>
 <span id="more"></span>
-<h4 id="PicMerger-1-22-7-5"><a href="#PicMerger-1-22-7-5" class="headerlink" title="PicMerger-1.22.7.5"></a>PicMerger-1.22.7.5</h4><p>1、PNG图片输出支持背景透明。<br>2、图片大小超出最大限制时会弹出错误提醒（猜测值为65535*65535）。</p>
-<h4 id="PicMerger-1-22-7-2"><a href="#PicMerger-1-22-7-2" class="headerlink" title="PicMerger-1.22.7.2"></a>PicMerger-1.22.7.2</h4><p>1、添加了清空图片列表的右键菜单。<br>2、添加了图片输出质量控制。<br>3、添加了PNG图片格式输出。<br>4、添加了配置自动保存和导入功能。<br>5、命令行拼图采用最后一次关闭窗口时的配置，纵横可配置。<br>6、纵横选项切换时，会自动重新合并。<br>7、优化了绘图逻辑，增强了程序的稳定性，缩小了程序大小。</p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>工作中经常用到需要把图片拼接后上传任务，手机端和图库可以很好地完成任务，但电脑端一直没有好用的工具，于是就写了一个适合自己使用的，需要的可以下载使用。</p>
-<h3 id="软件说明"><a href="#软件说明" class="headerlink" title="软件说明"></a>软件说明</h3><p>就是简单地将多个图片拼接成一个图片，支持横向和纵向拼接，设置图片间的距离。<br>1、点击“添加图片”，自动拼图，然后保存拼图就可以了。</p>
-<p><img src="https://attach.52pojie.cn/forum/202207/01/105350zy0dlkl6000z8o7y.gif" alt="请输入图片描述"></p>
-<p>2、直接拖动图片到软件界面，会自动拼图，然后保存就行了。</p>
-<p>3、命令行拼图，拖动图片到软件图标会自动合并生成图片。</p>
-<p><img src="https://attach.52pojie.cn/forum/202207/01/105442vl7w1immbj4q7mmq.gif" alt="请输入图片描述"></p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>免费下载：<a target="_blank" rel="noopener" href="https://yulinsoft.lanzoul.com/b00vtqffc">https://yulinsoft.lanzoul.com/b00vtqffc</a><br>密码:epqu</p>
+
+<p>软件特色<br>简洁小巧，功能很简单，就是打开后联网播放网易云的随机音乐，有一个显示专辑封面的小窗口，可以隐藏，点击后会切换下一首。<br>任务栏有小图标，单击图标换歌，双击图标隐藏或显示窗口。<br>有需要的可以下载。无需各种框架，delphi开发，完全绿色。</p>
+<p>下载地址</p>
+<p>下载地址：</p>
+<p>白嫖地址：<br><a target="_blank" rel="noopener" href="https://yulinsoft.lanzoui.com/b00uqjc0d">https://yulinsoft.lanzoui.com/b00uqjc0d</a>   密码：1111</p>
 
     </div>
 
@@ -319,13 +312,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/321cf7da.html" rel="prev" title="历史上的今天-精装版">
-                  <i class="fa fa-chevron-left"></i> 历史上的今天-精装版
+                <a href="/post/9ff81b4c.html" rel="prev" title="简单拼接-图片拼图神器">
+                  <i class="fa fa-chevron-left"></i> 简单拼接-图片拼图神器
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/post/undefined.html" rel="next" title="随机音乐播放器">
-                  随机音乐播放器 <i class="fa fa-chevron-right"></i>
+                <a href="/post/a4516257.html" rel="next" title="CloudDrive控制器">
+                  CloudDrive控制器 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
