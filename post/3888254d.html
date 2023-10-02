@@ -19,19 +19,19 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="更新日志：版本：1.0.8.25新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。版本：1.0.8.111、新增了暂停控制（点击滚动的歌名或右键菜单）。 2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。版本：1.0.8.81、修复了滚动歌名概率性消失的bug。2、新增了选择榜单功能。3、更换了软件图标。">
+    <meta name="description" content="##前言前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="随机音乐播放器">
 <meta property="og:url" content="http://example.com/post/3888254d.html">
 <meta property="og:site_name" content="我酷我流行">
-<meta property="og:description" content="更新日志：版本：1.0.8.25新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。版本：1.0.8.111、新增了暂停控制（点击滚动的歌名或右键菜单）。 2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。版本：1.0.8.81、修复了滚动歌名概率性消失的bug。2、新增了选择榜单功能。3、更换了软件图标。">
+<meta property="og:description" content="##前言前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png">
 <meta property="og:image" content="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png">
-<meta property="article:published_time" content="2022-11-02T08:35:36.000Z">
-<meta property="article:modified_time" content="2022-11-02T10:06:57.544Z">
+<meta property="article:published_time" content="2021-10-04T03:53:06.000Z">
+<meta property="article:modified_time" content="2021-10-04T03:53:06.000Z">
 <meta property="article:author" content="平淡如盐">
-<meta property="article:tag" content="个人软件">
+<meta property="article:tag" content="平淡如盐">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png">
 
@@ -90,7 +90,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">5</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">11</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">17</span></a></li><li class="menu-item menu-item-歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>歌单</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -161,18 +161,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">11</span>
+          <span class="site-state-item-count">17</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -199,7 +199,10 @@
     </div>
     <ul class="links-of-blogroll-list">
         <li class="links-of-blogroll-item">
-          <a href="http://www.yulinsoft.top/" title="http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank">我的网站</a>
+          <a href="https://www.yulinsoft.top/" title="https:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank">我的网站</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://pan.pdry.eu.org/" title="https:&#x2F;&#x2F;pan.pdry.eu.org" rel="noopener" target="_blank">我的网盘</a>
         </li>
     </ul>
   </div>
@@ -263,9 +266,8 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-11-02 16:35:36 / 修改时间：18:06:57" itemprop="dateCreated datePublished" datetime="2022-11-02T16:35:36+08:00">2022-11-02</time>
+      <time title="创建时间：2021-10-04 11:53:06" itemprop="dateCreated datePublished" datetime="2021-10-04T11:53:06+08:00">2021-10-04</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -273,7 +275,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E4%B8%AA%E4%BA%BA%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">个人软件</span></a>
+          <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">默认分类</span></a>
         </span>
     </span>
 
@@ -287,13 +289,11 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>更新日志：<br>版本：1.0.8.25<br>新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。<br>版本：1.0.8.11<br>1、新增了暂停控制（点击滚动的歌名或右键菜单）。<br><img src="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png" alt="请输入图片描述"></p>
-<p>2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。<br>3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。<br>版本：1.0.8.8<br>1、修复了滚动歌名概率性消失的bug。<br>2、新增了选择榜单功能。<br>3、更换了软件图标。<br><img src="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png" alt="请输入图片描述"></p>
-<p>前言<br>前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。</p>
+        <p>##前言<br>前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。</p>
 <span id="more"></span>
-
-<p>软件特色<br>简洁小巧，功能很简单，就是打开后联网播放网易云的随机音乐，有一个显示专辑封面的小窗口，可以隐藏，点击后会切换下一首。<br>任务栏有小图标，单击图标换歌，双击图标隐藏或显示窗口。<br>有需要的可以下载。无需各种框架，delphi开发，完全绿色。</p>
-<p>下载地址</p>
+<p>##软件特色<br>简洁小巧，功能很简单，就是打开后联网播放网易云的随机音乐，有一个显示专辑封面的小窗口，可以隐藏，点击后会切换下一首。<br>任务栏有小图标，单击图标换歌，双击图标隐藏或显示窗口。<br>有需要的可以下载。无需各种框架，delphi开发，完全绿色。</p>
+<p>##更新日志：<br>版本：1.0.8.25<br>新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。<br>版本：1.0.8.11<br>1、新增了暂停控制（点击滚动的歌名或右键菜单）。<br><img src="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png" alt="请输入图片描述"></p>
+<p>2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。<br>3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。<br>版本：1.0.8.8<br>1、修复了滚动歌名概率性消失的bug。<br>2、新增了选择榜单功能。<br>3、更换了软件图标。<br><img src="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png" alt="请输入图片描述"><br>##下载地址</p>
 <p>下载地址：</p>
 <p>白嫖地址：<br><a target="_blank" rel="noopener" href="https://yulinsoft.lanzoui.com/b00uqjc0d">https://yulinsoft.lanzoui.com/b00uqjc0d</a>   密码：1111</p>
 
@@ -304,21 +304,18 @@
     
 
     <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/%E4%B8%AA%E4%BA%BA%E8%BD%AF%E4%BB%B6/" rel="tag"># 个人软件</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/9ff81b4c.html" rel="prev" title="简单拼接-图片拼图神器">
-                  <i class="fa fa-chevron-left"></i> 简单拼接-图片拼图神器
+                <a href="/post/43b57a0.html" rel="prev" title="简单倒计时">
+                  <i class="fa fa-chevron-left"></i> 简单倒计时
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/post/a4516257.html" rel="next" title="CloudDrive控制器">
-                  CloudDrive控制器 <i class="fa fa-chevron-right"></i>
+                <a href="/post/311d4ccd.html" rel="next" title="自动电脑锁">
+                  自动电脑锁 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -340,7 +337,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2022</span>
+  <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
