@@ -1,6 +1,177 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>拼音助手2023最新版2.3.8.1</title>
+    <url>/post/52b6f658.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>拼音助手是一款用于Word和WPS的注音插件，具有能够一次性标注32000个汉字、运行速度快、智能中文词组识别、彩色拼音、拼音组合及多音字校对界面友好等诸多功能，尤为值得一提的是：它能够方便地为多音词注音，解决了拼音标注中的一大难题。它将为您的汉字拼音标注工作带来快乐。<br>本软件推荐用户使用于Windows10+Office 2016或WPS 2019平台，亦可运行于Office 2007以上和WPS 2013以上平台中，已全面支持64位平台。</p>
+<span id="more"></span>
+<p><a href="https://imgtu.com/i/vDpYo8"><img src="https://s1.ax1x.com/2022/08/17/vDpYo8.gif" alt="拼音助手演示"></a></p>
+<h2 id="一、功能描述"><a href="#一、功能描述" class="headerlink" title="一、功能描述"></a>一、功能描述</h2><p>1、摒弃了普通拼音标注软件以字取音从而导致“词组”中汉字出现多音字问题；<br>2、可以标注轻声词、多音词，解决了拼音标注中的一大难题。<br>3、拼音词库共收录汉字20902个，轻声及多音词词库参考拼音居士和拼音克星词库共收录1994个。<br>4、可以设置拼音的对齐方式，字体，字号和偏移量。拼音标注前，建议完成对文档的编排，以使字体接近最终文档要求。字体、字号和偏移量用户可以根据需要自己设定，建议先小试部分汉字。<br>5、自动记忆最近一次的用户对于拼音加注的设置。<br>6、随选定状态确定拼音标注范围。选定状态下，仅为所选内容标注拼音；非选定状态下，从光标处开始标注拼音。<br>7、友好的多音校对面板。<br>选定状态下，仅为所选内容进行多音校对；非选定状态下，从光标所在位置开始多音校对，可随时终止多音校对。<br>8、右键快速校对<br>8.1、右键校对可对全文任意汉字的拼音进行校对，只需将光标定位于汉字（拼音）之前或者选中该汉字（拼音）后右击即可。<br>8.2、右键菜单分为三组，第一组为当前汉字的一个或者多个拼音项；第二组为当前汉字注音（当前拼音）的轻声、轻声特别标注、儿化音和大小写切换（如果当前拼音为大写，则第二组的最后一项为小写，反之，则为大写）；第三组为用户自定义，和常用功能菜单，可任意修改当前汉字的注音。<br>8.3、当用户选择“儿”字右击时，最后第二个菜单项为删除“儿”字的拼音。<br>8.4、右键菜单建议在全文通读中使用。<br>9、两种颜色区分多音字，拼音助手采用红、绿两种颜色表示不同的拼音。红色表示多音字，绿色表示经过多音校对或者右键校对过的拼音。<br>10、去除拼音声调的功能。<br>11、去字留音，删除汉字而只保留拼音的功能（转为无格式文本）。适用于根据拼音写汉字的场合。<br>11.1、上下结构的去字留音，拼音仍位于汉字的上方，但汉字被设置为白色。左右结构的去字留音，拼音位于汉字的左侧，汉字被替换为指定的软空格数量。<br>11.2、可以指定11种括号样式（含无括号）。<br>12、去音留字，删除拼音还原汉字（转为无格式文本）</p>
+<h2 id="二、注意事项："><a href="#二、注意事项：" class="headerlink" title="二、注意事项："></a>二、注意事项：</h2><p>1、建议一次性标注的汉字数量不超过32000字。此受Word文档极限的约束。<br>2、中文间的空间可能会影响词组的识别和查询，建议用户在拼音标注之前删除不必要的空格。<br>3、拼音助手标注的拼音，受词库的影响。不保证所有拼音均是有效的或者正确的。　　</p>
+<h2 id="三、中文句首大写规则"><a href="#三、中文句首大写规则" class="headerlink" title="三、中文句首大写规则"></a>三、中文句首大写规则</h2><p>1、文章标题中开头的汉字；<br>2、段落开头的汉字；<br>3、句号、问号、感叹号、冒号后面的汉字；<br>4、冒号加前引号后边的汉字；<br>5、逗号加前引号后边的汉字；<br>6、省略号后边的汉字。</p>
+<h2 id="版本更新："><a href="#版本更新：" class="headerlink" title="版本更新："></a>版本更新：</h2><p>版本：V2.3.8.1</p>
+<ul>
+<li>修复彩色拼音部分汉字不能变色的问题。（感谢用户阿泽反馈）</li>
+<li>修复去字留音功能部分汉字不能去除的问题。（感谢用户yg6084120反馈）<br>版本：V2.2.11.26</li>
+<li>修复高分辨率缩放显示下右键菜单显示异常的问题。（感谢用户反馈）<br>版本：V2.2.11.24</li>
+<li>添加“一”、“不”变调到多音字库，方便多音校对。（感谢用户反馈）</li>
+<li>优化注音选项，注音窗口的字体和字号，只针对拼音，不改变原版的字体和字号。<br>版本：V2.2.8.29</li>
+<li>修复了Win7下的不兼容问题（win10用户可不用升级）。</li>
+</ul>
+<p>版本：V2.2.8.24<br>1、修复了文档中字号不是整数时可能出错的问题。<br>2、文档右键菜单中添加了汉字注音菜单，方便大家操作。<br>版本：V2.2.8.18<br>优化安装程序，修复WPS下安装失败的问题。<br>版本：V2.2.8.16<br>1、界面进行了适当调整，字体更清晰。<br>2、结合多个网络词典，更新了50多个生僻字读音。<br>3、加入软件注册机制，主要功能仍能免费使用。</p>
+<h2 id="软件下载："><a href="#软件下载：" class="headerlink" title="软件下载："></a>软件下载：</h2><p>下载地址：<a href="https://yulinsoft.lanzoul.com/b00vz97ng">https://yulinsoft.lanzoul.com/b00vz97ng</a> 密码:1111  </p>
+<h2 id="特别说明："><a href="#特别说明：" class="headerlink" title="特别说明："></a>特别说明：</h2><p>由于本软件被人在淘宝上随意卖钱，损害了作者利益，因此从本版本开始加入了注册机制。免费版只少了多音字标注和多音校对功能，你还可以使用右键手动校对，如果支持本软件的开发，请注册正式版。</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>个人软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Win10系统无法远程桌面连接XP提示“出现了内部错误”的解决方法</title>
+    <url>/post/7fb11b1d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>家庭服务器上虚拟了win7和XP，在win10电脑上使用远程桌面进行访问，可以正常连接win7，但连接XP时提示“出现了内部错误”。使用手机的RPD连接却可以正常连接XP。百度了一圈，最终解决方法如下：<br>1、win10下打开控制面板</p>
+<span id="more"></span>
+<p>2、找到管理工具<br>3、打开本地安全策略 也可以 运行 输入 secpol.msc &#x2F;s 直接打开 。<br><img src="http://blog.yulinsoft.top/usr/uploads/2023/09/3260702037.webp" alt="16314711-ecd218f8e8f603a2.webp"><br><img src="http://blog.yulinsoft.top/usr/uploads/2023/09/3768130669.webp" alt="16314711-851cc983e8657b5d.webp"><br>4、在右边的策略中，找到“系统加密：将FIPS算法用于加密 、哈希和签名”点击右键属性<br>5、将“本地安全设置”设置为“已禁用”，在单击“应用”，后”确定”，即可远程控制！<br>仅做记录以备查。</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>解决delphi10安卓app升级delphi11的问题</title>
+    <url>/post/45af48af.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>解决delphi10安卓app升级delphi11的问题<br>最近看delphi11比较稳定了，就主动安装了新版，但发现原来在delphi10.4.2下开发的安卓应用无法在新版下编译，主要情形如下：</p>
+<span id="more"></span>
+<p><img src="https://s1.ax1x.com/2022/12/03/zDNSw4.jpg" alt="批注 2022-12-03 103615.jpg"><br>Libraries下一堆红叉，编译时一堆错误，无法完成。经过百度学习，解决方法如下。<br><img src="https://s1.ax1x.com/2022/12/03/zDNPYR.jpg" alt="批注 2022-12-03 103822.jpg"><br>在Libraries上点击右键，点击revert system files to default菜单恢复默认库文件。<br>经过这一步，已经可以成功编译了，但编译后的app无法安装，提示安装包解析错误。<br>再百度得到答案如下：<br>新建一个安卓工程 ，把工程目录下的AndroidManifest.template.xml文件复制并覆盖原来安卓工程下的同名文件就可以解决。原因是新版安卓的配置有所变化。<br>至此，问题全部解决，可以正常编译并安装。</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>delphi</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Indy10发送邮件主题乱码的问题</title>
+    <url>/post/6f520309.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h3><p>最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。</p>
+<span id="more"></span>
+<p><img src="https://s1.ax1x.com/2022/11/19/zKV7Jx.jpg" alt="clip-27998453.jpg"><br>于是进行调试分析，终于找到了原因。</p>
+<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>打开idmessage.pas源码，另存到项目根目录，定位到<code>procedure TIdMessage.GenerateHeader;</code><br>这个过程。<br>找到这一行：<br><code>  InitializeISO(HeaderEncoding, ISOCharSet);</code><br><img src="https://s1.ax1x.com/2022/11/19/zKZeTs.jpg" alt="clip-28499062.jpg"><br>在这一行下面添加：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;$IFDEF ANDROID&#125;</span><br><span class="line">ISOCharSet:=&#x27;UTF-8&#x27;;</span><br><span class="line">HeaderEncoding:=&#x27;B&#x27;;</span><br><span class="line">&#123;$ENDIF&#125;</span><br></pre></td></tr></table></figure>
+<p>这是针对安卓平台的编译指令。原因就是InitializeISO这个过程初始化字符集数据时，采用的是windows平台的API,没有考虑安卓平台，导致编码识别出错，我们给它加上正确的编码指令，就完美解决了问题。</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>技术分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>解决Typecho1.20错误更新的问题</title>
+    <url>/post/7f5794d5.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。</p>
+<span id="more"></span>
+<p><img src="https://s1.ax1x.com/2022/11/19/zKEpBd.png" alt="20221119162003.png"><br>这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一个bug。</p>
+<h3 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h3><p>本着治病救人的初衷，经过逐步调试，找到了问题的根本原因。打开网站目录<code>/var/Widget/Ajax.php</code>这个文件，定位到第62行。<br><code>version_compare($json[&#39;release&#39;], $version, &#39;&gt;=&#39;)</code><br><img src="https://s1.ax1x.com/2022/11/19/zKE9HA.png" alt="20221119163036.png"><br>问题就在这里，多了一个 <code>=</code> 号，把这个&#x3D;号删除后保存，再清除浏览器缓存，重新登陆就解决了。</p>
+<h4 id="提醒：一定要清除浏览器缓存才能见到效果。"><a href="#提醒：一定要清除浏览器缓存才能见到效果。" class="headerlink" title="提醒：一定要清除浏览器缓存才能见到效果。"></a>提醒：一定要清除浏览器缓存才能见到效果。</h4>]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>技术分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>简单拼接-图片拼图神器</title>
+    <url>/post/9ff81b4c.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>工作中经常用到需要把图片拼接后上传任务，手机端和图库可以很好地完成任务，但电脑端一直没有好用的工具，于是就写了一个适合自己使用的，需要的可以下载使用。</p>
+<span id="more"></span>
+<h3 id="软件说明"><a href="#软件说明" class="headerlink" title="软件说明"></a>软件说明</h3><p>就是简单地将多个图片拼接成一个图片，支持横向和纵向拼接，设置图片间的距离。<br>1、点击“添加图片”，自动拼图，然后保存拼图就可以了。</p>
+<p><img src="https://attach.52pojie.cn/forum/202207/01/105350zy0dlkl6000z8o7y.gif" alt="请输入图片描述"></p>
+<p>2、直接拖动图片到软件界面，会自动拼图，然后保存就行了。</p>
+<p>3、命令行拼图，拖动图片到软件图标会自动合并生成图片。</p>
+<p><img src="https://attach.52pojie.cn/forum/202207/01/105442vl7w1immbj4q7mmq.gif" alt="请输入图片描述"></p>
+<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>关于说拼接后图片质量变差的说明<br>本程序拼图时的原则之一就以小图片的分辨率为基准。因为我工作时拼图的对象大部分是手机截图，图片大小差别不大。如果你把一个1080P的图片和一个32*32图片进行拼接，那么拼后的图片高就是32像素或者宽就是32像素，这样的图片肯定没法看，所以就有人说图片质量差，原因就在这里。这不是问题，而是原则上就是这样，请大家谨记这一原则。</p>
+<h4 id="PicMerger-1-22-10-7"><a href="#PicMerger-1-22-10-7" class="headerlink" title="PicMerger-1.22.10.7"></a>PicMerger-1.22.10.7</h4><p>1、修复清空列表的菜单右键点击时不出现的问题，并添加了一个清空按钮。<br>2、右上角添加了打印图片按钮，并将打印临时图片移到了系统临时目录。<br>3、添加了保存为BMP格式，方便老式编程工具合并图片。</p>
+<h4 id="PicMerger-1-22-9-24"><a href="#PicMerger-1-22-9-24" class="headerlink" title="PicMerger-1.22.9.24"></a>PicMerger-1.22.9.24</h4><p>1、添加拖动列表中图片进行调整顺序的功能。<br>2、修复有图片间隔时最后留有空白的问题。<br><img src="https://attach.52pojie.cn/forum/202209/24/180347gv9di5d1oaivmd9u.gif" alt="请输入图片描述"></p>
+<h4 id="PicMerger-1-22-8-3"><a href="#PicMerger-1-22-8-3" class="headerlink" title="PicMerger-1.22.8.3"></a>PicMerger-1.22.8.3</h4><p>1、添加点击图片直接打印的功能。<br>2、优化图片列表删除逻辑。<br>3、固定了命令行合并生成的图片名为”MergedIMG.jpg”，方便命令行配合其它脚本批量操作。</p>
+<h4 id="PicMerger-1-22-7-5"><a href="#PicMerger-1-22-7-5" class="headerlink" title="PicMerger-1.22.7.5"></a>PicMerger-1.22.7.5</h4><p>1、PNG图片输出支持背景透明。<br>2、图片大小超出最大限制时会弹出错误提醒（猜测值为65535*65535）。</p>
+<h4 id="PicMerger-1-22-7-2"><a href="#PicMerger-1-22-7-2" class="headerlink" title="PicMerger-1.22.7.2"></a>PicMerger-1.22.7.2</h4><p>1、添加了清空图片列表的右键菜单。<br>2、添加了图片输出质量控制。<br>3、添加了PNG图片格式输出。<br>4、添加了配置自动保存和导入功能。<br>5、命令行拼图采用最后一次关闭窗口时的配置，纵横可配置。<br>6、纵横选项切换时，会自动重新合并。<br>7、优化了绘图逻辑，增强了程序的稳定性，缩小了程序大小。</p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>免费下载：<a href="https://yulinsoft.lanzoul.com/b00vtqffc">https://yulinsoft.lanzoul.com/b00vtqffc</a><br>密码:epqu</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>虚拟证件制作，助力疫情防控</title>
+    <url>/post/2cf6d61f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="一、-制作初衷"><a href="#一、-制作初衷" class="headerlink" title="一、 制作初衷"></a>一、 制作初衷</h3><p>疫情当下，核酸检测已成常态化，学校在进行核酸检测时，需要扫描身份证进行信息录入，但很多小学生没有办理身份证，虽然可以用家长的身份证，但查询结果不太方便，很多时候都要拿着户口本手动输入，这大大降低了检测速度。基于提高录入速度，降低采集人员和学生家长的负担，特制作了本软件。</p>
+<span id="more"></span>
+<p><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1610054468.jpeg" alt="软件界面2.jpeg"></p>
+<h3 id="二、使用说明"><a href="#二、使用说明" class="headerlink" title="二、使用说明"></a>二、使用说明</h3><p>本软件是绿色软件，下载后直接解压就可以使用了。软件操作简单，打开后对照户口本输入孩子的信息，点击生成图片，就会在软件目录下生成以孩子名字为文件名的高清图片。拿到这个图片后，调整大小，注意按比例缩放，不要失真，打印出来，过塑或装在卡片夹里，孩子做核酸时带着就行了。既避免了身份证、户口本的丢失，也减少了信息泄露。<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1521411666.gif" alt="使用说明.gif"></p>
+<h3 id="三、特别声明"><a href="#三、特别声明" class="headerlink" title="三、特别声明"></a>三、特别声明</h3><p>本软件是公益软件，制作的虚拟证件，仅用于帮助无身份证的孩子快速完成核酸信息采集，助力疫情防控，不得用于非法用途。以此非法牟利的，作者将保留追究其法律责任，特此声明！！！<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/2217907488.jpg" alt="李小跳.jpg"></p>
+<h3 id="四、下载地址"><a href="#四、下载地址" class="headerlink" title="四、下载地址"></a>四、下载地址</h3><p><a href="https://yulinsoft.lanzoul.com/b00vp8zlg">https://yulinsoft.lanzoul.com/b00vp8zlg</a><br>密码:1111</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>个人软件</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>自动电脑锁</title>
+    <url>/post/311d4ccd.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>##需求说明<br>由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。</p>
+<span id="more"></span>
+<p>##运行原理<br>就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件夹中，程序在系统启动登陆后锁定电脑。</p>
+<p><img src="https://attach.52pojie.cn/forum/202109/15/112745dixj6xjh4zkizah6.png" alt="请输入图片描述"></p>
+<p>后来发现，也可以不用程序直接调用这个API。代码如下：</p>
+<pre><code>C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
+</code></pre>
+<p>创建一个批处理文件或创建一个快捷方式放启动文件夹也行。编译出来了就发给大家吧！<br>使用方法<br>打开启动文件夹<br>WIN+R  输入shell:startup回车会打开启动文件夹，把文件或快捷方式粘贴进去就行了。然后设置系统自动登陆就可以了，具体设置百度很多，我就不说了。</p>
+<p>##本地下载：<br><a href="https://www.52pojie.cn/thread-1513192-1-1.html">https://www.52pojie.cn/thread-1513192-1-1.html</a></p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>随机音乐播放器</title>
+    <url>/post/3888254d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>##前言<br>前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。</p>
+<span id="more"></span>
+<p>##软件特色<br>简洁小巧，功能很简单，就是打开后联网播放网易云的随机音乐，有一个显示专辑封面的小窗口，可以隐藏，点击后会切换下一首。<br>任务栏有小图标，单击图标换歌，双击图标隐藏或显示窗口。<br>有需要的可以下载。无需各种框架，delphi开发，完全绿色。</p>
+<p>##更新日志：<br>版本：1.0.8.25<br>新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。<br>版本：1.0.8.11<br>1、新增了暂停控制（点击滚动的歌名或右键菜单）。<br><img src="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png" alt="请输入图片描述"></p>
+<p>2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。<br>3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。<br>版本：1.0.8.8<br>1、修复了滚动歌名概率性消失的bug。<br>2、新增了选择榜单功能。<br>3、更换了软件图标。<br><img src="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png" alt="请输入图片描述"><br>##下载地址</p>
+<p>下载地址：</p>
+<p>白嫖地址：<br><a href="https://yulinsoft.lanzoui.com/b00uqjc0d">https://yulinsoft.lanzoui.com/b00uqjc0d</a>   密码：1111</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>简单倒计时</title>
+    <url>/post/43b57a0.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>软件简介<br>工作中有时会用到倒计时显示，看了一些软件都不够满意，于是就自己写了一个，这样定制性更强，自己可以随时修改，满足自己的需求。界面如下图：</p>
+<span id="more"></span>
+<p><img src="https://attach.52pojie.cn/forum/202109/05/111039zxsdydvdvqspozs3.png" alt="请输入图片描述"><br>功能介绍<br>主要功能看设置界面。</p>
+<p><img src="https://attach.52pojie.cn/forum/202109/05/111119chp3gchyhoch2ow2.png" alt="请输入图片描述"><br>1、双击画面自动全屏，全屏界面双击或按ESC退出全屏。<br>2、支持命令行传递一个数字(这个数字代表分钟)，可用于PPT中调用显示指定时长的倒计时。<br>3、有简单的开始和结束音效，最后10秒有提示音效。可以在设置中关闭。<br>4、设置参数保存功能，可以自定义背景和字体颜色，满足你的色。<br>5、全屏隐藏工具栏时，请用回车键控制开始和暂停计时。<br>6、基本就这些，其它自己摸索吧！</p>
+<p><img src="https://attach.52pojie.cn/forum/202109/05/111142rn9wjjxtgtjj3n4j.gif" alt="请输入图片描述"><br>软件下载</p>
+<p>免费下载：<a href="https://yulinsoft.lanzoui.com/iVm0Gtmmnef">https://yulinsoft.lanzoui.com/iVm0Gtmmnef</a>  密码:1111</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>CloudDrive控制器</title>
     <url>/post/a4516257.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p><a href="https://kudoushinichi.lanzoui.com/i9SXKsc88de">阿里云盘变本地硬盘CloudDrive</a>是一个好工具，它可以把你的阿里云盘和天翼云盘的内容映射到本地盘符，方便的使用。</p>
@@ -20,137 +191,19 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo博客迁移到其他电脑</title>
-    <url>/post/db4d493d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="安装必要的软件"><a href="#安装必要的软件" class="headerlink" title="安装必要的软件"></a>安装必要的软件</h4><ol>
-<li>下载安装Git客户端</li>
-<li>安装node js</li>
-</ol>
-<h4 id="恢复ssh配置"><a href="#恢复ssh配置" class="headerlink" title="恢复ssh配置"></a>恢复ssh配置</h4><p>回到你的git bash中</p>
-<h5 id="配置git用户名"><a href="#配置git用户名" class="headerlink" title="配置git用户名"></a>配置git用户名</h5><p><code>$ git config --global user.name &quot;yourname&quot;</code><br><code>$ git config --global user.email &quot;youremail&quot;</code></p>
-<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+    <title>历史上的今天-精装版</title>
+    <url>/post/321cf7da.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>昨天看到52上发的“历史上的今天”程序，作者讲述了从爬取数据到开发程序的过程，于是下载试了试，发现无论从日历选择任何日期，显示的都是当日的数据，这个bug已经回帖反馈了。而且作者也说接口都是临时的，过几天可能就失效了。我就想着干脆自己也做一个本地数据的程序，就不存在失效的问题了。说干就干，本想着直接从他的接口爬取数据，但看到他的数据也连的百度百科，就分析了一下百度百科，直接从百度百科下载到了数据，全部数据5M多，这个数据我会提供分享，有需要的可以下载。</p>
 <span id="more"></span>
-<p>你可以用以下两条，检查一下你有没有输对</p>
-<p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
-<h5 id="恢复ssh密钥"><a href="#恢复ssh密钥" class="headerlink" title="恢复ssh密钥"></a>恢复ssh密钥</h5><p>将原电脑备份的.ssh文件夹复制到当前用户目录下，一般为“C:\Users\用户名”下。<br>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
-<p>继续回到你的git bash中，<br>输入</p>
-<p><code>$ cd ~/.ssh</code></p>
-<p>检查是否由.ssh的文件夹</p>
-<p>输入ls，列出该文件下的内容。下图说明存在</p>
-<p><img src="/%5Cimg%5C1.png"></p>
-<p>输入</p>
-<p><code>$ eval &quot;$(ssh-agent -s)&quot;</code></p>
-<p>添加密钥到ssh-agent</p>
-<p>再输入</p>
-<p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
-<p>添加生成的SSH key到ssh-agent</p>
-<p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
-<p>输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
-<h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
-<p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
-<p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
-<p>接下来正常操作<br>在github上添加公钥public-key:<br>1、首先在你的终端运行 xclip -sel c ~&#x2F;.ssh&#x2F;id_rsa.pub将公钥内容复制到剪切板<br>2、在github上添加公钥时，直接复制即可<br>3、保存<br>在终端 </p>
-<p><code>$ ssh -T git@github.com</code></p>
-<p>如果看到Hi后面是你的用户名，就说明成功了。</p>
-<h4 id="备份原文件"><a href="#备份原文件" class="headerlink" title="备份原文件"></a>备份原文件</h4><p>打开原电脑的hexo文件夹，将以下文件备份。</p>
-<h5 id="需要转移的文件"><a href="#需要转移的文件" class="headerlink" title="需要转移的文件"></a>需要转移的文件</h5><blockquote>
-<p><strong>文件(夹)	         说明</strong><br>scaffolds&#x2F;	     博客文章模板<br>source&#x2F;	         所有的博客文章<br>themes&#x2F;	        网站主题<br>.gitignore	      push时需忽略的文件<br>_config.yml	   站点配置文件<br>package.json    依赖包的名称和版本号</p>
-</blockquote>
-<p>由于配置文件和主题文件需要经常更改，采用github创建博客分支的方式进行备份。</p>
-<h5 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h5><p>克隆github上上生成的静态文件到hexo文件夹中</p>
-<p>git clone <a href="https://github.com/yourname/xxxx.github.io.git">https://github.com/yourname/xxxx.github.io.git</a> hexo<br>克隆后将除.git文件外其他所有文件删除。主要是为了得到版本管理文件夹.git。</p>
-<p>.git文件为隐藏文件，可直接将可见文件全部删除</p>
-<p>将备份的原文件复制到此文件夹。若文件夹是从github克隆，则需要删除主题文件中的版本控制文件夹,以next主题为例：</p>
-<p><code>$ rm -rf thems/next/.git*</code><br>创建名为hexo的分支</p>
-<p><code>$ git checkout -b hexo</code><br>保存所有文件到暂存区</p>
-<p><code>$ git add --all</code></p>
-<h5 id="提交变更"><a href="#提交变更" class="headerlink" title="提交变更"></a>提交变更</h5><p><code>$ git commit -m &quot;hexo-2&quot;</code><br>提交变更时报错：</p>
-<p>根据提示配置。</p>
-<p>推送分支到github,并用–set-upstream与origin创建关联将</p>
-<p><code>$ git push --set-upstream origin hexo</code></p>
-<p>hexo设置为默认分支。</p>
-<h4 id="迁移到新电脑"><a href="#迁移到新电脑" class="headerlink" title="迁移到新电脑"></a>迁移到新电脑</h4><p>以后在其他电脑上写博客，直接将分支克隆下来。再使用npm install安装依赖。</p>
-<p><code>$ git clone -b hexo https://github.com/yourname/xxx.github.io.git myblog</code></p>
-<p><code>$ cd myblog</code></p>
-<p><code>$ npm install</code></p>
-<p>执行以上命令完成基础环境安装。</p>
-<h4 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h4><p>基础环境安装完成后，可以进行创建文章的测试。</p>
-<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><code>$ hexo n &quot;xxx&quot;</code></p>
-<p>注意：需要使用git push把源文件推到分支上</p>
-<p><code>$ git add .</code><br><code>$ git commit -m &quot;xxxx&quot;</code><br><code>$ git push origin hexo</code></p>
-<h5 id="部署文章"><a href="#部署文章" class="headerlink" title="部署文章"></a>部署文章</h5><p><code>$ hexo d -g</code></p>
-<h5 id="发布失败"><a href="#发布失败" class="headerlink" title="发布失败"></a>发布失败</h5><p>如果发布失败，可以安装最新版的putty，然后删除环境变量中的所有带ssh的变量后，重新打开git bash发布。</p>
-]]></content>
+<p><img src="https://attach.52pojie.cn/forum/202108/08/205109z01ujz1z1n77jjxy.png" alt="主界面"></p>
+<h3 id="开发过程"><a href="#开发过程" class="headerlink" title="开发过程"></a>开发过程</h3><p>由于下载的数据是json格式，初步设计是直接解析使用，考虑到程序的绿色，于是把数据以资源形式嵌入到exe中，程序运行时按需读取解析，方便快捷。分析数据发现，每条数据的标题和详情中，都含有A标签，放入列表时要把A标签的相关内容去掉，于是用到了正则表达式。显示数据时要不要把A标签用上呢？前几天编程时用到了delphi的新控件LinkLabel，它是可以解析A标签的，那不正好用在这里吗？每天的主题图片取自百度百科，所有的关键字链接也出自百度，方便大家学习。经过昨天晚上和今天下午的努力，克服了重重困难，我的程序终于完成了。</p>
+<h3 id="程序特色"><a href="#程序特色" class="headerlink" title="程序特色"></a>程序特色</h3><h5 id="1、数据取自百度百科，全面，权威。"><a href="#1、数据取自百度百科，全面，权威。" class="headerlink" title="1、数据取自百度百科，全面，权威。"></a>1、数据取自百度百科，全面，权威。</h5><h5 id="2、本地化数据，除图片取自百度，无网也能查看。"><a href="#2、本地化数据，除图片取自百度，无网也能查看。" class="headerlink" title="2、本地化数据，除图片取自百度，无网也能查看。"></a>2、本地化数据，除图片取自百度，无网也能查看。</h5><h5 id="3、界面优化处理，布局更加合理，无图时不留空位。"><a href="#3、界面优化处理，布局更加合理，无图时不留空位。" class="headerlink" title="3、界面优化处理，布局更加合理，无图时不留空位。"></a>3、界面优化处理，布局更加合理，无图时不留空位。</h5><h5 id="4、程序经过压缩，运行绿色稳定。"><a href="#4、程序经过压缩，运行绿色稳定。" class="headerlink" title="4、程序经过压缩，运行绿色稳定。"></a>4、程序经过压缩，运行绿色稳定。</h5><p><img src="https://attach.52pojie.cn/forum/202108/08/205111lh5cwjqk9eh5kj5g.png" alt="无图界面"></p>
+<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><h5 id="蓝奏链接：https-yulinsoft-lanzoui-com-b00uqkvmf-密码-1111"><a href="#蓝奏链接：https-yulinsoft-lanzoui-com-b00uqkvmf-密码-1111" class="headerlink" title="蓝奏链接：https://yulinsoft.lanzoui.com/b00uqkvmf   密码:1111"></a>蓝奏链接：<a href="https://yulinsoft.lanzoui.com/b00uqkvmf">https://yulinsoft.lanzoui.com/b00uqkvmf</a>   密码:1111</h5>]]></content>
       <categories>
         <category>默认分类</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Padavan 编译教程</title>
-    <url>/post/4a10dd00.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="配置编译环境"><a href="#配置编译环境" class="headerlink" title="配置编译环境"></a>配置编译环境</h4><p>安装虚拟机<br>安装Ubuntu 16.04LTS</p>
-<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install git</span><br></pre></td></tr></table></figure>
-<p>转到 &#x2F;opt目录，并且用命令克隆Padavan仓库</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git <span class="built_in">clone</span> https://bitbucket.org/padavan/rt-n56u.git</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>安装编译固件所需要的工具</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install autoconf automake bison build-essential flex gawk gettext gperf libtool pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev texinfo python-docutils mc</span><br></pre></td></tr></table></figure>
-<p>编译一个交叉编译的工具链</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
-<p>编译3.0内核的固件<br>如果你需要编译3.0内核的固件就需要执行下面的步骤，默认支持3.4内核</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain_3.0.x</span><br></pre></td></tr></table></figure>
-<p>编译好后的工具链会放在 &#x2F;opt&#x2F;rt-n56u&#x2F;toolchain-mipsel&#x2F;toolchain-3.0.x<br>以后在更新或者升级工具链的情况下才需要执行以上步骤。<br>机型适配（newifi mini）<br>进行入固件源码目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/trunk</span><br></pre></td></tr></table></figure>
-<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><p>删除默认的配置文件 opt&#x2F;rt-n56u&#x2F;trunk下的.config文件，默认是隐藏的，可以使用Ctrl+H显示与隐藏配置文件，或者用以下命令进行删除</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">rm</span> -f opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
-<p>从opt&#x2F;rt-n56u&#x2F;trunk&#x2F;configs&#x2F;templates里拷贝出 ac54u_base.config到 opt&#x2F;rt-n56u&#x2F;trunk下并重命名成.config，或者用以下命令进行操作</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">cp</span> opt/rt-n56u/trunk/configs/templates/ac54_base.config  /opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
-<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>由于修改后默认的.config配置文件里文档写的很详细，就不多解释，根据自己需要开启与关闭需要与不需要的功能，#这个符号默认是注释代码，也就是关闭某个功能，反之去掉就是开启（可以把文档内容拷出来到翻译里翻译一遍，可以很清楚的看到每个功能是干什么用的）</p>
-<h4 id="适配灯与复位键"><a href="#适配灯与复位键" class="headerlink" title="适配灯与复位键"></a>适配灯与复位键</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;board.h</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* ASUS RT-AC54U */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_PID        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NAME        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_DESC        <span class="string">&quot;ASUS RT-AC54U Wireless Router&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_NAME    <span class="string">&quot;ASUSTek Computer Inc.&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_URL    <span class="string">&quot;http://www.asus.com/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_MODEL_URL        <span class="string">&quot;http://www.asus.com/Networking/RTAC54U/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_BOOT_TIME        25</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_FLASH_TIME    120</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_RESET</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_BTN_WPS    11</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_WLTOG</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ALL</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WIFI    72</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_SW2G</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_SW5G    50</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_POWER    9</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_LAN    55</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WAN    51</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_USB    52</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ROUTER</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_PWR_USB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_5G_11AC    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ETH_LEDS    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_L1000    0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_W1000    0</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
-<h4 id="调用原厂无线参数"><a href="#调用原厂无线参数" class="headerlink" title="调用原厂无线参数"></a>调用原厂无线参数</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config查找修改成以下代码，并删除目录下SingleSKU开头的文件。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RT_SINGLE_SKU=n</span><br><span class="line">CONFIG_RT2860V2_AP_GREENAP=y</span><br><span class="line">CONFIG_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_MT76X2_AP_GREENAP=y</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_RALINK_UART_BRATE=<span class="number">57600</span></span><br></pre></td></tr></table></figure>
-<h4 id="适配WAN口与LAN口"><a href="#适配WAN口与LAN口" class="headerlink" title="适配WAN口与LAN口"></a>适配WAN口与LAN口</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RAETH_ESW_PORT_WAN=<span class="number">4</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN1=<span class="number">1</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN2=<span class="number">0</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN3=<span class="number">3</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN4=<span class="number">2</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
-<h4 id="开启外置PA-amp-LAN支持"><a href="#开启外置PA-amp-LAN支持" class="headerlink" title="开启外置PA&amp;LAN支持"></a>开启外置PA&amp;LAN支持</h4><p>在  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config里删除# CONFIG_EXTERNAL_PA_EXTERNAL_LNA is not set 这一行代码，并加入下面的代码</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br></pre></td></tr></table></figure>
-<h4 id="扩展内存"><a href="#扩展内存" class="headerlink" title="扩展内存"></a>扩展内存</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config配置文件，以AC-54U为例，默认是64M，所以只需要将以下代码进行如下修改</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//没修改前是64M内存</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M=y</span><br><span class="line">CONFIG_RT2880_DRAM_128M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">64</span></span><br><span class="line"><span class="comment">//修改成128M</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_128M=y</span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">128</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置时区"><a href="#设置时区" class="headerlink" title="设置时区"></a>设置时区</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.h</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_TIMEZONE        <span class="string">&quot;CST-8&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_NTP_SERVER0        <span class="string">&quot;ntp1.aliyun.com&quot;</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="关闭telnet开启ssh"><a href="#关闭telnet开启ssh" class="headerlink" title="关闭telnet开启ssh"></a>关闭telnet开启ssh</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.c</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&quot;telnetd&quot;</span>,<span class="string">&quot;0&quot;</span>&#125;.</span><br><span class="line">&#123;<span class="string">&quot;sshd_enable&quot;</span>,<span class="string">&quot;1&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h4><p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.header文件，找到LANG_EN&#x3D;English修改成以下</p>
-<blockquote>
-<p>LANG_EN&#x3D;简体中文</p>
-</blockquote>
-<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.footer文件，把里面内容翻译成中文（也可以从已经汉化的固件里提取&#x2F;www&#x2F;EN.dict文件，删除以下的内容，然后保存并重新命名成EN.footer；</p>
-<blockquote>
-<p>[Language type]<br>LANG_EN&#x3D;简体中文<br>LANG_RU&#x3D;English</p>
-</blockquote>
-<p>编辑trunk&#x2F;user&#x2F;www&#x2F;Makefile文件，找到echo “LANG_RU&#x3D;Pусский” &gt;$(ROMFS_DIR)&#x2F;www&#x2F;EN.header修改成以下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;LANG_RU=English&quot;</span> &gt;$(ROMFS_DIR)/www/EN.header</span><br></pre></td></tr></table></figure>
-<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;RU.dict文件，找到LANG_EN&#x3D;English修改成以下</p>
-<blockquote>
-<p>LANG_EN&#x3D;简体中文</p>
-</blockquote>
-<h4 id="生成固件"><a href="#生成固件" class="headerlink" title="生成固件"></a>生成固件</h4><p>清除源码树</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./clear_tree</span><br></pre></td></tr></table></figure>
-<p>开始编译生成固件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./build_firmware</span><br></pre></td></tr></table></figure>
-<p>编译完成后生成的固件在 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;images里面<br>更新源码<br>转到 &#x2F;opt目录，克隆最新源码</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
-<p>如果你对本地存仓库进行了更改，那么在更新源码的时候，你必须运行以下命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo git stash</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
-<p>如果更改了工具链，则必须重新构建它</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./clean_toolchain</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
-<p>以上的修改建议使用手工进行修改，如果直接使用文件进行覆盖的话很容易出错。而且一但编译出错的话需要花很多时间进行调整，所以还是自己一步步慢慢改吧。</p>
-]]></content>
-      <categories>
-        <category>Padavan</category>
-      </categories>
       <tags>
-        <tag>Padavan</tag>
+        <tag>个人软件</tag>
       </tags>
   </entry>
   <entry>
@@ -287,6 +340,132 @@
       </categories>
   </entry>
   <entry>
+    <title>斐讯N1刷armbian</title>
+    <url>/post/8a3a14b.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="一、系统降级并输入官改系统"><a href="#一、系统降级并输入官改系统" class="headerlink" title="一、系统降级并输入官改系统"></a>一、系统降级并输入官改系统</h3><p>　　降级过程此处参考学习原文链接：<a href="https://www.right.com.cn/forum/thread-336545-1-1.html">https://www.right.com.cn/forum/thread-336545-1-1.html</a>（如果你的版本小于等于2.19 则无需降级，切记第一次开机先不要联网，否则会自动升级）</p>
+<p>1.开启N1的adb调试功能：<br>将N1连显示器和鼠标，进入天天链界面后查看IP，版本号，如果版本号不高于2.19则可跳过降级步，否则无法线刷。四连击版本号，显示adb打开。</p>
+<span id="more"></span>
+
+<p>2.准备工作：</p>
+<ul>
+<li>①软件：<br>下载adb工具、USB burning tool、降版本用的3个低版本关键分区img文件（boot.img、bootloader.img、recovery.img ，已放到adb文件夹中）、将镜像写入U盘的工具（balenaEtcher、Win32DiskImager、USB image tool等之类的）、Armbian镜像等、SSL连接工具（如PUTTY，这样就不用将N1接显示器及鼠标键盘了）；</li>
+<li>②硬件：<br>好用的U盘一个（比较挑U盘，部分U盘引导armbian时进入不了U盘系统，会进入recovery界面）、双公头USB线一根、网线一根</li>
+</ul>
+<p>3.降级：</p>
+<ul>
+<li>①安装USB burning tool，安装时会提示安装驱动，必须安装；</li>
+<li>②在进行步骤1后，将电脑接入与N1同一网络下（下面均如此），CMD命令行环境进入adb安装目录，运行 adb connect N1的ip地址 ； 用双公头USB线将电脑和N1连接（N1端插到HDMI接口那个USB口上）；<ul>
+<li>③CMD环境中输入： adb<br>shell reboot fastboot,重启后N1进入fashtboot模式，此时电脑会提示有新硬件并自动安装（一般为：Android<br>Phone - Android ADB Interface），如果没有自动安装驱动，可能时USB线有问题；</li>
+<li>④CMD环境按CTRL+C，可以中止当前操作，输入fastboot devices -l ，正常情况下会显示N1的序列号；</li>
+<li>⑤将盒子对应的boot.img、bootloader.img、recovery.img放到adb文件夹内，分别执行fastboot<br>flash bootloader bootloader.img、 fastboot flash boot boot.img、<br>fastboot flash recovery recovery.img<br>命令，将低版本分区镜像刷入N1，等待三秒，断电，完成降级（降级后连接显示器后看版本号并不会变化，实际上已经降级了，恢复了线刷功能）。</li>
+</ul>
+</li>
+</ul>
+<p>4.刷入官改版本</p>
+<ul>
+<li>①用USB线连接N1和电脑，打开USB burning tool，准备好官改镜像文件（如N1_mod_by_webpad_v2.2_20180920.img）；</li>
+<li>②adb connect ip ，连接成功后，adb reboot update ，此时N1会重启，重启后USB burning tool节目显示连接成功后，文件→导入烧录包，导入后，去掉右边“擦除flash”和“擦除bootloader”选项前面的勾，点击开始，即开始进行录入，完成后拔线，停止烧录。</li>
+<li>③此时断电重启的话，则N1已经变成了官改版本。</li>
+</ul>
+<h3 id="二、刷入armbian系统"><a href="#二、刷入armbian系统" class="headerlink" title="二、刷入armbian系统"></a>二、刷入armbian系统</h3><p>二、刷入armbian系统<br>1.制作armbian启动U盘</p>
+<ul>
+<li>①使用USB image tool等之类的软件，将armbian镜像写入U盘（U盘中原文件全部会丢失，提前备份）：<br>这儿使用的是balenaEtcher，比较推荐</li>
+</ul>
+<p>官方下载：<a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a> （可能会比较慢）</p>
+<p>孤岛下载：<a href="http://cloud.feiji.work/s/46p6ns9y">http://cloud.feiji.work/s/46p6ns9y</a> （也可能很慢啦，但可以用工具下载！）</p>
+<p>这里使用的是Armbian_5.77_Aml-s905_Debian_stretch_default_5.0.2_20190318.img，写入后再插入会发现有2个磁盘，其中一个是以“BOOT”为卷标的，另一个在Windows环境下无法查看，提示需格式化，这里不要格式化。<br>1.下载地址：N1选择S905</p>
+<p>孤岛下载：<a href="http://cloud.feiji.work/s/49myr109">http://cloud.feiji.work/s/49myr109</a> (已经开启了X-Sendfile我自己测试下载速度有所提升)</p>
+<p>官方下载（速度较慢）：<a href="https://yadi.sk/d/pHxaRAs-tZiei">https://yadi.sk/d/pHxaRAs-tZiei</a></p>
+<ul>
+<li>②修改U盘文件：</li>
+</ul>
+<p>然后重新插拔一次硬盘，这时电脑上会多出一个分区“BOOT”</p>
+<p>进入到目录：&#x2F;boot&#x2F;dtb</p>
+<p>替换为恩山论坛大佬的dtb文件（注：我在写这篇文章的时候基于5.77版，这个版本的内核虽然已经很不错，但是空闲时负载较高，所以还是换为大佬的dtb）</p>
+<p>下载地址：<a href="http://cloud.feiji.work/s/ddd09jgp">http://cloud.feiji.work/s/ddd09jgp</a></p>
+<p>据说由于原镜像空闲时负载较高，要将BOOT盘下dtb\meson-gxl-s905d-phicomm-n1.dtb替换为恩山无线大佬的dtb文件，返回BOOT盘根目录，编辑文件：uEnv.in，</p>
+<p>替换第一行内容为： dtb_name&#x3D;&#x2F;dtb&#x2F;meson-gxl-s905d-phicomm-n1.dtb<br>据说如果不进行配置很可能出现无网络的情况。</p>
+<p>2.将armbian刷入N1</p>
+<ul>
+<li>①将写入后并改好的U盘插入N1靠近HDMI接口的U口，断电重启N1，如果U盘是天选之U盘，则N1会从U盘启动进入armbian系统（否则可能会进入安卓的recovery界面），此时可以N1接显示器和键盘，或者直接用putty连接（ip正常情况还是上面那个ip）。界面会提示输入登录账号，默认为root，密码是1234，注意，输入密码时不会有任何显示，输入后直接回车即可，如果正确则会进入root目录。首次登陆要求更改root密码，注意开始是要输入原密码的！同时需要创建一个新用户，随便创建一个即可，后面基本都是用root账号反正。<br>不建立新用户也OK</li>
+<li>②将armbian系统从U盘写入N1的emmc，保证以后无需U盘启动：输入 &#x2F;root&#x2F;install.sh 回车，运行完毕后，拔掉U盘，断电重启，N1可以自行进入armbian系统了。</li>
+</ul>
+<p>如果重启没有自动进入armbian，则可以尝试， 用adb connect 盒子IP 回车 然后 输入：adb shell reboot update 此时盒子会从U盘启动Linux。</p>
+<p><img src="https://i.loli.net/2019/05/31/5cf0c337bdde850737.png" alt="shh登入的画面"></p>
+<p><img src="https://i.loli.net/2019/05/31/5cf0c352992e760254.png" alt="安装了java环境，跑了两个springboot的程序，无压力"></p>
+<p>本博客的 hexo环境 也在这armbian上，通过git部署到vps</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Hexo博客迁移到其他电脑</title>
+    <url>/post/db4d493d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="安装必要的软件"><a href="#安装必要的软件" class="headerlink" title="安装必要的软件"></a>安装必要的软件</h4><ol>
+<li>下载安装Git客户端</li>
+<li>安装node js</li>
+</ol>
+<h4 id="恢复ssh配置"><a href="#恢复ssh配置" class="headerlink" title="恢复ssh配置"></a>恢复ssh配置</h4><p>回到你的git bash中</p>
+<h5 id="配置git用户名"><a href="#配置git用户名" class="headerlink" title="配置git用户名"></a>配置git用户名</h5><p><code>$ git config --global user.name &quot;yourname&quot;</code><br><code>$ git config --global user.email &quot;youremail&quot;</code></p>
+<p>这里的yourname输入你的GitHub用户名，youremail输入你GitHub的邮箱。这样GitHub才能知道你是不是对应它的账户。</p>
+<span id="more"></span>
+<p>你可以用以下两条，检查一下你有没有输对</p>
+<p><code>$ git config user.name</code><br><code>$ git config user.email</code></p>
+<h5 id="恢复ssh密钥"><a href="#恢复ssh密钥" class="headerlink" title="恢复ssh密钥"></a>恢复ssh密钥</h5><p>将原电脑备份的.ssh文件夹复制到当前用户目录下，一般为“C:\Users\用户名”下。<br>ssh，简单来讲，就是一个秘钥，其中，id_rsa是你这台电脑的私人秘钥，不能给别人看的，id_rsa.pub是公共秘钥，可以随便给别人看。把这个公钥放在GitHub上，这样当你链接GitHub自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到GitHub上。</p>
+<p>继续回到你的git bash中，<br>输入</p>
+<p><code>$ cd ~/.ssh</code></p>
+<p>检查是否由.ssh的文件夹</p>
+<p>输入ls，列出该文件下的内容。下图说明存在</p>
+<p><img src="/%5Cimg%5C1.png"></p>
+<p>输入</p>
+<p><code>$ eval &quot;$(ssh-agent -s)&quot;</code></p>
+<p>添加密钥到ssh-agent</p>
+<p>再输入</p>
+<p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
+<p>添加生成的SSH key到ssh-agent</p>
+<p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
+<p>输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
+<h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
+<p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
+<p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
+<p>接下来正常操作<br>在github上添加公钥public-key:<br>1、首先在你的终端运行 xclip -sel c ~&#x2F;.ssh&#x2F;id_rsa.pub将公钥内容复制到剪切板<br>2、在github上添加公钥时，直接复制即可<br>3、保存<br>在终端 </p>
+<p><code>$ ssh -T git@github.com</code></p>
+<p>如果看到Hi后面是你的用户名，就说明成功了。</p>
+<h4 id="备份原文件"><a href="#备份原文件" class="headerlink" title="备份原文件"></a>备份原文件</h4><p>打开原电脑的hexo文件夹，将以下文件备份。</p>
+<h5 id="需要转移的文件"><a href="#需要转移的文件" class="headerlink" title="需要转移的文件"></a>需要转移的文件</h5><blockquote>
+<p><strong>文件(夹)	         说明</strong><br>scaffolds&#x2F;	     博客文章模板<br>source&#x2F;	         所有的博客文章<br>themes&#x2F;	        网站主题<br>.gitignore	      push时需忽略的文件<br>_config.yml	   站点配置文件<br>package.json    依赖包的名称和版本号</p>
+</blockquote>
+<p>由于配置文件和主题文件需要经常更改，采用github创建博客分支的方式进行备份。</p>
+<h5 id="创建分支"><a href="#创建分支" class="headerlink" title="创建分支"></a>创建分支</h5><p>克隆github上上生成的静态文件到hexo文件夹中</p>
+<p>git clone <a href="https://github.com/yourname/xxxx.github.io.git">https://github.com/yourname/xxxx.github.io.git</a> hexo<br>克隆后将除.git文件外其他所有文件删除。主要是为了得到版本管理文件夹.git。</p>
+<p>.git文件为隐藏文件，可直接将可见文件全部删除</p>
+<p>将备份的原文件复制到此文件夹。若文件夹是从github克隆，则需要删除主题文件中的版本控制文件夹,以next主题为例：</p>
+<p><code>$ rm -rf thems/next/.git*</code><br>创建名为hexo的分支</p>
+<p><code>$ git checkout -b hexo</code><br>保存所有文件到暂存区</p>
+<p><code>$ git add --all</code></p>
+<h5 id="提交变更"><a href="#提交变更" class="headerlink" title="提交变更"></a>提交变更</h5><p><code>$ git commit -m &quot;hexo-2&quot;</code><br>提交变更时报错：</p>
+<p>根据提示配置。</p>
+<p>推送分支到github,并用–set-upstream与origin创建关联将</p>
+<p><code>$ git push --set-upstream origin hexo</code></p>
+<p>hexo设置为默认分支。</p>
+<h4 id="迁移到新电脑"><a href="#迁移到新电脑" class="headerlink" title="迁移到新电脑"></a>迁移到新电脑</h4><p>以后在其他电脑上写博客，直接将分支克隆下来。再使用npm install安装依赖。</p>
+<p><code>$ git clone -b hexo https://github.com/yourname/xxx.github.io.git myblog</code></p>
+<p><code>$ cd myblog</code></p>
+<p><code>$ npm install</code></p>
+<p>执行以上命令完成基础环境安装。</p>
+<h4 id="发表文章"><a href="#发表文章" class="headerlink" title="发表文章"></a>发表文章</h4><p>基础环境安装完成后，可以进行创建文章的测试。</p>
+<h5 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h5><p><code>$ hexo n &quot;xxx&quot;</code></p>
+<p>注意：需要使用git push把源文件推到分支上</p>
+<p><code>$ git add .</code><br><code>$ git commit -m &quot;xxxx&quot;</code><br><code>$ git push origin hexo</code></p>
+<h5 id="部署文章"><a href="#部署文章" class="headerlink" title="部署文章"></a>部署文章</h5><p><code>$ hexo d -g</code></p>
+<h5 id="发布失败"><a href="#发布失败" class="headerlink" title="发布失败"></a>发布失败</h5><p>如果发布失败，可以安装最新版的putty，然后删除环境变量中的所有带ssh的变量后，重新打开git bash发布。</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Padavan 编译教程</title>
     <url>/post/4a10dd00.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="配置编译环境"><a href="#配置编译环境" class="headerlink" title="配置编译环境"></a>配置编译环境</h4><p>安装虚拟机<br>安装Ubuntu 16.04LTS</p>
@@ -352,22 +531,6 @@
       </categories>
   </entry>
   <entry>
-    <title>历史上的今天-精装版</title>
-    <url>/post/321cf7da.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>昨天看到52上发的“历史上的今天”程序，作者讲述了从爬取数据到开发程序的过程，于是下载试了试，发现无论从日历选择任何日期，显示的都是当日的数据，这个bug已经回帖反馈了。而且作者也说接口都是临时的，过几天可能就失效了。我就想着干脆自己也做一个本地数据的程序，就不存在失效的问题了。说干就干，本想着直接从他的接口爬取数据，但看到他的数据也连的百度百科，就分析了一下百度百科，直接从百度百科下载到了数据，全部数据5M多，这个数据我会提供分享，有需要的可以下载。</p>
-<span id="more"></span>
-<p><img src="https://attach.52pojie.cn/forum/202108/08/205109z01ujz1z1n77jjxy.png" alt="主界面"></p>
-<h3 id="开发过程"><a href="#开发过程" class="headerlink" title="开发过程"></a>开发过程</h3><p>由于下载的数据是json格式，初步设计是直接解析使用，考虑到程序的绿色，于是把数据以资源形式嵌入到exe中，程序运行时按需读取解析，方便快捷。分析数据发现，每条数据的标题和详情中，都含有A标签，放入列表时要把A标签的相关内容去掉，于是用到了正则表达式。显示数据时要不要把A标签用上呢？前几天编程时用到了delphi的新控件LinkLabel，它是可以解析A标签的，那不正好用在这里吗？每天的主题图片取自百度百科，所有的关键字链接也出自百度，方便大家学习。经过昨天晚上和今天下午的努力，克服了重重困难，我的程序终于完成了。</p>
-<h3 id="程序特色"><a href="#程序特色" class="headerlink" title="程序特色"></a>程序特色</h3><h5 id="1、数据取自百度百科，全面，权威。"><a href="#1、数据取自百度百科，全面，权威。" class="headerlink" title="1、数据取自百度百科，全面，权威。"></a>1、数据取自百度百科，全面，权威。</h5><h5 id="2、本地化数据，除图片取自百度，无网也能查看。"><a href="#2、本地化数据，除图片取自百度，无网也能查看。" class="headerlink" title="2、本地化数据，除图片取自百度，无网也能查看。"></a>2、本地化数据，除图片取自百度，无网也能查看。</h5><h5 id="3、界面优化处理，布局更加合理，无图时不留空位。"><a href="#3、界面优化处理，布局更加合理，无图时不留空位。" class="headerlink" title="3、界面优化处理，布局更加合理，无图时不留空位。"></a>3、界面优化处理，布局更加合理，无图时不留空位。</h5><h5 id="4、程序经过压缩，运行绿色稳定。"><a href="#4、程序经过压缩，运行绿色稳定。" class="headerlink" title="4、程序经过压缩，运行绿色稳定。"></a>4、程序经过压缩，运行绿色稳定。</h5><p><img src="https://attach.52pojie.cn/forum/202108/08/205111lh5cwjqk9eh5kj5g.png" alt="无图界面"></p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><h5 id="蓝奏链接：https-yulinsoft-lanzoui-com-b00uqkvmf-密码-1111"><a href="#蓝奏链接：https-yulinsoft-lanzoui-com-b00uqkvmf-密码-1111" class="headerlink" title="蓝奏链接：https://yulinsoft.lanzoui.com/b00uqkvmf   密码:1111"></a>蓝奏链接：<a href="https://yulinsoft.lanzoui.com/b00uqkvmf">https://yulinsoft.lanzoui.com/b00uqkvmf</a>   密码:1111</h5>]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-      <tags>
-        <tag>个人软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>如何编译自己需要的-OpenWrt-固件</title>
     <url>/post/e31ea127.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="注意："><a href="#注意：" class="headerlink" title="注意："></a>注意：</h3><ol>
@@ -399,234 +562,71 @@
       </categories>
   </entry>
   <entry>
-    <title>拼音助手2023最新版2.3.8.1</title>
-    <url>/post/52b6f658.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>拼音助手是一款用于Word和WPS的注音插件，具有能够一次性标注32000个汉字、运行速度快、智能中文词组识别、彩色拼音、拼音组合及多音字校对界面友好等诸多功能，尤为值得一提的是：它能够方便地为多音词注音，解决了拼音标注中的一大难题。它将为您的汉字拼音标注工作带来快乐。<br>本软件推荐用户使用于Windows10+Office 2016或WPS 2019平台，亦可运行于Office 2007以上和WPS 2013以上平台中，已全面支持64位平台。</p>
+    <title>Padavan 编译教程</title>
+    <url>/post/4a10dd00.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="配置编译环境"><a href="#配置编译环境" class="headerlink" title="配置编译环境"></a>配置编译环境</h4><p>安装虚拟机<br>安装Ubuntu 16.04LTS</p>
+<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install git</span><br></pre></td></tr></table></figure>
+<p>转到 &#x2F;opt目录，并且用命令克隆Padavan仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git <span class="built_in">clone</span> https://bitbucket.org/padavan/rt-n56u.git</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
-<p><a href="https://imgtu.com/i/vDpYo8"><img src="https://s1.ax1x.com/2022/08/17/vDpYo8.gif" alt="拼音助手演示"></a></p>
-<h2 id="一、功能描述"><a href="#一、功能描述" class="headerlink" title="一、功能描述"></a>一、功能描述</h2><p>1、摒弃了普通拼音标注软件以字取音从而导致“词组”中汉字出现多音字问题；<br>2、可以标注轻声词、多音词，解决了拼音标注中的一大难题。<br>3、拼音词库共收录汉字20902个，轻声及多音词词库参考拼音居士和拼音克星词库共收录1994个。<br>4、可以设置拼音的对齐方式，字体，字号和偏移量。拼音标注前，建议完成对文档的编排，以使字体接近最终文档要求。字体、字号和偏移量用户可以根据需要自己设定，建议先小试部分汉字。<br>5、自动记忆最近一次的用户对于拼音加注的设置。<br>6、随选定状态确定拼音标注范围。选定状态下，仅为所选内容标注拼音；非选定状态下，从光标处开始标注拼音。<br>7、友好的多音校对面板。<br>选定状态下，仅为所选内容进行多音校对；非选定状态下，从光标所在位置开始多音校对，可随时终止多音校对。<br>8、右键快速校对<br>8.1、右键校对可对全文任意汉字的拼音进行校对，只需将光标定位于汉字（拼音）之前或者选中该汉字（拼音）后右击即可。<br>8.2、右键菜单分为三组，第一组为当前汉字的一个或者多个拼音项；第二组为当前汉字注音（当前拼音）的轻声、轻声特别标注、儿化音和大小写切换（如果当前拼音为大写，则第二组的最后一项为小写，反之，则为大写）；第三组为用户自定义，和常用功能菜单，可任意修改当前汉字的注音。<br>8.3、当用户选择“儿”字右击时，最后第二个菜单项为删除“儿”字的拼音。<br>8.4、右键菜单建议在全文通读中使用。<br>9、两种颜色区分多音字，拼音助手采用红、绿两种颜色表示不同的拼音。红色表示多音字，绿色表示经过多音校对或者右键校对过的拼音。<br>10、去除拼音声调的功能。<br>11、去字留音，删除汉字而只保留拼音的功能（转为无格式文本）。适用于根据拼音写汉字的场合。<br>11.1、上下结构的去字留音，拼音仍位于汉字的上方，但汉字被设置为白色。左右结构的去字留音，拼音位于汉字的左侧，汉字被替换为指定的软空格数量。<br>11.2、可以指定11种括号样式（含无括号）。<br>12、去音留字，删除拼音还原汉字（转为无格式文本）</p>
-<h2 id="二、注意事项："><a href="#二、注意事项：" class="headerlink" title="二、注意事项："></a>二、注意事项：</h2><p>1、建议一次性标注的汉字数量不超过32000字。此受Word文档极限的约束。<br>2、中文间的空间可能会影响词组的识别和查询，建议用户在拼音标注之前删除不必要的空格。<br>3、拼音助手标注的拼音，受词库的影响。不保证所有拼音均是有效的或者正确的。　　</p>
-<h2 id="三、中文句首大写规则"><a href="#三、中文句首大写规则" class="headerlink" title="三、中文句首大写规则"></a>三、中文句首大写规则</h2><p>1、文章标题中开头的汉字；<br>2、段落开头的汉字；<br>3、句号、问号、感叹号、冒号后面的汉字；<br>4、冒号加前引号后边的汉字；<br>5、逗号加前引号后边的汉字；<br>6、省略号后边的汉字。</p>
-<h2 id="版本更新："><a href="#版本更新：" class="headerlink" title="版本更新："></a>版本更新：</h2><p>版本：V2.3.8.1</p>
-<ul>
-<li>修复彩色拼音部分汉字不能变色的问题。（感谢用户阿泽反馈）</li>
-<li>修复去字留音功能部分汉字不能去除的问题。（感谢用户yg6084120反馈）<br>版本：V2.2.11.26</li>
-<li>修复高分辨率缩放显示下右键菜单显示异常的问题。（感谢用户反馈）<br>版本：V2.2.11.24</li>
-<li>添加“一”、“不”变调到多音字库，方便多音校对。（感谢用户反馈）</li>
-<li>优化注音选项，注音窗口的字体和字号，只针对拼音，不改变原版的字体和字号。<br>版本：V2.2.8.29</li>
-<li>修复了Win7下的不兼容问题（win10用户可不用升级）。</li>
-</ul>
-<p>版本：V2.2.8.24<br>1、修复了文档中字号不是整数时可能出错的问题。<br>2、文档右键菜单中添加了汉字注音菜单，方便大家操作。<br>版本：V2.2.8.18<br>优化安装程序，修复WPS下安装失败的问题。<br>版本：V2.2.8.16<br>1、界面进行了适当调整，字体更清晰。<br>2、结合多个网络词典，更新了50多个生僻字读音。<br>3、加入软件注册机制，主要功能仍能免费使用。</p>
-<h2 id="软件下载："><a href="#软件下载：" class="headerlink" title="软件下载："></a>软件下载：</h2><p>下载地址：<a href="https://yulinsoft.lanzoul.com/b00vz97ng">https://yulinsoft.lanzoul.com/b00vz97ng</a> 密码:1111  </p>
-<h2 id="特别说明："><a href="#特别说明：" class="headerlink" title="特别说明："></a>特别说明：</h2><p>由于本软件被人在淘宝上随意卖钱，损害了作者利益，因此从本版本开始加入了注册机制。免费版只少了多音字标注和多音校对功能，你还可以使用右键手动校对，如果支持本软件的开发，请注册正式版。</p>
+<p>安装编译固件所需要的工具</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install autoconf automake bison build-essential flex gawk gettext gperf libtool pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev texinfo python-docutils mc</span><br></pre></td></tr></table></figure>
+<p>编译一个交叉编译的工具链</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
+<p>编译3.0内核的固件<br>如果你需要编译3.0内核的固件就需要执行下面的步骤，默认支持3.4内核</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain_3.0.x</span><br></pre></td></tr></table></figure>
+<p>编译好后的工具链会放在 &#x2F;opt&#x2F;rt-n56u&#x2F;toolchain-mipsel&#x2F;toolchain-3.0.x<br>以后在更新或者升级工具链的情况下才需要执行以上步骤。<br>机型适配（newifi mini）<br>进行入固件源码目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/trunk</span><br></pre></td></tr></table></figure>
+<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><p>删除默认的配置文件 opt&#x2F;rt-n56u&#x2F;trunk下的.config文件，默认是隐藏的，可以使用Ctrl+H显示与隐藏配置文件，或者用以下命令进行删除</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">rm</span> -f opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
+<p>从opt&#x2F;rt-n56u&#x2F;trunk&#x2F;configs&#x2F;templates里拷贝出 ac54u_base.config到 opt&#x2F;rt-n56u&#x2F;trunk下并重命名成.config，或者用以下命令进行操作</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">cp</span> opt/rt-n56u/trunk/configs/templates/ac54_base.config  /opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
+<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>由于修改后默认的.config配置文件里文档写的很详细，就不多解释，根据自己需要开启与关闭需要与不需要的功能，#这个符号默认是注释代码，也就是关闭某个功能，反之去掉就是开启（可以把文档内容拷出来到翻译里翻译一遍，可以很清楚的看到每个功能是干什么用的）</p>
+<h4 id="适配灯与复位键"><a href="#适配灯与复位键" class="headerlink" title="适配灯与复位键"></a>适配灯与复位键</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;board.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* ASUS RT-AC54U */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_PID        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NAME        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_DESC        <span class="string">&quot;ASUS RT-AC54U Wireless Router&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_NAME    <span class="string">&quot;ASUSTek Computer Inc.&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_URL    <span class="string">&quot;http://www.asus.com/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_MODEL_URL        <span class="string">&quot;http://www.asus.com/Networking/RTAC54U/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_BOOT_TIME        25</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_FLASH_TIME    120</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_RESET</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_BTN_WPS    11</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_WLTOG</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ALL</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WIFI    72</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_SW2G</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_SW5G    50</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_POWER    9</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_LAN    55</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WAN    51</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_USB    52</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ROUTER</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_PWR_USB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_5G_11AC    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ETH_LEDS    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_L1000    0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_W1000    0</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
+<h4 id="调用原厂无线参数"><a href="#调用原厂无线参数" class="headerlink" title="调用原厂无线参数"></a>调用原厂无线参数</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config查找修改成以下代码，并删除目录下SingleSKU开头的文件。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RT_SINGLE_SKU=n</span><br><span class="line">CONFIG_RT2860V2_AP_GREENAP=y</span><br><span class="line">CONFIG_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_MT76X2_AP_GREENAP=y</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_RALINK_UART_BRATE=<span class="number">57600</span></span><br></pre></td></tr></table></figure>
+<h4 id="适配WAN口与LAN口"><a href="#适配WAN口与LAN口" class="headerlink" title="适配WAN口与LAN口"></a>适配WAN口与LAN口</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RAETH_ESW_PORT_WAN=<span class="number">4</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN1=<span class="number">1</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN2=<span class="number">0</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN3=<span class="number">3</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN4=<span class="number">2</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
+<h4 id="开启外置PA-amp-LAN支持"><a href="#开启外置PA-amp-LAN支持" class="headerlink" title="开启外置PA&amp;LAN支持"></a>开启外置PA&amp;LAN支持</h4><p>在  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config里删除# CONFIG_EXTERNAL_PA_EXTERNAL_LNA is not set 这一行代码，并加入下面的代码</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br></pre></td></tr></table></figure>
+<h4 id="扩展内存"><a href="#扩展内存" class="headerlink" title="扩展内存"></a>扩展内存</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config配置文件，以AC-54U为例，默认是64M，所以只需要将以下代码进行如下修改</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//没修改前是64M内存</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M=y</span><br><span class="line">CONFIG_RT2880_DRAM_128M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">64</span></span><br><span class="line"><span class="comment">//修改成128M</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_128M=y</span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">128</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置时区"><a href="#设置时区" class="headerlink" title="设置时区"></a>设置时区</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_TIMEZONE        <span class="string">&quot;CST-8&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_NTP_SERVER0        <span class="string">&quot;ntp1.aliyun.com&quot;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="关闭telnet开启ssh"><a href="#关闭telnet开启ssh" class="headerlink" title="关闭telnet开启ssh"></a>关闭telnet开启ssh</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.c</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&quot;telnetd&quot;</span>,<span class="string">&quot;0&quot;</span>&#125;.</span><br><span class="line">&#123;<span class="string">&quot;sshd_enable&quot;</span>,<span class="string">&quot;1&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h4><p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.header文件，找到LANG_EN&#x3D;English修改成以下</p>
+<blockquote>
+<p>LANG_EN&#x3D;简体中文</p>
+</blockquote>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.footer文件，把里面内容翻译成中文（也可以从已经汉化的固件里提取&#x2F;www&#x2F;EN.dict文件，删除以下的内容，然后保存并重新命名成EN.footer；</p>
+<blockquote>
+<p>[Language type]<br>LANG_EN&#x3D;简体中文<br>LANG_RU&#x3D;English</p>
+</blockquote>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;Makefile文件，找到echo “LANG_RU&#x3D;Pусский” &gt;$(ROMFS_DIR)&#x2F;www&#x2F;EN.header修改成以下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;LANG_RU=English&quot;</span> &gt;$(ROMFS_DIR)/www/EN.header</span><br></pre></td></tr></table></figure>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;RU.dict文件，找到LANG_EN&#x3D;English修改成以下</p>
+<blockquote>
+<p>LANG_EN&#x3D;简体中文</p>
+</blockquote>
+<h4 id="生成固件"><a href="#生成固件" class="headerlink" title="生成固件"></a>生成固件</h4><p>清除源码树</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./clear_tree</span><br></pre></td></tr></table></figure>
+<p>开始编译生成固件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./build_firmware</span><br></pre></td></tr></table></figure>
+<p>编译完成后生成的固件在 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;images里面<br>更新源码<br>转到 &#x2F;opt目录，克隆最新源码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
+<p>如果你对本地存仓库进行了更改，那么在更新源码的时候，你必须运行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo git stash</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
+<p>如果更改了工具链，则必须重新构建它</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./clean_toolchain</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
+<p>以上的修改建议使用手工进行修改，如果直接使用文件进行覆盖的话很容易出错。而且一但编译出错的话需要花很多时间进行调整，所以还是自己一步步慢慢改吧。</p>
 ]]></content>
       <categories>
-        <category>默认分类</category>
+        <category>Padavan</category>
       </categories>
       <tags>
-        <tag>个人软件</tag>
+        <tag>Padavan</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>斐讯N1刷armbian</title>
-    <url>/post/8a3a14b.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="一、系统降级并输入官改系统"><a href="#一、系统降级并输入官改系统" class="headerlink" title="一、系统降级并输入官改系统"></a>一、系统降级并输入官改系统</h3><p>　　降级过程此处参考学习原文链接：<a href="https://www.right.com.cn/forum/thread-336545-1-1.html">https://www.right.com.cn/forum/thread-336545-1-1.html</a>（如果你的版本小于等于2.19 则无需降级，切记第一次开机先不要联网，否则会自动升级）</p>
-<p>1.开启N1的adb调试功能：<br>将N1连显示器和鼠标，进入天天链界面后查看IP，版本号，如果版本号不高于2.19则可跳过降级步，否则无法线刷。四连击版本号，显示adb打开。</p>
-<span id="more"></span>
-
-<p>2.准备工作：</p>
-<ul>
-<li>①软件：<br>下载adb工具、USB burning tool、降版本用的3个低版本关键分区img文件（boot.img、bootloader.img、recovery.img ，已放到adb文件夹中）、将镜像写入U盘的工具（balenaEtcher、Win32DiskImager、USB image tool等之类的）、Armbian镜像等、SSL连接工具（如PUTTY，这样就不用将N1接显示器及鼠标键盘了）；</li>
-<li>②硬件：<br>好用的U盘一个（比较挑U盘，部分U盘引导armbian时进入不了U盘系统，会进入recovery界面）、双公头USB线一根、网线一根</li>
-</ul>
-<p>3.降级：</p>
-<ul>
-<li>①安装USB burning tool，安装时会提示安装驱动，必须安装；</li>
-<li>②在进行步骤1后，将电脑接入与N1同一网络下（下面均如此），CMD命令行环境进入adb安装目录，运行 adb connect N1的ip地址 ； 用双公头USB线将电脑和N1连接（N1端插到HDMI接口那个USB口上）；<ul>
-<li>③CMD环境中输入： adb<br>shell reboot fastboot,重启后N1进入fashtboot模式，此时电脑会提示有新硬件并自动安装（一般为：Android<br>Phone - Android ADB Interface），如果没有自动安装驱动，可能时USB线有问题；</li>
-<li>④CMD环境按CTRL+C，可以中止当前操作，输入fastboot devices -l ，正常情况下会显示N1的序列号；</li>
-<li>⑤将盒子对应的boot.img、bootloader.img、recovery.img放到adb文件夹内，分别执行fastboot<br>flash bootloader bootloader.img、 fastboot flash boot boot.img、<br>fastboot flash recovery recovery.img<br>命令，将低版本分区镜像刷入N1，等待三秒，断电，完成降级（降级后连接显示器后看版本号并不会变化，实际上已经降级了，恢复了线刷功能）。</li>
-</ul>
-</li>
-</ul>
-<p>4.刷入官改版本</p>
-<ul>
-<li>①用USB线连接N1和电脑，打开USB burning tool，准备好官改镜像文件（如N1_mod_by_webpad_v2.2_20180920.img）；</li>
-<li>②adb connect ip ，连接成功后，adb reboot update ，此时N1会重启，重启后USB burning tool节目显示连接成功后，文件→导入烧录包，导入后，去掉右边“擦除flash”和“擦除bootloader”选项前面的勾，点击开始，即开始进行录入，完成后拔线，停止烧录。</li>
-<li>③此时断电重启的话，则N1已经变成了官改版本。</li>
-</ul>
-<h3 id="二、刷入armbian系统"><a href="#二、刷入armbian系统" class="headerlink" title="二、刷入armbian系统"></a>二、刷入armbian系统</h3><p>二、刷入armbian系统<br>1.制作armbian启动U盘</p>
-<ul>
-<li>①使用USB image tool等之类的软件，将armbian镜像写入U盘（U盘中原文件全部会丢失，提前备份）：<br>这儿使用的是balenaEtcher，比较推荐</li>
-</ul>
-<p>官方下载：<a href="https://www.balena.io/etcher/">https://www.balena.io/etcher/</a> （可能会比较慢）</p>
-<p>孤岛下载：<a href="http://cloud.feiji.work/s/46p6ns9y">http://cloud.feiji.work/s/46p6ns9y</a> （也可能很慢啦，但可以用工具下载！）</p>
-<p>这里使用的是Armbian_5.77_Aml-s905_Debian_stretch_default_5.0.2_20190318.img，写入后再插入会发现有2个磁盘，其中一个是以“BOOT”为卷标的，另一个在Windows环境下无法查看，提示需格式化，这里不要格式化。<br>1.下载地址：N1选择S905</p>
-<p>孤岛下载：<a href="http://cloud.feiji.work/s/49myr109">http://cloud.feiji.work/s/49myr109</a> (已经开启了X-Sendfile我自己测试下载速度有所提升)</p>
-<p>官方下载（速度较慢）：<a href="https://yadi.sk/d/pHxaRAs-tZiei">https://yadi.sk/d/pHxaRAs-tZiei</a></p>
-<ul>
-<li>②修改U盘文件：</li>
-</ul>
-<p>然后重新插拔一次硬盘，这时电脑上会多出一个分区“BOOT”</p>
-<p>进入到目录：&#x2F;boot&#x2F;dtb</p>
-<p>替换为恩山论坛大佬的dtb文件（注：我在写这篇文章的时候基于5.77版，这个版本的内核虽然已经很不错，但是空闲时负载较高，所以还是换为大佬的dtb）</p>
-<p>下载地址：<a href="http://cloud.feiji.work/s/ddd09jgp">http://cloud.feiji.work/s/ddd09jgp</a></p>
-<p>据说由于原镜像空闲时负载较高，要将BOOT盘下dtb\meson-gxl-s905d-phicomm-n1.dtb替换为恩山无线大佬的dtb文件，返回BOOT盘根目录，编辑文件：uEnv.in，</p>
-<p>替换第一行内容为： dtb_name&#x3D;&#x2F;dtb&#x2F;meson-gxl-s905d-phicomm-n1.dtb<br>据说如果不进行配置很可能出现无网络的情况。</p>
-<p>2.将armbian刷入N1</p>
-<ul>
-<li>①将写入后并改好的U盘插入N1靠近HDMI接口的U口，断电重启N1，如果U盘是天选之U盘，则N1会从U盘启动进入armbian系统（否则可能会进入安卓的recovery界面），此时可以N1接显示器和键盘，或者直接用putty连接（ip正常情况还是上面那个ip）。界面会提示输入登录账号，默认为root，密码是1234，注意，输入密码时不会有任何显示，输入后直接回车即可，如果正确则会进入root目录。首次登陆要求更改root密码，注意开始是要输入原密码的！同时需要创建一个新用户，随便创建一个即可，后面基本都是用root账号反正。<br>不建立新用户也OK</li>
-<li>②将armbian系统从U盘写入N1的emmc，保证以后无需U盘启动：输入 &#x2F;root&#x2F;install.sh 回车，运行完毕后，拔掉U盘，断电重启，N1可以自行进入armbian系统了。</li>
-</ul>
-<p>如果重启没有自动进入armbian，则可以尝试， 用adb connect 盒子IP 回车 然后 输入：adb shell reboot update 此时盒子会从U盘启动Linux。</p>
-<p><img src="https://i.loli.net/2019/05/31/5cf0c337bdde850737.png" alt="shh登入的画面"></p>
-<p><img src="https://i.loli.net/2019/05/31/5cf0c352992e760254.png" alt="安装了java环境，跑了两个springboot的程序，无压力"></p>
-<p>本博客的 hexo环境 也在这armbian上，通过git部署到vps</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>简单倒计时</title>
-    <url>/post/43b57a0.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>软件简介<br>工作中有时会用到倒计时显示，看了一些软件都不够满意，于是就自己写了一个，这样定制性更强，自己可以随时修改，满足自己的需求。界面如下图：</p>
-<span id="more"></span>
-<p><img src="https://attach.52pojie.cn/forum/202109/05/111039zxsdydvdvqspozs3.png" alt="请输入图片描述"><br>功能介绍<br>主要功能看设置界面。</p>
-<p><img src="https://attach.52pojie.cn/forum/202109/05/111119chp3gchyhoch2ow2.png" alt="请输入图片描述"><br>1、双击画面自动全屏，全屏界面双击或按ESC退出全屏。<br>2、支持命令行传递一个数字(这个数字代表分钟)，可用于PPT中调用显示指定时长的倒计时。<br>3、有简单的开始和结束音效，最后10秒有提示音效。可以在设置中关闭。<br>4、设置参数保存功能，可以自定义背景和字体颜色，满足你的色。<br>5、全屏隐藏工具栏时，请用回车键控制开始和暂停计时。<br>6、基本就这些，其它自己摸索吧！</p>
-<p><img src="https://attach.52pojie.cn/forum/202109/05/111142rn9wjjxtgtjj3n4j.gif" alt="请输入图片描述"><br>软件下载</p>
-<p>免费下载：<a href="https://yulinsoft.lanzoui.com/iVm0Gtmmnef">https://yulinsoft.lanzoui.com/iVm0Gtmmnef</a>  密码:1111</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>简单拼接-图片拼图神器</title>
-    <url>/post/9ff81b4c.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>工作中经常用到需要把图片拼接后上传任务，手机端和图库可以很好地完成任务，但电脑端一直没有好用的工具，于是就写了一个适合自己使用的，需要的可以下载使用。</p>
-<span id="more"></span>
-<h3 id="软件说明"><a href="#软件说明" class="headerlink" title="软件说明"></a>软件说明</h3><p>就是简单地将多个图片拼接成一个图片，支持横向和纵向拼接，设置图片间的距离。<br>1、点击“添加图片”，自动拼图，然后保存拼图就可以了。</p>
-<p><img src="https://attach.52pojie.cn/forum/202207/01/105350zy0dlkl6000z8o7y.gif" alt="请输入图片描述"></p>
-<p>2、直接拖动图片到软件界面，会自动拼图，然后保存就行了。</p>
-<p>3、命令行拼图，拖动图片到软件图标会自动合并生成图片。</p>
-<p><img src="https://attach.52pojie.cn/forum/202207/01/105442vl7w1immbj4q7mmq.gif" alt="请输入图片描述"></p>
-<h3 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h3><p>关于说拼接后图片质量变差的说明<br>本程序拼图时的原则之一就以小图片的分辨率为基准。因为我工作时拼图的对象大部分是手机截图，图片大小差别不大。如果你把一个1080P的图片和一个32*32图片进行拼接，那么拼后的图片高就是32像素或者宽就是32像素，这样的图片肯定没法看，所以就有人说图片质量差，原因就在这里。这不是问题，而是原则上就是这样，请大家谨记这一原则。</p>
-<h4 id="PicMerger-1-22-10-7"><a href="#PicMerger-1-22-10-7" class="headerlink" title="PicMerger-1.22.10.7"></a>PicMerger-1.22.10.7</h4><p>1、修复清空列表的菜单右键点击时不出现的问题，并添加了一个清空按钮。<br>2、右上角添加了打印图片按钮，并将打印临时图片移到了系统临时目录。<br>3、添加了保存为BMP格式，方便老式编程工具合并图片。</p>
-<h4 id="PicMerger-1-22-9-24"><a href="#PicMerger-1-22-9-24" class="headerlink" title="PicMerger-1.22.9.24"></a>PicMerger-1.22.9.24</h4><p>1、添加拖动列表中图片进行调整顺序的功能。<br>2、修复有图片间隔时最后留有空白的问题。<br><img src="https://attach.52pojie.cn/forum/202209/24/180347gv9di5d1oaivmd9u.gif" alt="请输入图片描述"></p>
-<h4 id="PicMerger-1-22-8-3"><a href="#PicMerger-1-22-8-3" class="headerlink" title="PicMerger-1.22.8.3"></a>PicMerger-1.22.8.3</h4><p>1、添加点击图片直接打印的功能。<br>2、优化图片列表删除逻辑。<br>3、固定了命令行合并生成的图片名为”MergedIMG.jpg”，方便命令行配合其它脚本批量操作。</p>
-<h4 id="PicMerger-1-22-7-5"><a href="#PicMerger-1-22-7-5" class="headerlink" title="PicMerger-1.22.7.5"></a>PicMerger-1.22.7.5</h4><p>1、PNG图片输出支持背景透明。<br>2、图片大小超出最大限制时会弹出错误提醒（猜测值为65535*65535）。</p>
-<h4 id="PicMerger-1-22-7-2"><a href="#PicMerger-1-22-7-2" class="headerlink" title="PicMerger-1.22.7.2"></a>PicMerger-1.22.7.2</h4><p>1、添加了清空图片列表的右键菜单。<br>2、添加了图片输出质量控制。<br>3、添加了PNG图片格式输出。<br>4、添加了配置自动保存和导入功能。<br>5、命令行拼图采用最后一次关闭窗口时的配置，纵横可配置。<br>6、纵横选项切换时，会自动重新合并。<br>7、优化了绘图逻辑，增强了程序的稳定性，缩小了程序大小。</p>
-<h3 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h3><p>免费下载：<a href="https://yulinsoft.lanzoul.com/b00vtqffc">https://yulinsoft.lanzoul.com/b00vtqffc</a><br>密码:epqu</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>自动电脑锁</title>
-    <url>/post/311d4ccd.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>##需求说明<br>由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。</p>
-<span id="more"></span>
-<p>##运行原理<br>就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件夹中，程序在系统启动登陆后锁定电脑。</p>
-<p><img src="https://attach.52pojie.cn/forum/202109/15/112745dixj6xjh4zkizah6.png" alt="请输入图片描述"></p>
-<p>后来发现，也可以不用程序直接调用这个API。代码如下：</p>
-<pre><code>C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
-</code></pre>
-<p>创建一个批处理文件或创建一个快捷方式放启动文件夹也行。编译出来了就发给大家吧！<br>使用方法<br>打开启动文件夹<br>WIN+R  输入shell:startup回车会打开启动文件夹，把文件或快捷方式粘贴进去就行了。然后设置系统自动登陆就可以了，具体设置百度很多，我就不说了。</p>
-<p>##本地下载：<br><a href="https://www.52pojie.cn/thread-1513192-1-1.html">https://www.52pojie.cn/thread-1513192-1-1.html</a></p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>解决Indy10发送邮件主题乱码的问题</title>
-    <url>/post/6f520309.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h3><p>最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。</p>
-<span id="more"></span>
-<p><img src="https://s1.ax1x.com/2022/11/19/zKV7Jx.jpg" alt="clip-27998453.jpg"><br>于是进行调试分析，终于找到了原因。</p>
-<h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>打开idmessage.pas源码，另存到项目根目录，定位到<code>procedure TIdMessage.GenerateHeader;</code><br>这个过程。<br>找到这一行：<br><code>  InitializeISO(HeaderEncoding, ISOCharSet);</code><br><img src="https://s1.ax1x.com/2022/11/19/zKZeTs.jpg" alt="clip-28499062.jpg"><br>在这一行下面添加：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&#123;$IFDEF ANDROID&#125;</span><br><span class="line">ISOCharSet:=&#x27;UTF-8&#x27;;</span><br><span class="line">HeaderEncoding:=&#x27;B&#x27;;</span><br><span class="line">&#123;$ENDIF&#125;</span><br></pre></td></tr></table></figure>
-<p>这是针对安卓平台的编译指令。原因就是InitializeISO这个过程初始化字符集数据时，采用的是windows平台的API,没有考虑安卓平台，导致编码识别出错，我们给它加上正确的编码指令，就完美解决了问题。</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-      <tags>
-        <tag>技术分享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>虚拟证件制作，助力疫情防控</title>
-    <url>/post/2cf6d61f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="一、-制作初衷"><a href="#一、-制作初衷" class="headerlink" title="一、 制作初衷"></a>一、 制作初衷</h3><p>疫情当下，核酸检测已成常态化，学校在进行核酸检测时，需要扫描身份证进行信息录入，但很多小学生没有办理身份证，虽然可以用家长的身份证，但查询结果不太方便，很多时候都要拿着户口本手动输入，这大大降低了检测速度。基于提高录入速度，降低采集人员和学生家长的负担，特制作了本软件。</p>
-<span id="more"></span>
-<p><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1610054468.jpeg" alt="软件界面2.jpeg"></p>
-<h3 id="二、使用说明"><a href="#二、使用说明" class="headerlink" title="二、使用说明"></a>二、使用说明</h3><p>本软件是绿色软件，下载后直接解压就可以使用了。软件操作简单，打开后对照户口本输入孩子的信息，点击生成图片，就会在软件目录下生成以孩子名字为文件名的高清图片。拿到这个图片后，调整大小，注意按比例缩放，不要失真，打印出来，过塑或装在卡片夹里，孩子做核酸时带着就行了。既避免了身份证、户口本的丢失，也减少了信息泄露。<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1521411666.gif" alt="使用说明.gif"></p>
-<h3 id="三、特别声明"><a href="#三、特别声明" class="headerlink" title="三、特别声明"></a>三、特别声明</h3><p>本软件是公益软件，制作的虚拟证件，仅用于帮助无身份证的孩子快速完成核酸信息采集，助力疫情防控，不得用于非法用途。以此非法牟利的，作者将保留追究其法律责任，特此声明！！！<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/2217907488.jpg" alt="李小跳.jpg"></p>
-<h3 id="四、下载地址"><a href="#四、下载地址" class="headerlink" title="四、下载地址"></a>四、下载地址</h3><p><a href="https://yulinsoft.lanzoul.com/b00vp8zlg">https://yulinsoft.lanzoul.com/b00vp8zlg</a><br>密码:1111</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-      <tags>
-        <tag>个人软件</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决Typecho1.20错误更新的问题</title>
-    <url>/post/7f5794d5.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。</p>
-<span id="more"></span>
-<p><img src="https://s1.ax1x.com/2022/11/19/zKEpBd.png" alt="20221119162003.png"><br>这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一个bug。</p>
-<h3 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h3><p>本着治病救人的初衷，经过逐步调试，找到了问题的根本原因。打开网站目录<code>/var/Widget/Ajax.php</code>这个文件，定位到第62行。<br><code>version_compare($json[&#39;release&#39;], $version, &#39;&gt;=&#39;)</code><br><img src="https://s1.ax1x.com/2022/11/19/zKE9HA.png" alt="20221119163036.png"><br>问题就在这里，多了一个 <code>=</code> 号，把这个&#x3D;号删除后保存，再清除浏览器缓存，重新登陆就解决了。</p>
-<h4 id="提醒：一定要清除浏览器缓存才能见到效果。"><a href="#提醒：一定要清除浏览器缓存才能见到效果。" class="headerlink" title="提醒：一定要清除浏览器缓存才能见到效果。"></a>提醒：一定要清除浏览器缓存才能见到效果。</h4>]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-      <tags>
-        <tag>技术分享</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>解决delphi10安卓app升级delphi11的问题</title>
-    <url>/post/45af48af.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>解决delphi10安卓app升级delphi11的问题<br>最近看delphi11比较稳定了，就主动安装了新版，但发现原来在delphi10.4.2下开发的安卓应用无法在新版下编译，主要情形如下：</p>
-<span id="more"></span>
-<p><img src="https://s1.ax1x.com/2022/12/03/zDNSw4.jpg" alt="批注 2022-12-03 103615.jpg"><br>Libraries下一堆红叉，编译时一堆错误，无法完成。经过百度学习，解决方法如下。<br><img src="https://s1.ax1x.com/2022/12/03/zDNPYR.jpg" alt="批注 2022-12-03 103822.jpg"><br>在Libraries上点击右键，点击revert system files to default菜单恢复默认库文件。<br>经过这一步，已经可以成功编译了，但编译后的app无法安装，提示安装包解析错误。<br>再百度得到答案如下：<br>新建一个安卓工程 ，把工程目录下的AndroidManifest.template.xml文件复制并覆盖原来安卓工程下的同名文件就可以解决。原因是新版安卓的配置有所变化。<br>至此，问题全部解决，可以正常编译并安装。</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-      <tags>
-        <tag>delphi</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>随机音乐播放器</title>
-    <url>/post/3888254d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>##前言<br>前段时间在本论坛看到一个随机音乐播放软件，觉得很有意思，看到坛友提供了网络接口，于是自己也做了一个，完善了一些我要的功能，今天发出来与大家分享。</p>
-<span id="more"></span>
-<p>##软件特色<br>简洁小巧，功能很简单，就是打开后联网播放网易云的随机音乐，有一个显示专辑封面的小窗口，可以隐藏，点击后会切换下一首。<br>任务栏有小图标，单击图标换歌，双击图标隐藏或显示窗口。<br>有需要的可以下载。无需各种框架，delphi开发，完全绿色。</p>
-<p>##更新日志：<br>版本：1.0.8.25<br>新增了音量控制（鼠标滚轮上滚增加音量，下滚减小音量）。<br>版本：1.0.8.11<br>1、新增了暂停控制（点击滚动的歌名或右键菜单）。<br><img src="https://attach.52pojie.cn/forum/202108/12/114440ou4lmzbuq7b7bggu.png" alt="请输入图片描述"></p>
-<p>2、优化鼠标移到播放器窗口时会自动获得焦点（以前没焦点时换歌时要点两次）。<br>3、菜单添加了快捷键，窗口获得焦点时，按快捷键可执行相应的操作。<br>版本：1.0.8.8<br>1、修复了滚动歌名概率性消失的bug。<br>2、新增了选择榜单功能。<br>3、更换了软件图标。<br><img src="https://attach.52pojie.cn/forum/202108/08/110521mh4g3nsslhymswjd.png" alt="请输入图片描述"><br>##下载地址</p>
-<p>下载地址：</p>
-<p>白嫖地址：<br><a href="https://yulinsoft.lanzoui.com/b00uqjc0d">https://yulinsoft.lanzoui.com/b00uqjc0d</a>   密码：1111</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Win10系统无法远程桌面连接XP提示“出现了内部错误”的解决方法</title>
-    <url>/post/7fb11b1d.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>家庭服务器上虚拟了win7和XP，在win10电脑上使用远程桌面进行访问，可以正常连接win7，但连接XP时提示“出现了内部错误”。使用手机的RPD连接却可以正常连接XP。百度了一圈，最终解决方法如下：<br>1、win10下打开控制面板</p>
-<span id="more"></span>
-<p>2、找到管理工具<br>3、打开本地安全策略 也可以 运行 输入 secpol.msc &#x2F;s 直接打开 。<br><img src="http://blog.yulinsoft.top/usr/uploads/2023/09/3260702037.webp" alt="16314711-ecd218f8e8f603a2.webp"><br><img src="http://blog.yulinsoft.top/usr/uploads/2023/09/3768130669.webp" alt="16314711-851cc983e8657b5d.webp"><br>4、在右边的策略中，找到“系统加密：将FIPS算法用于加密 、哈希和签名”点击右键属性<br>5、将“本地安全设置”设置为“已禁用”，在单击“应用”，后”确定”，即可远程控制！<br>仅做记录以备查。</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
   </entry>
 </search>
