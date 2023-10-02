@@ -45,7 +45,7 @@
 <p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
 <p>添加生成的SSH key到ssh-agent</p>
 <p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
-<p>输入ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;">&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#x75;&#x62;&#46;&#99;&#x6f;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
+<p>输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
 <h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
 <p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
 <p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
@@ -152,71 +152,6 @@
       <tags>
         <tag>Padavan</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Padavan 编译教程</title>
-    <url>/post/4a10dd00.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="配置编译环境"><a href="#配置编译环境" class="headerlink" title="配置编译环境"></a>配置编译环境</h4><p>安装虚拟机<br>安装Ubuntu 16.04LTS</p>
-<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install git</span><br></pre></td></tr></table></figure>
-<p>转到 &#x2F;opt目录，并且用命令克隆Padavan仓库</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git <span class="built_in">clone</span> https://bitbucket.org/padavan/rt-n56u.git</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<p>安装编译固件所需要的工具</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install autoconf automake bison build-essential flex gawk gettext gperf libtool pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev texinfo python-docutils mc</span><br></pre></td></tr></table></figure>
-<p>编译一个交叉编译的工具链</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
-<p>编译3.0内核的固件<br>如果你需要编译3.0内核的固件就需要执行下面的步骤，默认支持3.4内核</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain_3.0.x</span><br></pre></td></tr></table></figure>
-<p>编译好后的工具链会放在 &#x2F;opt&#x2F;rt-n56u&#x2F;toolchain-mipsel&#x2F;toolchain-3.0.x<br>以后在更新或者升级工具链的情况下才需要执行以上步骤。<br>机型适配（newifi mini）<br>进行入固件源码目录</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/trunk</span><br></pre></td></tr></table></figure>
-<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><p>删除默认的配置文件 opt&#x2F;rt-n56u&#x2F;trunk下的.config文件，默认是隐藏的，可以使用Ctrl+H显示与隐藏配置文件，或者用以下命令进行删除</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">rm</span> -f opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
-<p>从opt&#x2F;rt-n56u&#x2F;trunk&#x2F;configs&#x2F;templates里拷贝出 ac54u_base.config到 opt&#x2F;rt-n56u&#x2F;trunk下并重命名成.config，或者用以下命令进行操作</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">cp</span> opt/rt-n56u/trunk/configs/templates/ac54_base.config  /opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
-<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>由于修改后默认的.config配置文件里文档写的很详细，就不多解释，根据自己需要开启与关闭需要与不需要的功能，#这个符号默认是注释代码，也就是关闭某个功能，反之去掉就是开启（可以把文档内容拷出来到翻译里翻译一遍，可以很清楚的看到每个功能是干什么用的）</p>
-<h4 id="适配灯与复位键"><a href="#适配灯与复位键" class="headerlink" title="适配灯与复位键"></a>适配灯与复位键</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;board.h</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* ASUS RT-AC54U */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_PID        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NAME        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_DESC        <span class="string">&quot;ASUS RT-AC54U Wireless Router&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_NAME    <span class="string">&quot;ASUSTek Computer Inc.&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_URL    <span class="string">&quot;http://www.asus.com/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_MODEL_URL        <span class="string">&quot;http://www.asus.com/Networking/RTAC54U/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_BOOT_TIME        25</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_FLASH_TIME    120</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_RESET</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_BTN_WPS    11</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_WLTOG</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ALL</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WIFI    72</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_SW2G</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_SW5G    50</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_POWER    9</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_LAN    55</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WAN    51</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_USB    52</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ROUTER</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_PWR_USB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_5G_11AC    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ETH_LEDS    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_L1000    0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_W1000    0</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
-<h4 id="调用原厂无线参数"><a href="#调用原厂无线参数" class="headerlink" title="调用原厂无线参数"></a>调用原厂无线参数</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config查找修改成以下代码，并删除目录下SingleSKU开头的文件。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RT_SINGLE_SKU=n</span><br><span class="line">CONFIG_RT2860V2_AP_GREENAP=y</span><br><span class="line">CONFIG_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_MT76X2_AP_GREENAP=y</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_RALINK_UART_BRATE=<span class="number">57600</span></span><br></pre></td></tr></table></figure>
-<h4 id="适配WAN口与LAN口"><a href="#适配WAN口与LAN口" class="headerlink" title="适配WAN口与LAN口"></a>适配WAN口与LAN口</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RAETH_ESW_PORT_WAN=<span class="number">4</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN1=<span class="number">1</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN2=<span class="number">0</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN3=<span class="number">3</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN4=<span class="number">2</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
-<h4 id="开启外置PA-amp-LAN支持"><a href="#开启外置PA-amp-LAN支持" class="headerlink" title="开启外置PA&amp;LAN支持"></a>开启外置PA&amp;LAN支持</h4><p>在  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config里删除# CONFIG_EXTERNAL_PA_EXTERNAL_LNA is not set 这一行代码，并加入下面的代码</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br></pre></td></tr></table></figure>
-<h4 id="扩展内存"><a href="#扩展内存" class="headerlink" title="扩展内存"></a>扩展内存</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config配置文件，以AC-54U为例，默认是64M，所以只需要将以下代码进行如下修改</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//没修改前是64M内存</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M=y</span><br><span class="line">CONFIG_RT2880_DRAM_128M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">64</span></span><br><span class="line"><span class="comment">//修改成128M</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_128M=y</span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">128</span></span><br></pre></td></tr></table></figure>
-<h4 id="设置时区"><a href="#设置时区" class="headerlink" title="设置时区"></a>设置时区</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.h</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_TIMEZONE        <span class="string">&quot;CST-8&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_NTP_SERVER0        <span class="string">&quot;ntp1.aliyun.com&quot;</span></span></span><br></pre></td></tr></table></figure>
-<h4 id="关闭telnet开启ssh"><a href="#关闭telnet开启ssh" class="headerlink" title="关闭telnet开启ssh"></a>关闭telnet开启ssh</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.c</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&quot;telnetd&quot;</span>,<span class="string">&quot;0&quot;</span>&#125;.</span><br><span class="line">&#123;<span class="string">&quot;sshd_enable&quot;</span>,<span class="string">&quot;1&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h4><p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.header文件，找到LANG_EN&#x3D;English修改成以下</p>
-<blockquote>
-<p>LANG_EN&#x3D;简体中文</p>
-</blockquote>
-<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.footer文件，把里面内容翻译成中文（也可以从已经汉化的固件里提取&#x2F;www&#x2F;EN.dict文件，删除以下的内容，然后保存并重新命名成EN.footer；</p>
-<blockquote>
-<p>[Language type]<br>LANG_EN&#x3D;简体中文<br>LANG_RU&#x3D;English</p>
-</blockquote>
-<p>编辑trunk&#x2F;user&#x2F;www&#x2F;Makefile文件，找到echo “LANG_RU&#x3D;Pусский” &gt;$(ROMFS_DIR)&#x2F;www&#x2F;EN.header修改成以下</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;LANG_RU=English&quot;</span> &gt;$(ROMFS_DIR)/www/EN.header</span><br></pre></td></tr></table></figure>
-<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;RU.dict文件，找到LANG_EN&#x3D;English修改成以下</p>
-<blockquote>
-<p>LANG_EN&#x3D;简体中文</p>
-</blockquote>
-<h4 id="生成固件"><a href="#生成固件" class="headerlink" title="生成固件"></a>生成固件</h4><p>清除源码树</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./clear_tree</span><br></pre></td></tr></table></figure>
-<p>开始编译生成固件</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./build_firmware</span><br></pre></td></tr></table></figure>
-<p>编译完成后生成的固件在 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;images里面<br>更新源码<br>转到 &#x2F;opt目录，克隆最新源码</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
-<p>如果你对本地存仓库进行了更改，那么在更新源码的时候，你必须运行以下命令</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo git stash</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
-<p>如果更改了工具链，则必须重新构建它</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./clean_toolchain</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
-<p>以上的修改建议使用手工进行修改，如果直接使用文件进行覆盖的话很容易出错。而且一但编译出错的话需要花很多时间进行调整，所以还是自己一步步慢慢改吧。</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
   </entry>
   <entry>
     <title>nexT主题配置</title>
@@ -346,6 +281,71 @@
 
 <p><code>three_waves</code> 配置示例</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># three_waves</span><br><span class="line">three_waves: true //开启动画</span><br><span class="line">three_waves: false //关闭动画</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Padavan 编译教程</title>
+    <url>/post/4a10dd00.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h4 id="配置编译环境"><a href="#配置编译环境" class="headerlink" title="配置编译环境"></a>配置编译环境</h4><p>安装虚拟机<br>安装Ubuntu 16.04LTS</p>
+<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install git</span><br></pre></td></tr></table></figure>
+<p>转到 &#x2F;opt目录，并且用命令克隆Padavan仓库</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git <span class="built_in">clone</span> https://bitbucket.org/padavan/rt-n56u.git</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<p>安装编译固件所需要的工具</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo apt-get install autoconf automake bison build-essential flex gawk gettext gperf libtool pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev texinfo python-docutils mc</span><br></pre></td></tr></table></figure>
+<p>编译一个交叉编译的工具链</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
+<p>编译3.0内核的固件<br>如果你需要编译3.0内核的固件就需要执行下面的步骤，默认支持3.4内核</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./build_toolchain_3.0.x</span><br></pre></td></tr></table></figure>
+<p>编译好后的工具链会放在 &#x2F;opt&#x2F;rt-n56u&#x2F;toolchain-mipsel&#x2F;toolchain-3.0.x<br>以后在更新或者升级工具链的情况下才需要执行以上步骤。<br>机型适配（newifi mini）<br>进行入固件源码目录</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/trunk</span><br></pre></td></tr></table></figure>
+<h4 id="生成配置文件"><a href="#生成配置文件" class="headerlink" title="生成配置文件"></a>生成配置文件</h4><p>删除默认的配置文件 opt&#x2F;rt-n56u&#x2F;trunk下的.config文件，默认是隐藏的，可以使用Ctrl+H显示与隐藏配置文件，或者用以下命令进行删除</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">rm</span> -f opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
+<p>从opt&#x2F;rt-n56u&#x2F;trunk&#x2F;configs&#x2F;templates里拷贝出 ac54u_base.config到 opt&#x2F;rt-n56u&#x2F;trunk下并重命名成.config，或者用以下命令进行操作</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo <span class="built_in">cp</span> opt/rt-n56u/trunk/configs/templates/ac54_base.config  /opt/rt-n56u/trunk/.config</span><br></pre></td></tr></table></figure>
+<h4 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h4><p>由于修改后默认的.config配置文件里文档写的很详细，就不多解释，根据自己需要开启与关闭需要与不需要的功能，#这个符号默认是注释代码，也就是关闭某个功能，反之去掉就是开启（可以把文档内容拷出来到翻译里翻译一遍，可以很清楚的看到每个功能是干什么用的）</p>
+<h4 id="适配灯与复位键"><a href="#适配灯与复位键" class="headerlink" title="适配灯与复位键"></a>适配灯与复位键</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;board.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">/* ASUS RT-AC54U */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_PID        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NAME        <span class="string">&quot;RT-AC54U&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_DESC        <span class="string">&quot;ASUS RT-AC54U Wireless Router&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_NAME    <span class="string">&quot;ASUSTek Computer Inc.&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_VENDOR_URL    <span class="string">&quot;http://www.asus.com/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_MODEL_URL        <span class="string">&quot;http://www.asus.com/Networking/RTAC54U/&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_BOOT_TIME        25</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_FLASH_TIME    120</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_RESET</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_BTN_WPS    11</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_BTN_WLTOG</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ALL</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WIFI    72</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_SW2G</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_SW5G    50</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_POWER    9</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_LAN    55</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_WAN    51</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_GPIO_LED_USB    52</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_LED_ROUTER</span></span><br><span class="line"><span class="meta">#<span class="keyword">undef</span> BOARD_GPIO_PWR_USB</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_5G_11AC    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_5G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_TX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ANT_2G_RX    2</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_NUM_ETH_LEDS    1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_L1000    0</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> BOARD_HAS_EPHY_W1000    0</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
+<h4 id="调用原厂无线参数"><a href="#调用原厂无线参数" class="headerlink" title="调用原厂无线参数"></a>调用原厂无线参数</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config查找修改成以下代码，并删除目录下SingleSKU开头的文件。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RT_SINGLE_SKU=n</span><br><span class="line">CONFIG_RT2860V2_AP_GREENAP=y</span><br><span class="line">CONFIG_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_MT76X2_AP_GREENAP=y</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_INTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_INTERNAL_PA_EXTERNAL_LNA=n</span><br><span class="line">CONFIG_MT76X2_AP_EXTERNAL_PA_EXTERNAL_LNA=y</span><br><span class="line">CONFIG_RALINK_UART_BRATE=<span class="number">57600</span></span><br></pre></td></tr></table></figure>
+<h4 id="适配WAN口与LAN口"><a href="#适配WAN口与LAN口" class="headerlink" title="适配WAN口与LAN口"></a>适配WAN口与LAN口</h4><p>编辑  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_RAETH_ESW_PORT_WAN=<span class="number">4</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN1=<span class="number">1</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN2=<span class="number">0</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN3=<span class="number">3</span></span><br><span class="line">CONFIG_RAETH_ESW_PORT_LAN4=<span class="number">2</span></span><br><span class="line"><span class="comment">//上面是newifi mini的，由于每个机型不同，仅供参考</span></span><br></pre></td></tr></table></figure>
+<h4 id="开启外置PA-amp-LAN支持"><a href="#开启外置PA-amp-LAN支持" class="headerlink" title="开启外置PA&amp;LAN支持"></a>开启外置PA&amp;LAN支持</h4><p>在  &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config里删除# CONFIG_EXTERNAL_PA_EXTERNAL_LNA is not set 这一行代码，并加入下面的代码</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">CONFIG_EXTERNAL_PA_EXTERNAL_LNA=y</span><br></pre></td></tr></table></figure>
+<h4 id="扩展内存"><a href="#扩展内存" class="headerlink" title="扩展内存"></a>扩展内存</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;configs&#x2F;boards&#x2F;RT-AC54U&#x2F;kernel-3.4.x.config配置文件，以AC-54U为例，默认是64M，所以只需要将以下代码进行如下修改</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="comment">//没修改前是64M内存</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M=y</span><br><span class="line">CONFIG_RT2880_DRAM_128M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">64</span></span><br><span class="line"><span class="comment">//修改成128M</span></span><br><span class="line">CONFIG_RT2880_DRAM_16M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_32M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_64M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RT2880_DRAM_128M=y</span><br><span class="line">CONFIG_RT2880_DRAM_256M is not <span class="built_in">set</span></span><br><span class="line">CONFIG_RALINK_RAM_SIZE=<span class="number">128</span></span><br></pre></td></tr></table></figure>
+<h4 id="设置时区"><a href="#设置时区" class="headerlink" title="设置时区"></a>设置时区</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.h</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_TIMEZONE        <span class="string">&quot;CST-8&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> DEF_NTP_SERVER0        <span class="string">&quot;ntp1.aliyun.com&quot;</span></span></span><br></pre></td></tr></table></figure>
+<h4 id="关闭telnet开启ssh"><a href="#关闭telnet开启ssh" class="headerlink" title="关闭telnet开启ssh"></a>关闭telnet开启ssh</h4><p>编辑 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;user&#x2F;shared&#x2F;defaults.c</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line">&#123;<span class="string">&quot;telnetd&quot;</span>,<span class="string">&quot;0&quot;</span>&#125;.</span><br><span class="line">&#123;<span class="string">&quot;sshd_enable&quot;</span>,<span class="string">&quot;1&quot;</span>&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h4><p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.header文件，找到LANG_EN&#x3D;English修改成以下</p>
+<blockquote>
+<p>LANG_EN&#x3D;简体中文</p>
+</blockquote>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;EN.footer文件，把里面内容翻译成中文（也可以从已经汉化的固件里提取&#x2F;www&#x2F;EN.dict文件，删除以下的内容，然后保存并重新命名成EN.footer；</p>
+<blockquote>
+<p>[Language type]<br>LANG_EN&#x3D;简体中文<br>LANG_RU&#x3D;English</p>
+</blockquote>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;Makefile文件，找到echo “LANG_RU&#x3D;Pусский” &gt;$(ROMFS_DIR)&#x2F;www&#x2F;EN.header修改成以下</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;LANG_RU=English&quot;</span> &gt;$(ROMFS_DIR)/www/EN.header</span><br></pre></td></tr></table></figure>
+<p>编辑trunk&#x2F;user&#x2F;www&#x2F;dict&#x2F;RU.dict文件，找到LANG_EN&#x3D;English修改成以下</p>
+<blockquote>
+<p>LANG_EN&#x3D;简体中文</p>
+</blockquote>
+<h4 id="生成固件"><a href="#生成固件" class="headerlink" title="生成固件"></a>生成固件</h4><p>清除源码树</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./clear_tree</span><br></pre></td></tr></table></figure>
+<p>开始编译生成固件</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo ./build_firmware</span><br></pre></td></tr></table></figure>
+<p>编译完成后生成的固件在 &#x2F;opt&#x2F;rt-56u&#x2F;trunk&#x2F;images里面<br>更新源码<br>转到 &#x2F;opt目录，克隆最新源码</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
+<p>如果你对本地存仓库进行了更改，那么在更新源码的时候，你必须运行以下命令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ sudo git stash</span><br><span class="line">$ sudo git pull</span><br></pre></td></tr></table></figure>
+<p>如果更改了工具链，则必须重新构建它</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /opt/rt-n56u/toolchain-mipsel</span><br><span class="line">$ sudo ./clean_sources</span><br><span class="line">$ sudo ./clean_toolchain</span><br><span class="line">$ sudo ./build_toolchain</span><br></pre></td></tr></table></figure>
+<p>以上的修改建议使用手工进行修改，如果直接使用文件进行覆盖的话很容易出错。而且一但编译出错的话需要花很多时间进行调整，所以还是自己一步步慢慢改吧。</p>
 ]]></content>
       <categories>
         <category>默认分类</category>
@@ -541,23 +541,6 @@
       </categories>
   </entry>
   <entry>
-    <title>虚拟证件制作，助力疫情防控</title>
-    <url>/post/2cf6d61f.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="一、-制作初衷"><a href="#一、-制作初衷" class="headerlink" title="一、 制作初衷"></a>一、 制作初衷</h3><p>疫情当下，核酸检测已成常态化，学校在进行核酸检测时，需要扫描身份证进行信息录入，但很多小学生没有办理身份证，虽然可以用家长的身份证，但查询结果不太方便，很多时候都要拿着户口本手动输入，这大大降低了检测速度。基于提高录入速度，降低采集人员和学生家长的负担，特制作了本软件。</p>
-<span id="more"></span>
-<p><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1610054468.jpeg" alt="软件界面2.jpeg"></p>
-<h3 id="二、使用说明"><a href="#二、使用说明" class="headerlink" title="二、使用说明"></a>二、使用说明</h3><p>本软件是绿色软件，下载后直接解压就可以使用了。软件操作简单，打开后对照户口本输入孩子的信息，点击生成图片，就会在软件目录下生成以孩子名字为文件名的高清图片。拿到这个图片后，调整大小，注意按比例缩放，不要失真，打印出来，过塑或装在卡片夹里，孩子做核酸时带着就行了。既避免了身份证、户口本的丢失，也减少了信息泄露。<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1521411666.gif" alt="使用说明.gif"></p>
-<h3 id="三、特别声明"><a href="#三、特别声明" class="headerlink" title="三、特别声明"></a>三、特别声明</h3><p>本软件是公益软件，制作的虚拟证件，仅用于帮助无身份证的孩子快速完成核酸信息采集，助力疫情防控，不得用于非法用途。以此非法牟利的，作者将保留追究其法律责任，特此声明！！！<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/2217907488.jpg" alt="李小跳.jpg"></p>
-<h3 id="四、下载地址"><a href="#四、下载地址" class="headerlink" title="四、下载地址"></a>四、下载地址</h3><p><a href="https://yulinsoft.lanzoul.com/b00vp8zlg">https://yulinsoft.lanzoul.com/b00vp8zlg</a><br>密码:1111</p>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-      <tags>
-        <tag>个人软件</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>解决Indy10发送邮件主题乱码的问题</title>
     <url>/post/6f520309.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h3><p>最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。</p>
@@ -572,6 +555,23 @@
       </categories>
       <tags>
         <tag>技术分享</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>虚拟证件制作，助力疫情防控</title>
+    <url>/post/2cf6d61f.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h3 id="一、-制作初衷"><a href="#一、-制作初衷" class="headerlink" title="一、 制作初衷"></a>一、 制作初衷</h3><p>疫情当下，核酸检测已成常态化，学校在进行核酸检测时，需要扫描身份证进行信息录入，但很多小学生没有办理身份证，虽然可以用家长的身份证，但查询结果不太方便，很多时候都要拿着户口本手动输入，这大大降低了检测速度。基于提高录入速度，降低采集人员和学生家长的负担，特制作了本软件。</p>
+<span id="more"></span>
+<p><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1610054468.jpeg" alt="软件界面2.jpeg"></p>
+<h3 id="二、使用说明"><a href="#二、使用说明" class="headerlink" title="二、使用说明"></a>二、使用说明</h3><p>本软件是绿色软件，下载后直接解压就可以使用了。软件操作简单，打开后对照户口本输入孩子的信息，点击生成图片，就会在软件目录下生成以孩子名字为文件名的高清图片。拿到这个图片后，调整大小，注意按比例缩放，不要失真，打印出来，过塑或装在卡片夹里，孩子做核酸时带着就行了。既避免了身份证、户口本的丢失，也减少了信息泄露。<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/1521411666.gif" alt="使用说明.gif"></p>
+<h3 id="三、特别声明"><a href="#三、特别声明" class="headerlink" title="三、特别声明"></a>三、特别声明</h3><p>本软件是公益软件，制作的虚拟证件，仅用于帮助无身份证的孩子快速完成核酸信息采集，助力疫情防控，不得用于非法用途。以此非法牟利的，作者将保留追究其法律责任，特此声明！！！<br><img src="https://blog.yulinsoft.top/usr/uploads/2022/05/2217907488.jpg" alt="李小跳.jpg"></p>
+<h3 id="四、下载地址"><a href="#四、下载地址" class="headerlink" title="四、下载地址"></a>四、下载地址</h3><p><a href="https://yulinsoft.lanzoul.com/b00vp8zlg">https://yulinsoft.lanzoul.com/b00vp8zlg</a><br>密码:1111</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>个人软件</tag>
       </tags>
   </entry>
   <entry>
