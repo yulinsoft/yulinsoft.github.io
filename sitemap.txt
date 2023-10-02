@@ -1,5 +1,6 @@
 http://example.com/about/index.html
 http://example.com/playlist/index.html
+http://example.com/post/7fb11b1d.html
 http://example.com/post/52b6f658.html
 http://example.com/post/45af48af.html
 http://example.com/post/6f520309.html

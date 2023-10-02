@@ -618,4 +618,15 @@
         <category>默认分类</category>
       </categories>
   </entry>
+  <entry>
+    <title>Win10系统无法远程桌面连接XP提示“出现了内部错误”的解决方法</title>
+    <url>/post/7fb11b1d.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>家庭服务器上虚拟了win7和XP，在win10电脑上使用远程桌面进行访问，可以正常连接win7，但连接XP时提示“出现了内部错误”。使用手机的RPD连接却可以正常连接XP。百度了一圈，最终解决方法如下：<br>1、win10下打开控制面板</p>
+<span id="more"></span>
+<p>2、找到管理工具<br>3、打开本地安全策略 也可以 运行 输入 secpol.msc &#x2F;s 直接打开 。<br><img src="http://blog.yulinsoft.top/usr/uploads/2023/09/3260702037.webp" alt="16314711-ecd218f8e8f603a2.webp"><br><img src="http://blog.yulinsoft.top/usr/uploads/2023/09/3768130669.webp" alt="16314711-851cc983e8657b5d.webp"><br>4、在右边的策略中，找到“系统加密：将FIPS算法用于加密 、哈希和签名”点击右键属性<br>5、将“本地安全设置”设置为“已禁用”，在单击“应用”，后”确定”，即可远程控制！<br>仅做记录以备查。</p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+  </entry>
 </search>
