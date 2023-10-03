@@ -45,6 +45,8 @@
 <title>Hexo博客迁移到其他电脑 | 我酷我流行</title>
   
 
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?378edb9b8d83ba6d22bea67736a1b8b1"></script>
 
 
 
@@ -89,7 +91,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">18</span></a></li><li class="menu-item menu-item-歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>歌单</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">18</span></a></li><li class="menu-item menu-item-我的歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>我的歌单</a></li><li class="menu-item menu-item-软件注册"><a href="/regform/" rel="section"><i class="fa  fa-key fa-fw"></i>软件注册</a></li><li class="menu-item menu-item-留言板"><a href="/notebook/" rel="section"><i class="fa  fa-book fa-fw"></i>留言板</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -188,7 +190,7 @@
         <a href="https://weibo.com/yulinsoft" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="http://www.yulinsoft.top/" title="我的网站 → http:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank"><i class="edge fa-fw"></i></a>
+        <a href="https://www.yulinsoft.top/" title="我的网站 → https:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank"><i class="edge fa-fw"></i></a>
       </span>
   </div>
 
@@ -281,6 +283,20 @@
     </span>
 
   
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    <a title="Hexo博客迁移到其他电脑" href="/post/db4d493d.html#SOHUCS" itemprop="discussionUrl">
+      <span id="sourceId::3759bf0fbd0f3b234ae446041571ef94" class="cy_cmt_count" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
 </div>
 
         </div>
@@ -313,7 +329,7 @@
 <p><code>$ ssh-add ~/.ssh/id_rsa</code></p>
 <p>添加生成的SSH key到ssh-agent</p>
 <p>登录Github，点击头像下的settings，添加ssh，因为原系统已经添加过了，这里就不用添加了。</p>
-<p>输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#103;&#105;&#x74;&#x40;&#103;&#105;&#x74;&#x68;&#117;&#98;&#46;&#99;&#111;&#x6d;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
+<p>输入ssh -T <a href="mailto:&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;">&#103;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#117;&#x62;&#46;&#99;&#x6f;&#109;</a>，测试添加ssh是否成功。如果看到Hi后面是你的用户名，就说明成功了</p>
 <h5 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h5><p>假如ssh-key配置失败，那么只要以下步骤就能完全解决</p>
 <p>首先，清除所有的key-pair<br><code>$ ssh-add -D</code><br><code>$ rm -r ~/.ssh</code><br>删除你在github中的public-key</p>
 <p>重新生成ssh密钥对<br><code>$ ssh-keygen -t rsa -C &quot;xxx@xxx.com&quot;</code></p>
@@ -380,6 +396,7 @@
 
 
 
+    <div class="comments" id="SOHUCS" sid="3759bf0fbd0f3b234ae446041571ef94"></div>
 </div>
   </main>
 
@@ -391,12 +408,10 @@
   &copy; 
   <span itemprop="copyrightYear">2023</span>
   <span class="with-love">
-    <i class="fa fa-heart"></i>
+    <i class="fa fa-address-book"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">平淡如盐</span>
+  <span class="author" itemprop="copyrightHolder">yulinsoft</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
 
     </div>
   </footer>
@@ -418,6 +433,8 @@
 
 
 
+<script class="next-config" data-name="changyan" type="application/json">{"enable":true,"appid":"cywUpb8ow","appkey":"prod_7a1c59af575bae3ecc96da4afac0de9d","count":true}</script>
+<script src="/js/third-party/comments/changyan.js"></script>
 
 </body>
 </html>
