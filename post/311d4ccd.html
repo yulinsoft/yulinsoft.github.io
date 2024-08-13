@@ -19,16 +19,16 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"pdry.eu.org","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="需求说明由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。运行原理就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件夹">
+    <meta name="description" content="需求说明由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。 运行原理就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件">
 <meta property="og:type" content="article">
 <meta property="og:title" content="自动电脑锁">
 <meta property="og:url" content="https://pdry.eu.org/post/311d4ccd.html">
 <meta property="og:site_name" content="我酷我流行">
-<meta property="og:description" content="需求说明由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。运行原理就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件夹">
+<meta property="og:description" content="需求说明由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。 运行原理就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://attach.52pojie.cn/forum/202109/15/112745dixj6xjh4zkizah6.png">
-<meta property="article:published_time" content="2021-10-03T19:57:00.000Z">
-<meta property="article:modified_time" content="2024-08-13T02:53:54.383Z">
+<meta property="article:published_time" content="2021-10-04T03:57:00.000Z">
+<meta property="article:modified_time" content="2023-10-06T01:30:56.000Z">
 <meta property="article:author" content="平淡如盐">
 <meta property="article:tag" content="个人软件">
 <meta name="twitter:card" content="summary">
@@ -91,7 +91,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">21</span></a></li><li class="menu-item menu-item-我的歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>我的歌单</a></li><li class="menu-item menu-item-软件注册"><a href="/regform/" rel="section"><i class="fa  fa-key fa-fw"></i>软件注册</a></li><li class="menu-item menu-item-留言板"><a href="/notebook/" rel="section"><i class="fa  fa-book fa-fw"></i>留言板</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">19</span></a></li><li class="menu-item menu-item-我的歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>我的歌单</a></li><li class="menu-item menu-item-软件注册"><a href="/regform/" rel="section"><i class="fa  fa-key fa-fw"></i>软件注册</a></li><li class="menu-item menu-item-留言板"><a href="/notebook/" rel="section"><i class="fa  fa-book fa-fw"></i>留言板</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -162,18 +162,18 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-count">19</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">1</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -269,14 +269,14 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2021-10-04 03:57:00" itemprop="dateCreated datePublished" datetime="2021-10-04T03:57:00+08:00">2021-10-04</time>
+      <time title="创建时间：2021-10-04 11:57:00" itemprop="dateCreated datePublished" datetime="2021-10-04T11:57:00+08:00">2021-10-04</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-08-13 10:53:54" itemprop="dateModified" datetime="2024-08-13T10:53:54+08:00">2024-08-13</time>
+      <time title="修改时间：2023-10-06 09:30:56" itemprop="dateModified" datetime="2023-10-06T09:30:56+08:00">2023-10-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -284,7 +284,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%8F%91%E5%B8%83/" itemprop="url" rel="index"><span itemprop="name">软件发布</span></a>
+          <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">默认分类</span></a>
         </span>
     </span>
 
@@ -305,8 +305,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p><strong>需求说明</strong><br />由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。</p><p><strong>运行原理</strong><br />就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件夹中，程序在系统启动登陆后锁定电脑。</p><p><img src="https://attach.52pojie.cn/forum/202109/15/112745dixj6xjh4zkizah6.png" alt="请输入图片描述" title="请输入图片描述"></p><p>后来发现，也可以不用程序直接调用这个API。代码如下：</p><pre><code>C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
-</code></pre><p>创建一个批处理文件或创建一个快捷方式放启动文件夹也行。编译出来了就发给大家吧！<br />使用方法<br />打开启动文件夹<br />WIN+R  输入shell:startup回车会打开启动文件夹，把文件或快捷方式粘贴进去就行了。然后设置系统自动登陆就可以了，具体设置百度很多，我就不说了。</p><p>本地下载：  <a target="_blank" rel="noopener" href="https://www.52pojie.cn/thread-1513192-1-1.html">https://www.52pojie.cn/thread-1513192-1-1.html</a></p>
+        <p><strong>需求说明</strong><br>由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。</p>
+<p><strong>运行原理</strong><br>就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件夹中，程序在系统启动登陆后锁定电脑。</p>
+<p><img src="https://attach.52pojie.cn/forum/202109/15/112745dixj6xjh4zkizah6.png" alt="请输入图片描述"></p>
+<p>后来发现，也可以不用程序直接调用这个API。代码如下：</p>
+<pre><code>C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
+</code></pre>
+<p>创建一个批处理文件或创建一个快捷方式放启动文件夹也行。编译出来了就发给大家吧！<br>使用方法<br>打开启动文件夹<br>WIN+R  输入shell:startup回车会打开启动文件夹，把文件或快捷方式粘贴进去就行了。然后设置系统自动登陆就可以了，具体设置百度很多，我就不说了。</p>
+<p>本地下载：  <a target="_blank" rel="noopener" href="https://www.52pojie.cn/thread-1513192-1-1.html">https://www.52pojie.cn/thread-1513192-1-1.html</a></p>
+
     </div>
 
     
