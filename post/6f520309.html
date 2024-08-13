@@ -13,18 +13,18 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"pdry.eu.org","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="发现问题最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。于是进行调试分析，终于找到了原因。 解决问题打开i">
+    <meta name="description" content="发现问题最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。于是进行调试分析，终于找到了原因。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决Indy10发送邮件主题乱码的问题">
 <meta property="og:url" content="https://pdry.eu.org/post/6f520309.html">
 <meta property="og:site_name" content="我酷我流行">
-<meta property="og:description" content="发现问题最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。于是进行调试分析，终于找到了原因。 解决问题打开i">
+<meta property="og:description" content="发现问题最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。于是进行调试分析，终于找到了原因。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2022/11/19/zKV7Jx.jpg">
 <meta property="og:image" content="https://s1.ax1x.com/2022/11/19/zKZeTs.jpg">
@@ -301,6 +301,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <h3 id="发现问题"><a href="#发现问题" class="headerlink" title="发现问题"></a>发现问题</h3><p>最近在用delphi做一个自娱的跨平台邮件发送程序时,发现在发送主题为中文时，接收方会显示为？？？？？。这个问题出现在安卓平台，同样的代码，windows平台是没问题的。通过查看邮件的源码发现，安卓程序发送的源码就是？？？,很明显就是没有对中文进行正确的编码。本以为将idmessage的charset设为utf-8就能解决，结果却事与愿违。<br><img src="https://s1.ax1x.com/2022/11/19/zKV7Jx.jpg" alt="clip-27998453.jpg"><br>于是进行调试分析，终于找到了原因。</p>
+<span id="more"></span>
 <h3 id="解决问题"><a href="#解决问题" class="headerlink" title="解决问题"></a>解决问题</h3><p>打开idmessage.pas源码，另存到项目根目录，定位到<code>procedure TIdMessage.GenerateHeader;</code><br>这个过程。<br>找到这一行：<br><code>  InitializeISO(HeaderEncoding, ISOCharSet);</code><br><img src="https://s1.ax1x.com/2022/11/19/zKZeTs.jpg" alt="clip-28499062.jpg"><br>在这一行下面添加：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;$IFDEF ANDROID&#125;</span><br><span class="line">ISOCharSet:=&#x27;UTF-8&#x27;;</span><br><span class="line">HeaderEncoding:=&#x27;B&#x27;;</span><br><span class="line">&#123;$ENDIF&#125;</span><br></pre></td></tr></table></figure>
 <p>这是针对安卓平台的编译指令。原因就是InitializeISO这个过程初始化字符集数据时，采用的是windows平台的API,没有考虑安卓平台，导致编码识别出错，我们给它加上正确的编码指令，就完美解决了问题。</p>

@@ -13,7 +13,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
 
@@ -307,6 +307,7 @@
     <div class="post-body" itemprop="articleBody">
         <p><strong>需求说明</strong><br>由于工作需要，电脑要加密码。每天需要等单位的电脑蜗牛般启动，然后输入密码登陆，这样自动运行的网盘和相关的同步程序才能运行，为使用做好准备。有没有办法让系统登陆后马上自动锁定，这样后台程序可以自动运行，安全性也有了保证。找了很多方案都不满意，屏幕保护什么的也不实用，每次都要重新设置，于是就有了这个简单程序。</p>
 <p><strong>运行原理</strong><br>就只一句代码，调用锁定系统的API锁定电脑。简单说就是把程序放在系统启动文件夹中，程序在系统启动登陆后锁定电脑。</p>
+<span id="more"></span>
 <p><img src="https://attach.52pojie.cn/forum/202109/15/112745dixj6xjh4zkizah6.png" alt="请输入图片描述"></p>
 <p>后来发现，也可以不用程序直接调用这个API。代码如下：</p>
 <pre><code>C:\Windows\System32\rundll32.exe user32.dll,LockWorkStation
