@@ -19,17 +19,17 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"pdry.eu.org","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="前因最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。">
+    <meta name="description" content="前因最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="解决Typecho1.20错误更新的问题">
 <meta property="og:url" content="https://pdry.eu.org/post/7f5794d5.html">
 <meta property="og:site_name" content="我酷我流行">
-<meta property="og:description" content="前因最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。">
+<meta property="og:description" content="前因最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s1.ax1x.com/2022/11/19/zKEpBd.png">
 <meta property="og:image" content="https://s1.ax1x.com/2022/11/19/zKE9HA.png">
-<meta property="article:published_time" content="2022-11-19T08:35:00.000Z">
-<meta property="article:modified_time" content="2022-11-19T08:51:38.000Z">
+<meta property="article:published_time" content="2022-11-19T00:35:00.000Z">
+<meta property="article:modified_time" content="2024-08-13T02:53:54.396Z">
 <meta property="article:author" content="平淡如盐">
 <meta property="article:tag" content="技术分享">
 <meta name="twitter:card" content="summary">
@@ -92,7 +92,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">18</span></a></li><li class="menu-item menu-item-我的歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>我的歌单</a></li><li class="menu-item menu-item-软件注册"><a href="/regform/" rel="section"><i class="fa  fa-key fa-fw"></i>软件注册</a></li><li class="menu-item menu-item-留言板"><a href="/notebook/" rel="section"><i class="fa  fa-book fa-fw"></i>留言板</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">21</span></a></li><li class="menu-item menu-item-我的歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>我的歌单</a></li><li class="menu-item menu-item-软件注册"><a href="/regform/" rel="section"><i class="fa  fa-key fa-fw"></i>软件注册</a></li><li class="menu-item menu-item-留言板"><a href="/notebook/" rel="section"><i class="fa  fa-book fa-fw"></i>留言板</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -149,7 +149,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E5%9B%A0"><span class="nav-number">1.</span> <span class="nav-text">前因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8E%E6%9E%9C"><span class="nav-number">2.</span> <span class="nav-text">后果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%8F%90%E9%86%92%EF%BC%9A%E4%B8%80%E5%AE%9A%E8%A6%81%E6%B8%85%E9%99%A4%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%89%8D%E8%83%BD%E8%A7%81%E5%88%B0%E6%95%88%E6%9E%9C%E3%80%82"><span class="nav-number">2.1.</span> <span class="nav-text">提醒：一定要清除浏览器缓存才能见到效果。</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">前因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link"><span class="nav-number">2.</span> <span class="nav-text">后果</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link"><span class="nav-number">2.1.</span> <span class="nav-text">提醒：一定要清除浏览器缓存才能见到效果。</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -164,13 +164,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">18</span>
+          <span class="site-state-item-count">21</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -270,9 +270,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
-      
 
-      <time title="创建时间：2022-11-19 16:35:00 / 修改时间：16:51:38" itemprop="dateCreated datePublished" datetime="2022-11-19T16:35:00+08:00">2022-11-19</time>
+      <time title="创建时间：2022-11-19 08:35:00" itemprop="dateCreated datePublished" datetime="2022-11-19T08:35:00+08:00">2022-11-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-08-13 10:53:54" itemprop="dateModified" datetime="2024-08-13T10:53:54+08:00">2024-08-13</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -280,7 +286,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/" itemprop="url" rel="index"><span itemprop="name">默认分类</span></a>
+          <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">技术分享</span></a>
         </span>
     </span>
 
@@ -292,20 +298,6 @@
       <span class="post-meta-item-text">阅读次数：</span>
       <span id="busuanzi_value_page_pv"></span>
     </span>
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan：</span>
-    
-    <a title="解决Typecho1.20错误更新的问题" href="/post/7f5794d5.html#SOHUCS" itemprop="discussionUrl">
-      <span id="sourceId::ec2fd948074e8ebea7e93c67918f4c3f" class="cy_cmt_count" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 </div>
 
         </div>
@@ -315,11 +307,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。</p>
-<span id="more"></span>
-<p><img src="https://s1.ax1x.com/2022/11/19/zKEpBd.png" alt="20221119162003.png"><br>这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一个bug。</p>
-<h3 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h3><p>本着治病救人的初衷，经过逐步调试，找到了问题的根本原因。打开网站目录<code>/var/Widget/Ajax.php</code>这个文件，定位到第62行。<br><code>version_compare($json[&#39;release&#39;], $version, &#39;&gt;=&#39;)</code><br><img src="https://s1.ax1x.com/2022/11/19/zKE9HA.png" alt="20221119163036.png"><br>问题就在这里，多了一个 <code>=</code> 号，把这个&#x3D;号删除后保存，再清除浏览器缓存，重新登陆就解决了。</p>
-<h4 id="提醒：一定要清除浏览器缓存才能见到效果。"><a href="#提醒：一定要清除浏览器缓存才能见到效果。" class="headerlink" title="提醒：一定要清除浏览器缓存才能见到效果。"></a>提醒：一定要清除浏览器缓存才能见到效果。</h4>
+        <h3>前因</h3><p>最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。<br /><img src="https://s1.ax1x.com/2022/11/19/zKEpBd.png" alt="20221119162003.png" title="20221119162003.png"><br />这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一个bug。</p><h3>后果</h3><p>本着治病救人的初衷，经过逐步调试，找到了问题的根本原因。打开网站目录<code>/var/Widget/Ajax.php</code>这个文件，定位到第62行。<br /><code>version_compare($json[&#039;release&#039;], $version, &#039;&gt;=&#039;)</code><br /><img src="https://s1.ax1x.com/2022/11/19/zKE9HA.png" alt="20221119163036.png" title="20221119163036.png"><br />问题就在这里，多了一个 <code>=</code> 号，把这个=号删除后保存，再清除浏览器缓存，重新登陆就解决了。</p><h4>提醒：一定要清除浏览器缓存才能见到效果。</h4>
     </div>
 
     
@@ -354,7 +342,6 @@
 
 
 
-    <div class="comments" id="SOHUCS" sid="ec2fd948074e8ebea7e93c67918f4c3f"></div>
 </div>
   </main>
 
@@ -364,7 +351,7 @@
 
 <div class="copyright">
   &copy; 
-  <span itemprop="copyrightYear">2023</span>
+  <span itemprop="copyrightYear">2024</span>
   <span class="with-love">
     <i class="fa fa-address-book"></i>
   </span>
@@ -410,8 +397,6 @@
 
 
 
-<script class="next-config" data-name="changyan" type="application/json">{"enable":true,"appid":"cywUpb8ow","appkey":"prod_7a1c59af575bae3ecc96da4afac0de9d","count":true}</script>
-<script src="/js/third-party/comments/changyan.js"></script>
 
 </body>
 </html>
