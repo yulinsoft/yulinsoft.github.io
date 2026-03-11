@@ -467,7 +467,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-10 16:45:36" itemprop="dateModified" datetime="2026-03-10T16:45:36+08:00">2026-03-10</time>
+      <time title="修改时间：2026-03-11 10:24:15" itemprop="dateModified" datetime="2026-03-11T10:24:15+08:00">2026-03-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -491,14 +491,14 @@
     <div class="post-body" itemprop="articleBody">
           <h2 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h2><p>一台旧电脑安装了FNOS，经常在飞牛系统更新后或意外断电时导致失联，IP地址ping不通，当然就无法联通。联上显示器，插上键盘，看到系统正常启动，但无法获取IP,reboot后也一样不行。<br><img src="https://img.hcdn.tk/image/2111081916.jpg" alt="飞牛1.0.jpg"></p>
 <h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>以前遇到过这个问题，我都是直接重装解决，把硬盘重新挂载一下，也没什么损失。究其原因，其实就是网卡开启OVS导致，但只要装了虚拟机，这个选项还必须开启。也可以准备一个免驱的USB网卡，失联时插上去，用USB网卡联网解决，一般登陆后关闭OVS,再开启一下就解决了。</p>
-<h2 id="开药方"><a href="#开药方" class="headerlink" title="开药方"></a>开药方</h2><ol>
-<li>将fnos主机接上显示器和键盘，通过控制台输入账户密码登录以后</li>
-<li>用ovs-vsctl工具删除网桥即可<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查看当前的网桥</span><br><span class="line">sudo ovs-vsctl list-br</span><br><span class="line"># 删除网桥</span><br><span class="line">sudo ovs-vsctl del-br &lt;br-name&gt;</span><br></pre></td></tr></table></figure></li>
-<li>重启网络或者重启系统<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 重启网络</span><br><span class="line">sudo systemctl restart NetworkManager.service</span><br><span class="line"># 重启系统</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure></li>
-<li>到这里网络就恢复正常了。</li>
-</ol>
-<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>只能说飞牛这个OVS稳定性实在不敢恭维，我最近已经将IP地址设置为手动固定IP了，看看还会不会再出现这个问题。</p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/post/72.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -561,7 +561,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-10 16:49:31" itemprop="dateModified" datetime="2026-03-10T16:49:31+08:00">2026-03-10</time>
+      <time title="修改时间：2026-03-11 10:24:48" itemprop="dateModified" datetime="2026-03-11T10:24:48+08:00">2026-03-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -583,12 +583,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>家里的小主机性能太低，于是装了win10 ltsc 2021<br><img src="https://img.hcdn.tk/image/windows.png"><br>感觉反应还可以，当我尝试在资源管理器中打开局域网中分享的硬盘时，结果却弹出了错误。<br><img src="https://img.hcdn.tk/image/%E6%8D%95%E8%8E%B7.png"><br>尝试设置高级共享，添加samba1.0，设置防火墙都没有解决问题，最后还是在网上找到了答案，直接说操作流程吧！</p>
-<h3 id="打开运行对话框，输入gpedit-msc，"><a href="#打开运行对话框，输入gpedit-msc，" class="headerlink" title="打开运行对话框，输入gpedit.msc，"></a>打开运行对话框，输入gpedit.msc，</h3><p><img src="https://img.hcdn.tk/image/%E8%BF%90%E8%A1%8C.png"></p>
-<h3 id="打开组策略编辑器，定位到如图所示位置。"><a href="#打开组策略编辑器，定位到如图所示位置。" class="headerlink" title="打开组策略编辑器，定位到如图所示位置。"></a>打开组策略编辑器，定位到如图所示位置。</h3><p><img src="https://img.hcdn.tk/image/%E7%BB%84%E7%AD%96%E7%95%A5.png"></p>
-<h3 id="双击“启用不安全的来宾登陆”，在弹出的对话框中点击启用，再点击确定就可以了。"><a href="#双击“启用不安全的来宾登陆”，在弹出的对话框中点击启用，再点击确定就可以了。" class="headerlink" title="双击“启用不安全的来宾登陆”，在弹出的对话框中点击启用，再点击确定就可以了。"></a>双击“启用不安全的来宾登陆”，在弹出的对话框中点击启用，再点击确定就可以了。</h3><p><img src="https://img.hcdn.tk/image/%E5%90%AF%E7%94%A8%E4%B8%8D%E5%AE%89%E5%85%A8.png"></p>
-<h3 id="再次打开资源管理器，输入IP地址，久违的硬盘终于出现了。"><a href="#再次打开资源管理器，输入IP地址，久违的硬盘终于出现了。" class="headerlink" title="再次打开资源管理器，输入IP地址，久违的硬盘终于出现了。"></a>再次打开资源管理器，输入IP地址，久违的硬盘终于出现了。</h3><p><img src="https://img.hcdn.tk/image/%E6%AD%A3%E5%B8%B8.png"></p>
-
+          <p>家里的小主机性能太低，于是装了win10 ltsc 2021<br><img src="https://img.hcdn.tk/image/windows.png"><br>感觉反应还可以，当我尝试在资源管理器中打开局域网中分享的硬盘时，结果却弹出了错误。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/post/58.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -651,7 +654,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-03-10 16:54:32" itemprop="dateModified" datetime="2026-03-10T16:54:32+08:00">2026-03-10</time>
+      <time title="修改时间：2026-03-11 10:25:27" itemprop="dateModified" datetime="2026-03-11T10:25:27+08:00">2026-03-11</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -676,22 +679,14 @@
           <p>如果你在使用 os.environ.get 无法获取 GitHub Actions 的 secrets，可能是以下原因之一导致的：</p>
 <h2 id="1-Secrets-未正确配置"><a href="#1-Secrets-未正确配置" class="headerlink" title="1. Secrets 未正确配置"></a>1. Secrets 未正确配置</h2><p>确保你已经在 GitHub 仓库的 Settings &gt; Secrets and variables &gt; Actions 中正确添加了所需的 secrets。<br>确保你在工作流文件（.yml）中正确引用了这些 secrets，例如：</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">env:</span></span><br><span class="line">  <span class="attr">MY_SECRET:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.MY_SECRET</span> <span class="string">&#125;&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-环境变量未传递到脚本"><a href="#2-环境变量未传递到脚本" class="headerlink" title="2. 环境变量未传递到脚本"></a>2. 环境变量未传递到脚本</h2><p>如果你在脚本中使用 os.environ.get，需要确保工作流中将 secrets 映射为环境变量。例如：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">jobs:</span></span><br><span class="line">  <span class="attr">example-job:</span></span><br><span class="line">    <span class="attr">runs-on:</span> <span class="string">ubuntu-latest</span></span><br><span class="line">    <span class="attr">steps:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Checkout</span> <span class="string">code</span></span><br><span class="line">        <span class="attr">uses:</span> <span class="string">actions/checkout@v3</span></span><br><span class="line">      <span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Run</span> <span class="string">script</span></span><br><span class="line">        <span class="attr">env:</span></span><br><span class="line">          <span class="attr">MY_SECRET:</span> <span class="string">$&#123;&#123;</span> <span class="string">secrets.MY_SECRET</span> <span class="string">&#125;&#125;</span></span><br><span class="line">        <span class="attr">run:</span> <span class="string">python</span> <span class="string">script.py</span></span><br></pre></td></tr></table></figure>
-
-<p>在脚本中，你可以通过以下方式获取：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">my_secret = os.environ.get(<span class="string">&quot;MY_SECRET&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(my_secret)</span><br></pre></td></tr></table></figure>
-
-<h2 id="3-Secrets-名称拼写错误"><a href="#3-Secrets-名称拼写错误" class="headerlink" title="3. Secrets 名称拼写错误"></a>3. Secrets 名称拼写错误</h2><p>检查 secrets 的名称是否拼写正确，名称区分大小写。例如，MY_SECRET 和 my_secret 是不同的。</p>
-<h2 id="4-权限问题"><a href="#4-权限问题" class="headerlink" title="4. 权限问题"></a>4. 权限问题</h2><p>如果你在 Fork 仓库中运行工作流，默认情况下 secrets 不会传递到 Fork 仓库的 Actions 中。需要在工作流触发时手动启用 secrets。</p>
-<h2 id="5-Secrets-不会暴露给-PR"><a href="#5-Secrets-不会暴露给-PR" class="headerlink" title="5. Secrets 不会暴露给 PR"></a>5. Secrets 不会暴露给 PR</h2><p>如果工作流是由外部 Pull Request 触发的，GitHub 出于安全考虑不会将 secrets 暴露给工作流。<br>解决方法<br>调试环境变量：在工作流中打印所有环境变量，检查是否正确传递：<br>复制代码</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="attr">name:</span> <span class="string">Debug</span> <span class="string">environment</span> <span class="string">variables</span></span><br><span class="line">  <span class="attr">run:</span> <span class="string">env</span></span><br></pre></td></tr></table></figure>
-
-<p>确保正确使用 os.environ.get：如果环境变量未设置，os.environ.get 会返回 None，可以添加默认值以便调试：<br>复制代码</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">my_secret = os.environ.get(<span class="string">&quot;MY_SECRET&quot;</span>, <span class="string">&quot;default_value&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(my_secret)</span><br></pre></td></tr></table></figure>
-<p>如果问题仍未解决，可以提供更多上下文，我会尽力帮你进一步排查！<br>搜索越来越智能了，直接给出了答案。<br><img src="https://img.hcdn.tk/image/556722871.jpg" alt="Bing给的答案"></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/post/54.html#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
