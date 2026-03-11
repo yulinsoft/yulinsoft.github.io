@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/Favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/Favicon.ico">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha256-AbA177XfpSnFEvgpYu1jMygiLabzPCJCRIBtR5jGc0k=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"pdry.eu.org","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.13.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="症状一台旧电脑安装了FNOS，经常在飞牛系统更新后或意外断电时导致失联，IP地址ping不通，当然就无法联通。联上显示器，插上键盘，看到系统正常启动，但无法获取IP,reboot后也一样不行。 分析以前遇到过这个问题，我都是直接重装解决，把硬盘重新挂载一下，也没什么损失。究其原因，其实就是网卡开启OVS导致，但只要装了虚拟机，这个选项还必须开启。也可以准备一个免驱的USB网卡，失联时插上去，用US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="飞牛系统（fnOS）开启OVS导致更新失联的解决方法">
+<meta property="og:url" content="https://pdry.eu.org/post/72.html">
+<meta property="og:site_name" content="我酷我流行">
+<meta property="og:description" content="症状一台旧电脑安装了FNOS，经常在飞牛系统更新后或意外断电时导致失联，IP地址ping不通，当然就无法联通。联上显示器，插上键盘，看到系统正常启动，但无法获取IP,reboot后也一样不行。 分析以前遇到过这个问题，我都是直接重装解决，把硬盘重新挂载一下，也没什么损失。究其原因，其实就是网卡开启OVS导致，但只要装了虚拟机，这个选项还必须开启。也可以准备一个免驱的USB网卡，失联时插上去，用US">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img.hcdn.tk/image/2111081916.jpg">
+<meta property="article:published_time" content="2025-11-21T00:17:05.000Z">
+<meta property="article:modified_time" content="2026-03-10T08:45:36.930Z">
+<meta property="article:author" content="平淡如盐">
+<meta property="article:tag" content="平淡如盐 育林软件 拼音助手官网 yulinsoft">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img.hcdn.tk/image/2111081916.jpg">
+
+
+<link rel="canonical" href="https://pdry.eu.org/post/72.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://pdry.eu.org/post/72.html","path":"post/72.html","title":"飞牛系统（fnOS）开启OVS导致更新失联的解决方法"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>飞牛系统（fnOS）开启OVS导致更新失联的解决方法 | 我酷我流行</title>
+  
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">我酷我流行</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">越努力越幸运！</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">21</span></a></li><li class="menu-item menu-item-我的歌单"><a href="/playlist/" rel="section"><i class="fa  fa-music fa-fw"></i>我的歌单</a></li><li class="menu-item menu-item-软件注册"><a href="/regform/" rel="section"><i class="fa  fa-key fa-fw"></i>软件注册</a></li><li class="menu-item menu-item-留言板"><a href="/notebook/" rel="section"><i class="fa  fa-book fa-fw"></i>留言板</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%97%87%E7%8A%B6"><span class="nav-number">1.</span> <span class="nav-text">症状</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%86%E6%9E%90"><span class="nav-number">2.</span> <span class="nav-text">分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E8%8D%AF%E6%96%B9"><span class="nav-number">3.</span> <span class="nav-text">开药方</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E8%AF%AD"><span class="nav-number">4.</span> <span class="nav-text">结语</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="平淡如盐"
+      src="/img/weixin.jpg">
+  <p class="site-author-name" itemprop="name">平淡如盐</p>
+  <div class="site-description" itemprop="description">明天的你一定会感谢今天努力的自己。</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">21</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/yulinsoft" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:yulinsoft@gmail.com" title="E-Mail → mailto:yulinsoft@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/yulinsoft" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;yulinsoft" rel="noopener" target="_blank"><i class="fab fa-weibo fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://www.yulinsoft.top/" title="我的网站 → https:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank"><i class="edge fa-fw"></i></a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.yulinsoft.top/" title="https:&#x2F;&#x2F;www.yulinsoft.top" rel="noopener" target="_blank">我的网站</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://pan.pdry.eu.org/" title="https:&#x2F;&#x2F;pan.pdry.eu.org" rel="noopener" target="_blank">我的网盘</a>
+        </li>
+    </ul>
+  </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://pdry.eu.org/post/72.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/weixin.jpg">
+      <meta itemprop="name" content="平淡如盐">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="我酷我流行">
+      <meta itemprop="description" content="明天的你一定会感谢今天努力的自己。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="飞牛系统（fnOS）开启OVS导致更新失联的解决方法 | 我酷我流行">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          飞牛系统（fnOS）开启OVS导致更新失联的解决方法
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+  
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2025-11-21 08:17:05" itemprop="dateCreated datePublished" datetime="2025-11-21T08:17:05+08:00">2025-11-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-03-10 16:45:36" itemprop="dateModified" datetime="2026-03-10T16:45:36+08:00">2026-03-10</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%BD%AF%E4%BB%B6%E5%8F%91%E5%B8%83/" itemprop="url" rel="index"><span itemprop="name">软件发布</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="症状"><a href="#症状" class="headerlink" title="症状"></a>症状</h2><p>一台旧电脑安装了FNOS，经常在飞牛系统更新后或意外断电时导致失联，IP地址ping不通，当然就无法联通。联上显示器，插上键盘，看到系统正常启动，但无法获取IP,reboot后也一样不行。<br><img src="https://img.hcdn.tk/image/2111081916.jpg" alt="飞牛1.0.jpg"></p>
+<h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>以前遇到过这个问题，我都是直接重装解决，把硬盘重新挂载一下，也没什么损失。究其原因，其实就是网卡开启OVS导致，但只要装了虚拟机，这个选项还必须开启。也可以准备一个免驱的USB网卡，失联时插上去，用USB网卡联网解决，一般登陆后关闭OVS,再开启一下就解决了。</p>
+<h2 id="开药方"><a href="#开药方" class="headerlink" title="开药方"></a>开药方</h2><ol>
+<li>将fnos主机接上显示器和键盘，通过控制台输入账户密码登录以后</li>
+<li>用ovs-vsctl工具删除网桥即可<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 查看当前的网桥</span><br><span class="line">sudo ovs-vsctl list-br</span><br><span class="line"># 删除网桥</span><br><span class="line">sudo ovs-vsctl del-br &lt;br-name&gt;</span><br></pre></td></tr></table></figure></li>
+<li>重启网络或者重启系统<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 重启网络</span><br><span class="line">sudo systemctl restart NetworkManager.service</span><br><span class="line"># 重启系统</span><br><span class="line">sudo reboot</span><br></pre></td></tr></table></figure></li>
+<li>到这里网络就恢复正常了。</li>
+</ol>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>只能说飞牛这个OVS稳定性实在不敢恭维，我最近已经将IP地址设置为手动固定IP了，看看还会不会再出现这个问题。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/post/58.html" rel="prev" title="win10 ltsc 2021无法打开openwrt samba4共享的硬盘">
+                  <i class="fa fa-chevron-left"></i> win10 ltsc 2021无法打开openwrt samba4共享的硬盘
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-address-book"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">平淡如盐</span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/next-boot.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
