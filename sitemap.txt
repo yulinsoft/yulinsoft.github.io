@@ -7,9 +7,9 @@ https://pdry.eu.org/post/4a10dd00.html
 https://pdry.eu.org/about/index.html
 https://pdry.eu.org/categories/index.html
 https://pdry.eu.org/notebook/index.html
-https://pdry.eu.org/regform/index.html
-https://pdry.eu.org/tags/index.html
 https://pdry.eu.org/playlist/index.html
+https://pdry.eu.org/tags/index.html
+https://pdry.eu.org/regform/index.html
 https://pdry.eu.org/post/7fb11b1d.html
 https://pdry.eu.org/post/45af48af.html
 https://pdry.eu.org/post/6f520309.html
