@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pdry.eu.org/post/52718885.html</loc>
+    
+    <lastmod>2026-03-16</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://pdry.eu.org/post/36.html</loc>
     
     <lastmod>2026-03-12</lastmod>
@@ -265,7 +274,7 @@
 
   <url>
     <loc>https://pdry.eu.org/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -273,28 +282,28 @@
   
   <url>
     <loc>https://pdry.eu.org/tags/%E4%B8%AA%E4%BA%BA%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://pdry.eu.org/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://pdry.eu.org/tags/Padavan/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://pdry.eu.org/tags/delphi/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -303,28 +312,28 @@
   
   <url>
     <loc>https://pdry.eu.org/categories/%E9%BB%98%E8%AE%A4%E5%88%86%E7%B1%BB/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://pdry.eu.org/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://pdry.eu.org/categories/Padavan/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://pdry.eu.org/categories/%E8%BD%AF%E4%BB%B6%E5%8F%91%E5%B8%83/</loc>
-    <lastmod>2026-03-12</lastmod>
+    <lastmod>2026-03-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
