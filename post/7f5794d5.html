@@ -25,14 +25,14 @@
 <meta property="og:site_name" content="我酷我流行">
 <meta property="og:description" content="前因最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img.hcdn.tk/image/hgsds9.png">
-<meta property="og:image" content="https://img.hcdn.tk/image/hgq1hp.png">
+<meta property="og:image" content="https://img.pdry.eu.org/image/hgsds9.png">
+<meta property="og:image" content="https://img.pdry.eu.org/image/hgq1hp.png">
 <meta property="article:published_time" content="2022-11-19T08:35:00.000Z">
 <meta property="article:modified_time" content="2022-11-19T08:51:38.000Z">
 <meta property="article:author" content="平淡如盐">
 <meta property="article:tag" content="技术分享">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img.hcdn.tk/image/hgsds9.png">
+<meta name="twitter:image" content="https://img.pdry.eu.org/image/hgsds9.png">
 
 
 <link rel="canonical" href="https://pdry.eu.org/post/7f5794d5.html">
@@ -295,8 +295,8 @@
     
     <div class="post-body" itemprop="articleBody"><h3 id="前因"><a href="#前因" class="headerlink" title="前因"></a>前因</h3><p>最近新撸了一个免费的虚拟主机，安装了php8.0，安装typecho1.1时，总是失败。发现Typecho最新升级到了1.20版本，这是几年来的首次更新，于是下载更新。先备份原网站数据，并存到本地，再删除原来的老版文件，上传新版文件，一系列设置后，重新导入备份的数据，网站完美运行了。美中不足的是每次进入后台都会弹出更新提醒，但其实又没有更新。</p>
 <span id="more"></span>
-<p><img src="https://img.hcdn.tk/image/hgsds9.png" alt="20221119162003.png"><br>这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一个bug。</p>
-<h3 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h3><p>本着治病救人的初衷，经过逐步调试，找到了问题的根本原因。打开网站目录<code>/var/Widget/Ajax.php</code>这个文件，定位到第62行。<br><code>version_compare($json[&#39;release&#39;], $version, &#39;&gt;=&#39;)</code><br><img src="https://img.hcdn.tk/image/hgq1hp.png" alt="20221119163036.png"><br>问题就在这里，多了一个 <code>=</code> 号，把这个&#x3D;号删除后保存，再清除浏览器缓存，重新登陆就解决了。</p>
+<p><img src="https://img.pdry.eu.org/image/hgsds9.png" alt="20221119162003.png"><br>这红色的提醒确实醒目，但我不喜欢这么直白，这肯定是一个bug。</p>
+<h3 id="后果"><a href="#后果" class="headerlink" title="后果"></a>后果</h3><p>本着治病救人的初衷，经过逐步调试，找到了问题的根本原因。打开网站目录<code>/var/Widget/Ajax.php</code>这个文件，定位到第62行。<br><code>version_compare($json[&#39;release&#39;], $version, &#39;&gt;=&#39;)</code><br><img src="https://img.pdry.eu.org/image/hgq1hp.png" alt="20221119163036.png"><br>问题就在这里，多了一个 <code>=</code> 号，把这个&#x3D;号删除后保存，再清除浏览器缓存，重新登陆就解决了。</p>
 <h4 id="提醒：一定要清除浏览器缓存才能见到效果。"><a href="#提醒：一定要清除浏览器缓存才能见到效果。" class="headerlink" title="提醒：一定要清除浏览器缓存才能见到效果。"></a>提醒：一定要清除浏览器缓存才能见到效果。</h4>
     </div>
 

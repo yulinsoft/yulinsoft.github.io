@@ -25,14 +25,14 @@
 <meta property="og:site_name" content="我酷我流行">
 <meta property="og:description" content="解决delphi10安卓app升级delphi11的问题最近看delphi11比较稳定了，就主动安装了新版，但发现原来在delphi10.4.2下开发的安卓应用无法在新版下编译，主要情形如下：">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://img.hcdn.tk/image/hgs92d.jpg">
-<meta property="og:image" content="https://img.hcdn.tk/image/hgquyg.jpg">
+<meta property="og:image" content="https://img.pdry.eu.org/image/hgs92d.jpg">
+<meta property="og:image" content="https://img.pdry.eu.org/image/hgquyg.jpg">
 <meta property="article:published_time" content="2022-12-03T02:58:05.000Z">
 <meta property="article:modified_time" content="2022-12-03T02:58:05.000Z">
 <meta property="article:author" content="平淡如盐">
 <meta property="article:tag" content="delphi">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img.hcdn.tk/image/hgs92d.jpg">
+<meta name="twitter:image" content="https://img.pdry.eu.org/image/hgs92d.jpg">
 
 
 <link rel="canonical" href="https://pdry.eu.org/post/45af48af.html">
@@ -293,7 +293,7 @@
     
     <div class="post-body" itemprop="articleBody"><p>解决delphi10安卓app升级delphi11的问题<br>最近看delphi11比较稳定了，就主动安装了新版，但发现原来在delphi10.4.2下开发的安卓应用无法在新版下编译，主要情形如下：</p>
 <span id="more"></span>
-<p><img src="https://img.hcdn.tk/image/hgs92d.jpg" alt="批注 2022-12-03 103615.jpg"><br>Libraries下一堆红叉，编译时一堆错误，无法完成。经过百度学习，解决方法如下。<br><img src="https://img.hcdn.tk/image/hgquyg.jpg" alt="批注 2022-12-03 103822.jpg"><br>在Libraries上点击右键，点击revert system files to default菜单恢复默认库文件。<br>经过这一步，已经可以成功编译了，但编译后的app无法安装，提示安装包解析错误。<br>再百度得到答案如下：<br>新建一个安卓工程 ，把工程目录下的AndroidManifest.template.xml文件复制并覆盖原来安卓工程下的同名文件就可以解决。原因是新版安卓的配置有所变化。<br>至此，问题全部解决，可以正常编译并安装。</p>
+<p><img src="https://img.pdry.eu.org/image/hgs92d.jpg" alt="批注 2022-12-03 103615.jpg"><br>Libraries下一堆红叉，编译时一堆错误，无法完成。经过百度学习，解决方法如下。<br><img src="https://img.pdry.eu.org/image/hgquyg.jpg" alt="批注 2022-12-03 103822.jpg"><br>在Libraries上点击右键，点击revert system files to default菜单恢复默认库文件。<br>经过这一步，已经可以成功编译了，但编译后的app无法安装，提示安装包解析错误。<br>再百度得到答案如下：<br>新建一个安卓工程 ，把工程目录下的AndroidManifest.template.xml文件复制并覆盖原来安卓工程下的同名文件就可以解决。原因是新版安卓的配置有所变化。<br>至此，问题全部解决，可以正常编译并安装。</p>
 
     </div>
 
